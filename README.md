@@ -61,7 +61,7 @@ I have a degree in Computer Science from FMU, I've been working as a developer f
   - Movies, different genres
   - Anime
   - Game 
-- 😄 Pronouns: He/HIS
+- 😄 Pronouns: He/HIM
 - ⚡ Fun fact: I have 2 children
 
 ### Language topics
