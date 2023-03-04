@@ -1,5 +1,5 @@
-<img align="left" width="300rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
-<img align="right" width="300rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar-2" border="0">
+<img align="left" width="230rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
+<img align="right" width="260rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar-2" border="0">
 </br>
 </br>
 </br>
@@ -8,26 +8,23 @@
 <div align="center" dsplay="inline-block">
  
  <h1 align="center">André Carlos </h1> 
- <a href="https://www.instagram.com/andresinho200498/">
+ <a href="https://www.instagram.com/andresinho200498/" target="_blank">
     <img align="center" width="80px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
   </a> 
-  <a href="https://www.youtube.com/@andresinho200498">
+  <a href="https://www.youtube.com/@andresinho200498" target="_blank">
     <img align="center" width="80px" src="https://img.icons8.com/color/256/youtube-play.png" alt="twitter" style="vertical-align:top;">
   </a>
-  <a href="https://www.linkedin.com/in/andresinho20049/">
+  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
     <img align="center" width="80px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
   </a>
   
   <h3 align="center">@andresinho20049</h3>
 </div> 
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 [![pt-br](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.md)
+
+<br/>
 
 ## Olá, Devs
 Sou formado em Ciência da Computação pela FMU, trabalho como desenvolvedor há 5 anos, comecei como traineer no projeto de URA da Vivo, iniciei no back-end e hoje trabalho como desenvolvedor full stack . amo tecnologia, mas também amo a natureza, passear ao ar livre, profissionalmente prefiro ser direto e firme, pessoalmente dentro do meu ciclo de amigos sou meio bobo kkkk. <br/>
@@ -48,11 +45,9 @@ Sou formado em Ciência da Computação pela FMU, trabalho como desenvolvedor h�
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" title = "ANGULAR"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title = "DOCKER"/></code>
 
-<br/>
-<br/>
 
 ### Sobre mim
-- 🔭 Atualmente estou trabalhando na [A5 Solutions](https://www.linkedin.com/company/a5-solutions/)
+- 🔭 Atualmente estou trabalhando na <a href="https://www.linkedin.com/company/a5-solutions/" target="_blank">A5 Solutions</a> 
 - 🌱 Atualmente estou aprendendo...
   - Inglês
   - NodeJs Express
@@ -110,7 +105,7 @@ Sobre:
     - Spring Secutiry Oauth2 Autoconfigure 2.1.5
     - Springfox (Swagger) 3.0.0
     - H2 Database - Base de teste
-    - Lombok - [Ajuda para configurar o lombok](https://projectlombok.org/setup/eclipse)
+    - Lombok - <a href="https://projectlombok.org/setup/eclipse/" target="_blank">Ajuda para configurar o lombok</a>
     - Log4J
     - Project Maven
 - Application.properties - Padrão
@@ -182,7 +177,7 @@ mvn clean spring-boot:run
 ```
 
 <details>
-<summary>:eyes: show example</summary>
+<summary>:eyes: mostrar exemplo</summary>
 
   ## [NF Control](https://github.com/andresinho20049/nf-control-front)
   ********************************
@@ -256,10 +251,10 @@ Conforme dito anteriormente o back-end trabalha com Authentication Server Oauth2
 > Considerações: Projetos profissionais são privados e carregados no gitlabs da corporação, os projetos disponíveis aqui no meu perfil do Github são pessoais e desenvolvidos com intuito acadêmico.
 
 
-## My GitHub Profile
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=andresinho20049)](https://github.com/andresinho20049)
-
-
-![André Carlos's GitHub stats](https://github-readme-stats.vercel.app/api?username=andresinho20049&show_icons=true&count_private=true&theme=radical&include_all_commits=true)
-
+## Meu perfil no Github
+<p align="center">
+<a href="https://github.com/andresinho20049">
+  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andresinho20049&custom_title=Linguagens mais utilizadas"/>
+  <img height="200em" src="https://github-readme-stats.vercel.app/api?username=andresinho20049&show_icons=true&count_private=true&theme=radical&include_all_commits=true"/>
+</a>
+</p>
