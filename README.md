@@ -1,5 +1,5 @@
-<img align="left" width="230rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
-<img align="right" width="260rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar-2" border="0">
+<img align="left" width="200rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
+<img align="right" width="230rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar-2" border="0">
 </br>
 </br>
 </br>
