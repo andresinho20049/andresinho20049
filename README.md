@@ -22,7 +22,7 @@
 </div> 
 
 
-[![pt-br](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.pt-br.md)
 
 <br/>
 
@@ -147,6 +147,11 @@ Check lombok and then finish
 mvn package spring-boot:run 
 ```
 
+ ## End Example
+ *********************************
+ <br/>
+ <br/>
+ <br/>
 </content>
 
 </details>
@@ -245,6 +250,11 @@ mvn package spring-boot:run
 
   > The username and password informed in the body, refers to the client (user) that is logging in, the clientId and clientSecret informed in the auth block serves for the application_client to authenticate itself with the Authentication server.
 
+ ## End Example
+ *********************************
+ <br/>
+ <br/>
+ <br/>
 </details>
 
 > Considerations: Professional projects are private and uploaded to the corporation's gitlabs, the projects available here on my Github profile are personal and developed with academic intent.
