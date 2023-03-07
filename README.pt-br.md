@@ -1,20 +1,23 @@
 <img align="left" width="230rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
 <img align="right" width="260rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar" border="0">
-</br>
-</br>
-</br>
+<br/>
 
+ <h1 align="center">André Carlos </h1> 
+ <h3 align="center">@andresinho20049</h3>
 
 <div align="center" dsplay="inline-block">
- 
- <h1 align="center">André Carlos </h1> 
-  <h3 align="center">@andresinho20049</h3>
+ <a href="https://www.instagram.com/andresinho200498/" target="_blank">
+    <img align="center" width="50px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
+  </a> 
+  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
+    <img align="center" width="50px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
+  </a>
 </div> 
 
+<br/>
+<br/>
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.md)
-
-<br/>
 
 ## Olá, Devs
 Sou formado em Ciência da Computação pela FMU, trabalho como desenvolvedor há 5 anos, comecei como traineer no projeto de URA da Vivo, iniciei no back-end e hoje trabalho como desenvolvedor full stack . amo tecnologia, mas também amo a natureza, passear ao ar livre, profissionalmente prefiro ser direto e firme, pessoalmente dentro do meu ciclo de amigos sou mais descontraido. <br/>
@@ -34,7 +37,6 @@ Sou formado em Ciência da Computação pela FMU, trabalho como desenvolvedor h�
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title = "REACT"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" title = "ANGULAR"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title = "DOCKER"/></code>
-
 
 ### Sobre mim
 - 🔭 Atualmente estou trabalhando na <a href="https://www.linkedin.com/company/a5-solutions/" target="_blank">A5 Solutions</a> 
@@ -138,7 +140,6 @@ Marque lombok e depois click em finish
 mvn clean spring-boot:run 
 ```
  ## End Example
- *********************************
  <br/>
  <br/>
  <br/>
@@ -172,8 +173,7 @@ mvn clean spring-boot:run
 <details>
 <summary>:eyes: mostrar exemplo</summary>
 
-  ## [NF Control](https://github.com/andresinho20049/nf-control-front)
-  ********************************
+## [NF Control](https://github.com/andresinho20049/nf-control-front)
 
 ## Bibliotecas utilizadas
 Irei abordar um pouco sobre as ferramentas/bibliotecas utilizadas, o porque foram desenvolvidas de tal maneiras.
@@ -239,7 +239,6 @@ Conforme dito anteriormente o back-end trabalha com Authentication Server Oauth2
 
 > O username e password informados no body, é relacionado ao cliente(usuário) que esta efetuando o login, o clientId e clientSecret informado no bloco auth é para o application_client se autenticar com o Authentication server.
  ## End Example
- *********************************
  <br/>
  <br/>
  <br/>
@@ -256,19 +255,3 @@ Conforme dito anteriormente o back-end trabalha com Authentication Server Oauth2
   <img height="200em" src="https://github-readme-stats.vercel.app/api?username=andresinho20049&show_icons=true&count_private=true&theme=radical&include_all_commits=true"/>
 </a>
 </p>
-
-***
-
-<div align="center">
-
-
- <a href="https://www.instagram.com/andresinho200498/" target="_blank">
-    <img align="center" width="50px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
-  </a> 
-  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
-    <img align="center" width="50px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
-  </a>
-
-  <h3>Redes Sociais</h3>
-
-</div>
