@@ -12,7 +12,7 @@
 </div> 
 
 
-[![pt-br](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.md)
 
 <br/>
 
@@ -137,13 +137,16 @@ Marque lombok e depois click em finish
 ```mvn
 mvn clean spring-boot:run 
 ```
+ ## End Example
+ *********************************
+ <br/>
+ <br/>
+ <br/>
 
 </content>
 
 </details>
 
-<br/>
-<br/>
 
 > Front-end é bem diversificado, tenho conhecimento de core development com HTML, CSS e JS, e também de projetos NodeJs com frameworks React e Angular.
 
@@ -235,6 +238,11 @@ Conforme dito anteriormente o back-end trabalha com Authentication Server Oauth2
 ```
 
 > O username e password informados no body, é relacionado ao cliente(usuário) que esta efetuando o login, o clientId e clientSecret informado no bloco auth é para o application_client se autenticar com o Authentication server.
+ ## End Example
+ *********************************
+ <br/>
+ <br/>
+ <br/>
 
 </details>
 
@@ -244,7 +252,7 @@ Conforme dito anteriormente o back-end trabalha com Authentication Server Oauth2
 ## Meu perfil no Github
 <p align="center">
 <a href="https://github.com/andresinho20049">
-  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andresinho20049&custom_title=Linguagens mais utilizadas"/>
+  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andresinho20049&custom_title=Linguagens%20mais%20utilizadas"/>
   <img height="200em" src="https://github-readme-stats.vercel.app/api?username=andresinho20049&show_icons=true&count_private=true&theme=radical&include_all_commits=true"/>
 </a>
 </p>

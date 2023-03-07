@@ -1,5 +1,5 @@
-<img align="left" width="230rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
-<img align="right" width="260rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar-2" border="0">
+<img align="left" width="200rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
+<img align="right" width="230rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar-2" border="0">
 </br>
 </br>
 </br>
@@ -52,7 +52,7 @@ I have a degree in Computer Science from FMU, I've been working as a developer f
   - Movies, different genres
   <!-- - Anime -->
   - Game 
-- 😄 Pronouns: He/HIS
+- 😄 Pronouns: He/HIM
 - ⚡ Fun fact: I have 2 children
 
 ### Language topics
@@ -138,6 +138,11 @@ Check lombok and then finish
 mvn package spring-boot:run 
 ```
 
+ ## End Example
+ *********************************
+ <br/>
+ <br/>
+ <br/>
 </content>
 
 </details>
@@ -236,6 +241,11 @@ mvn package spring-boot:run
 
   > The username and password informed in the body, refers to the client (user) that is logging in, the clientId and clientSecret informed in the auth block serves for the application_client to authenticate itself with the Authentication server.
 
+ ## End Example
+ *********************************
+ <br/>
+ <br/>
+ <br/>
 </details>
 
 > Considerations: Professional projects are private and uploaded to the corporation's gitlabs, the projects available here on my Github profile are personal and developed with academic intent.
