@@ -1,21 +1,22 @@
 <img align="left" width="200rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
 <img align="right" width="230rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar-2" border="0">
-</br>
-</br>
-</br>
 
-
-<div align="center" dsplay="inline-block">
  
  <h1 align="center">André Carlos </h1> 
-  <h3 align="center">@andresinho20049</h3>
-
+ <h3 align="center">@andresinho20049</h3>
+ 
+<div align="center" dsplay="inline-block">
+ <a href="https://www.instagram.com/andresinho200498/" target="_blank">
+    <img align="center" width="50px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
+  </a> 
+  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
+    <img align="center" width="50px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
+  </a>
 </div> 
 
+<br/>
 
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.pt-br.md)
-
-<br/>
 
 ## Hello, Devs
 I have a degree in Computer Science from FMU, I've been working as a developer for 5 years, I started as an intern at Vivo's IVR project, I started in the back-end and today I work as a full stack developer. I love technology, but I also love nature, walking outdoors, professionally I prefer to be direct and firm, personally within my circle of friends I am more relaxed. <br/>
@@ -35,9 +36,6 @@ I have a degree in Computer Science from FMU, I've been working as a developer f
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title = "REACT"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" title = "ANGULAR"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title = "DOCKER"/></code>
-
-<br/>
-<br/>
 
 ### About me
 - 🔭 I’m currently working on <a href="https://www.linkedin.com/company/a5-solutions/" target="_blank">A5 Solutions</a>
@@ -139,7 +137,6 @@ mvn package spring-boot:run
 ```
 
  ## End Example
- *********************************
  <br/>
  <br/>
  <br/>
@@ -175,7 +172,6 @@ mvn package spring-boot:run
 <summary>:eyes: show example</summary>
 
   ## [NF Control](https://github.com/andresinho20049/nf-control-front)
-  ********************************
 
   ## Libraries used
   I'll talk a little about the tools/libraries used, and explain why they were developed that way.
@@ -242,7 +238,6 @@ mvn package spring-boot:run
   > The username and password informed in the body, refers to the client (user) that is logging in, the clientId and clientSecret informed in the auth block serves for the application_client to authenticate itself with the Authentication server.
 
  ## End Example
- *********************************
  <br/>
  <br/>
  <br/>
@@ -258,19 +253,3 @@ mvn package spring-boot:run
   <img height="200em" src="https://github-readme-stats.vercel.app/api?username=andresinho20049&show_icons=true&count_private=true&theme=radical&include_all_commits=true"/>
 </a>
 </p>
-
-***
-
-<div align="center">
-
-
- <a href="https://www.instagram.com/andresinho200498/" target="_blank">
-    <img align="center" width="50px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
-  </a> 
-  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
-    <img align="center" width="50px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
-  </a>
-
-  <h3>Social Media</h3>
-
-</div>
