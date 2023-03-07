@@ -1,5 +1,5 @@
 <img align="left" width="230rem" src="https://i.ibb.co/bvQNxSF/Avatar-Art.png" alt="Avatar-Art" border="0">
-<img align="right" width="260rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar-2" border="0">
+<img align="right" width="260rem" src="https://i.ibb.co/C7drn6j/Ready-Player-Me-Avatar-2.png" alt="Ready-Player-Me-Avatar" border="0">
 </br>
 </br>
 </br>
@@ -8,16 +8,6 @@
 <div align="center" dsplay="inline-block">
  
  <h1 align="center">André Carlos </h1> 
- <a href="https://www.instagram.com/andresinho200498/" target="_blank">
-    <img align="center" width="80px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
-  </a> 
-  <a href="https://www.youtube.com/@andresinho200498" target="_blank">
-    <img align="center" width="80px" src="https://img.icons8.com/color/256/youtube-play.png" alt="twitter" style="vertical-align:top;">
-  </a>
-  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
-    <img align="center" width="80px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
-  </a>
-  
   <h3 align="center">@andresinho20049</h3>
 </div> 
 
@@ -27,7 +17,7 @@
 <br/>
 
 ## Olá, Devs
-Sou formado em Ciência da Computação pela FMU, trabalho como desenvolvedor há 5 anos, comecei como traineer no projeto de URA da Vivo, iniciei no back-end e hoje trabalho como desenvolvedor full stack . amo tecnologia, mas também amo a natureza, passear ao ar livre, profissionalmente prefiro ser direto e firme, pessoalmente dentro do meu ciclo de amigos sou meio bobo kkkk. <br/>
+Sou formado em Ciência da Computação pela FMU, trabalho como desenvolvedor há 5 anos, comecei como traineer no projeto de URA da Vivo, iniciei no back-end e hoje trabalho como desenvolvedor full stack . amo tecnologia, mas também amo a natureza, passear ao ar livre, profissionalmente prefiro ser direto e firme, pessoalmente dentro do meu ciclo de amigos sou mais descontraido. <br/>
 > Quero me desculpar, meu inglês não é nativo e estou aprendendo.
 
 ### 🖥️ Tecnologias e ferramentas: 
@@ -57,7 +47,7 @@ Sou formado em Ciência da Computação pela FMU, trabalho como desenvolvedor h�
   - Carros customizados
   - Videos de curiosidades
   - Filmes, de diferente genêros
-  - Anime
+  <!-- - Anime -->
   - Jogos 
 - 😄 Pronomes: Ele/Dele
 - ⚡ Curiosidade: Tenhos 2 filhos
@@ -258,3 +248,19 @@ Conforme dito anteriormente o back-end trabalha com Authentication Server Oauth2
   <img height="200em" src="https://github-readme-stats.vercel.app/api?username=andresinho20049&show_icons=true&count_private=true&theme=radical&include_all_commits=true"/>
 </a>
 </p>
+
+***
+
+<div align="center">
+
+
+ <a href="https://www.instagram.com/andresinho200498/" target="_blank">
+    <img align="center" width="50px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
+  </a> 
+  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
+    <img align="center" width="50px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
+  </a>
+
+  <h3>Redes Sociais</h3>
+
+</div>

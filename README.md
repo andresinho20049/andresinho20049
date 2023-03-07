@@ -8,26 +8,17 @@
 <div align="center" dsplay="inline-block">
  
  <h1 align="center">André Carlos </h1> 
- <a href="https://www.instagram.com/andresinho200498/" target="_blank">
-    <img align="center" width="80px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
-  </a> 
-  <a href="https://www.youtube.com/@andresinho200498" target="_blank">
-    <img align="center" width="80px" src="https://img.icons8.com/color/256/youtube-play.png" alt="twitter" style="vertical-align:top;">
-  </a>
-  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
-    <img align="center" width="80px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
-  </a>
-  
   <h3 align="center">@andresinho20049</h3>
+
 </div> 
 
 
-[![pt-br](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.pt-br.md)
 
 <br/>
 
 ## Hello, Devs
-I have a degree in Computer Science from FMU, I've been working as a developer for 5 years, I started as a trainee in the IVR project at Vivo, I started in the back-end and today I work as a full stack developer. I love technology, but I also love nature, walking outdoors, professionally I prefer to be direct and firm, personally within my circle of friends I'm kind of silly kkkk. <br/>
+I have a degree in Computer Science from FMU, I've been working as a developer for 5 years, I started as an intern at Vivo's IVR project, I started in the back-end and today I work as a full stack developer. I love technology, but I also love nature, walking outdoors, professionally I prefer to be direct and firm, personally within my circle of friends I am more relaxed. <br/>
 > I want to apologize, my English is not native and I'm learning.
 
 ### 🖥️ Technologies and Tools: 
@@ -59,7 +50,7 @@ I have a degree in Computer Science from FMU, I've been working as a developer f
   - Customized cars
   - Fun facts video
   - Movies, different genres
-  - Anime
+  <!-- - Anime -->
   - Game 
 - 😄 Pronouns: He/HIS
 - ⚡ Fun fact: I have 2 children
@@ -257,3 +248,19 @@ mvn package spring-boot:run
   <img height="200em" src="https://github-readme-stats.vercel.app/api?username=andresinho20049&show_icons=true&count_private=true&theme=radical&include_all_commits=true"/>
 </a>
 </p>
+
+***
+
+<div align="center">
+
+
+ <a href="https://www.instagram.com/andresinho200498/" target="_blank">
+    <img align="center" width="50px" src="https://img.icons8.com/color/256/instagram-new.png" alt="instagram" style="vertical-align:top;">
+  </a> 
+  <a href="https://www.linkedin.com/in/andresinho20049/" target="_blank">
+    <img align="center" width="50px" src="https://img.icons8.com/color/256/linkedin.png" alt="linkedin" style="vertical-align:top;">
+  </a>
+
+  <h3>Social Media</h3>
+
+</div>
