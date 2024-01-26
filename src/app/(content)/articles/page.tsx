@@ -10,7 +10,7 @@ export default function Home() {
             key={post._id}
             title={post.title}
             resume={post.description || "Summary not available"}
-            img_url={post.capa}
+            img_url={post.imgSrc}
             img_alt=""
             slug={post.slug}
           />
