@@ -13,12 +13,14 @@ export const FooterComponent = () => {
       {/* <!--Copyright section--> */}
       <hr className="border-gray-200 sm:mx-auto" />
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between">
+        <Link href={"/"}>
         <Image
           src="/Logo_extended.png"
           width={260}
           height={260}
           alt="Picture of the author"
-        />
+          />
+          </Link>
         <div className="flex flex-col justify-between items-center gap-4">
           <h3>Follow us</h3>
           <SocialMediaComponent />
