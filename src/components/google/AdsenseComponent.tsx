@@ -1,17 +1,13 @@
 import Script from "next/script";
 
-interface IAdsenseComponentProps {
-  slot?: string;
-}
-
-export const AdsenseComponent = ({ slot }: IAdsenseComponentProps) => {
+export const AdsenseComponent = () => {
   return (
-    <div className="container m-auto h-1/4 my-4">
+    <div>
       <ins
         className="adsbygoogle"
-        style={{ display: "block" }}
+        style={{display:"block"}}
         data-ad-client="ca-pub-3617432012620885"
-        data-ad-slot="3537949391"
+        data-ad-slot="6487308684"
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
@@ -46,3 +42,24 @@ export const AdsenseComponentImageOnly = () => {
     </div>
   );
 };
+
+export const AdsenseArticleAds = () => {
+  return (
+    <div>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block", textAlign: "center" }}
+        data-ad-layout="in-article"
+        data-ad-format="fluid"
+        data-ad-client="ca-pub-3617432012620885"
+        data-ad-slot="6978263277"
+      ></ins>
+      <Script
+        id="ads-google-article-2"
+        dangerouslySetInnerHTML={{
+          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+        }}
+      />
+    </div>
+  );
+}
