@@ -8,11 +8,13 @@ import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
 
 const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
   return (
-    <Timeline.Item>
+    <Timeline.Item className="snap-always snap-start scroll-my-1">
       <Timeline.Point icon={HiCalendar} />
       <Timeline.Content>
-        <Timeline.Time>{time}</Timeline.Time>
-        <Timeline.Title>{title}</Timeline.Title>
+        <div className="sticky top-0 drop-shadow-lg bg-blend-difference backdrop-blur-md">
+          <Timeline.Time>{time}</Timeline.Time>
+          <Timeline.Title>{title}</Timeline.Title>
+        </div>
         <Timeline.Body>
           {imgSrc && (
             <Image
@@ -41,7 +43,7 @@ const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
 
 export const TimelineComponent = () => {
   return (
-    <Timeline>
+    <Timeline className="snap-y snap-mandatory my-4">
       {listTimeline.map((time, idx) => (
         <TimelineItem
           key={idx}
@@ -52,6 +54,7 @@ export const TimelineComponent = () => {
           imgSrc={time.imgSrc}
         />
       ))}
+      <div className="sticky top-0 h-16"></div>
     </Timeline>
   );
 };

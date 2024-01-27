@@ -1,7 +1,10 @@
+import { RecommendedProjects } from "@/components/cards/cardProject";
+import { AdsenseComponent } from "@/components/google/AdsenseComponent";
 import { TimelineComponent } from "@/components/timeline/TimelineComponent";
 import Image from "next/image";
 
 export default function Sobre() {
+
   return (
     <section>
       <div className="border-b mb-10">
@@ -21,6 +24,9 @@ export default function Sobre() {
         />
       </div>
       <TimelineComponent />
+      <AdsenseComponent />
+    <RecommendedProjects />
+      
     </section>
   );
 }
