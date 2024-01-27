@@ -2,7 +2,7 @@ import Script from "next/script";
 
 export const AdsenseComponent = () => {
   return (
-    <div>
+    <div className="w-full">
       <ins
         className="adsbygoogle"
         style={{display:"block"}}
@@ -24,7 +24,7 @@ export const AdsenseComponent = () => {
 
 export const AdsenseComponentImageOnly = () => {
   return (
-    <div className="container m-auto justify-items-stretch my-4">
+    <div className="container m-auto justify-items-stretch">
       <ins
         className="adsbygoogle"
         style={{ display: "block", width: "100%" }}
@@ -45,7 +45,7 @@ export const AdsenseComponentImageOnly = () => {
 
 export const AdsenseArticleAds = () => {
   return (
-    <div>
+    <div className="w-full">
       <ins
         className="adsbygoogle"
         style={{ display: "block", textAlign: "center" }}

@@ -10,7 +10,7 @@ import {
 const customTheme: CustomFlowbiteTheme["card"] = {
   root: {
     base: "flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800",
-    children: "flex h-full flex-col justify-center gap-4 p-6",
+    children: "flex h-full max-w-xs flex-col justify-center gap-4 p-6",
     horizontal: {
       off: "flex-col",
       on: "flex-col md:max-w-xl md:flex-row",

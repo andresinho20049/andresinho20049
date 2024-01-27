@@ -4,9 +4,8 @@ import { TimelineComponent } from "@/components/timeline/TimelineComponent";
 import Image from "next/image";
 
 export default function Sobre() {
-
   return (
-    <section>
+    <section className="max-w-xs sm:max-w-sm md:max-w-full mx-auto">
       <div className="border-b mb-10">
         <Image
           className="dark:hidden block"
@@ -24,9 +23,10 @@ export default function Sobre() {
         />
       </div>
       <TimelineComponent />
-      <AdsenseComponent />
-    <RecommendedProjects />
-      
+      <div className="w-full">
+        <AdsenseComponent />
+      </div>
+      <RecommendedProjects />
     </section>
   );
 }
