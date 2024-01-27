@@ -4,7 +4,7 @@ export const listTimeline: ITimeline[] = [
   {
     time: "April 1998",
     title: "Hi, my name is André!",
-    body: "I was born on April 98. At that time, my father was studying at Senai. He tried studying computer science, but couldn't finish. He has been my biggest inspiration and my first reference in the IT area. I thought it would be cool to mention this fact.",
+    body: "I was born on April 1998. At that time, my father was studying at Senai. He tried studying computer science, but couldn't finish. He has been my biggest inspiration and my first reference in the IT area. I thought it would be cool to mention this fact.",
     imgSrc: "/timeline/me_and_my_dad.png",
   },
   {
@@ -364,5 +364,5 @@ export const listTimeline: ITimeline[] = [
     With great pride, I say that I got the voucher, booked the exam and passed, earning my AWS Cloud Plactitioner certification.`,
     imgSrc: "/timeline/voucher_aws.png",
     link: "https://www.credly.com/badges/0928a4d7-d742-457a-926b-063f6c6a5168/linked_in_profile",
-  },
+  }
 ];
