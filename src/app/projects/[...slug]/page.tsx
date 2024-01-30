@@ -7,6 +7,8 @@ import { BreadcrumbComponent } from "@/components/iteraction/breadcrumb";
 import { Mdx } from "@/components/structure/mdx-components";
 import Image from "next/image";
 import { RecommendedProjects } from "@/components/cards/cardProject";
+import { Button } from "flowbite-react";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
 interface PageProps {
   params: {
@@ -46,7 +48,7 @@ export async function generateStaticParams(): Promise<PageProps["params"][]> {
   }));
 }
 
-export default async function PagePage({ params }: PageProps) {
+export default async function PageProject({ params }: PageProps) {
   const page = await getPageFromParams(params);
 
   if (!page) {
@@ -60,17 +62,41 @@ export default async function PagePage({ params }: PageProps) {
         <div className="w-4/5 prose dark:prose-invert">
           <h1>{page.title}</h1>
           {page.description && (
-            <h3 className="text-lg md:text-xl">{page.description}</h3>
+            <h3 className="text-lg md:text-xl font-light">
+              {page.description}
+            </h3>
           )}
+          <div>
+            <p className="font-light text-sm text-gray-500 dark:text-gray-300 opacity-25">
+              <strong>Publicated: </strong>
+              {page.date.substring(0, 10)}
+            </p>
+          </div>
           <hr />
           <Image alt="Modelo" src={page.imgSrc} width={1080} height={1920} />
+
+          {page.linkPreview && (
+            <div>
+              <Button
+                outline
+                gradientDuoTone="purpleToPink"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={page.linkPreview}
+                className="transition duration-150 ease-out hover:ease-in"
+              >
+                Visit
+                <HiOutlineArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          )}
           <Mdx code={page.body.code} />
         </div>
         <div className="w-full">
           <AdsenseArticleAds />
         </div>
         <div className="w-5/6">
-          <RecommendedProjects exclusion={page.title} qtde={4} />
+          <RecommendedProjects exclusion={page.title} qtde={2} />
         </div>
       </div>
     </article>
