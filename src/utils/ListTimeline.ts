@@ -169,7 +169,11 @@ export const listTimeline: ITimeline[] = [
     time: "April 2018",
     title: "I started my new job",
     body: `When I started my new job, I received SOA training in Java from Marcos Caldeira. 
+
+    In our training, we primarily studied the HTTP protocol and developed WebServices with Java Core. We also configured Tomcat and developed JSP. After gaining an understanding of how servlets function, we developed REST APIs with Spring Boot.
     
+    --->
+
     As a Trainee, I worked on the Ura Project using Genesys Compose. 
     
     My responsibilities included developing Rest and SOAP APIs for Ura consumption, creating URA flow for VIVO demands, analyzing flow using Visio, and interpreting specifications from Mutant.`,
@@ -177,11 +181,19 @@ export const listTimeline: ITimeline[] = [
   {
     time: "October 2018",
     title: "Promotion, now I'm an INFORMATION SYSTEMS PROGRAMMER",
-    body: `As I approached the one-year mark since leaving Florença, I initially felt like I was jumping the gun. 
+    body: `During the IVR project, I worked on various demands, most of which involved developing the Client's Web Services using REST/SOAP. 
     
-    However, as I reflect on the events that have occurred since then, I now feel filled with confidence and gratitude. I got a job in my field at a multinational consultancy only in the third semester, a testament to the hard work and dedication I put in. I am extremely grateful to God for this opportunity and I am grateful for my family.
+    We followed the Scrum methodology and the development team was also involved in Releases/CRQ and provided support even after the Sprint delivery.
 
-    thank God.`,
+    One of the main components of the project was an IVR Cognitive. 
+     - In the Ura flow, audio transcription was done using Speech-to-Text technology. 
+     - Then, we requested a Web Service (Middleware) by passing the text of the speech to the API. 
+     - The API returned the commands that needed to be executed in the Ura. 
+     
+     * I was involved in this project right from the planning stage. 
+     * I developed the Client Web Service using Java JAX-RS. 
+     * I also developed the Ura Flow using Genesys Compose and participated in developing the Ura Report service. 
+     * Furthermore, I executed various queries to monitor the project's progress using Oracle Bank.`,
   },
   {
     time: "October 2019",
@@ -330,23 +342,6 @@ export const listTimeline: ITimeline[] = [
     I'm looking forward to graduating and making my dad very proud.`,
     link: "https://drive.google.com/file/d/1LD96Irt6iZDLb8bjYXC2cUopEZM3Teya/view",
   },
-  // {
-  //   time: "March 2023",
-  //   title: "Graduation",
-  //   body: `A5 Solutions became an AWS partner, and we employees would have the possibility to participate in the Rocket Journey program.
-
-  //   Rocket Journey is a tailor-made program for
-  //   our AWS partners
-
-  //   All participants will receive two partner accreditations
-  //   of AWS and will receive free training led by
-  //   trainers and solution architects.
-
-  //   This program allowed us to take courses on the AWS Skill Builder platform and earn Badges. At the end of the program, a Quiz was held and the best candidates in the Quiz would receive a 100% Voucher to obtain the AWS certification.
-
-  //   With great pride, I say that I got the voucher, booked the exam and passed, earning my AWS Cloud Plactitioner certification.`,
-  //   imgSrc: "/timeline/voucher_aws.png",
-  // },
   {
     time: "May 2023",
     title: "Successfully passed the AWS Certified Cloud Practitioner exam.",
@@ -364,5 +359,5 @@ export const listTimeline: ITimeline[] = [
     With great pride, I say that I got the voucher, booked the exam and passed, earning my AWS Cloud Plactitioner certification.`,
     imgSrc: "/timeline/voucher_aws.png",
     link: "https://www.credly.com/badges/0928a4d7-d742-457a-926b-063f6c6a5168/linked_in_profile",
-  }
+  },
 ];
