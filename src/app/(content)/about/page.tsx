@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Sobre() {
   return (
     <section className="max-w-xs sm:max-w-sm md:max-w-full mx-auto">
-      <div className="border-b mb-10">
+      <div className="mb-10">
         <Image
           className="dark:hidden block"
           alt="Timeline Art"
