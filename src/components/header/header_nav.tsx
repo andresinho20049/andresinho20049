@@ -14,7 +14,6 @@ export const HeaderNav = () => {
     <Navbar
       fluid
       rounded
-      className="bg-gradient-to-r from-zinc-500/0 via-zinc-500/50 to-zinc-500/0"
     >
       <Navbar.Brand href="/" className="order-2 md:order-1">
         <Avatar img="/Logo.png" alt="My Logo" />
