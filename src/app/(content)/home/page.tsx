@@ -29,13 +29,13 @@ export default function Resume() {
   return (
     <div className="min-h-screen">
       <div className="bg-white bg-fixed bg-cover bg-[url('/background/resumeBg_1.png')] p-8 grid lg:grid-cols-2 gap-4 h-dvh">
-        <div className="w-full flex flex-col items-center justify-center gap-4 prose prose-neutral md:prose-lg lg:prose-xl text-center">
+        <div className="w-full flex flex-col items-center justify-center gap-1 md:gap-4 prose prose-neutral md:prose-lg lg:prose-xl text-center">
           <div>
             <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary-500 pr-1">
               {"I'm André Carlos"}
             </h1>
           </div>
-          <div className="animate-title">
+          <div className="animate-fade-in">
             <p>
               {`As a developer with a Bachelor's degree in Computer Science, I have expertise primarily in technical skills in Java, TypeScript, JavaScript, SQL and Docker. Through my experience, I have learned to approach each project with a growth mindset, eager to contribute meaningfully and make the difference. I am constantly striving to improve and face new challenges, confident in my abilities to deliver high-quality work.`}
             </p>
