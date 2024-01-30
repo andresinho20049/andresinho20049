@@ -4,7 +4,7 @@ interface ILinkNav {
 }
 
 export const LinksNavigation: ILinkNav[] = [
-  // { name: "Articles", href: "/articles" },
+  { name: "Home", href: "/home" },
   { name: "Projects", href: "/projects" },
   // { name: "Contact", href: "/contact" },
   { name: "About", href: "/about" },

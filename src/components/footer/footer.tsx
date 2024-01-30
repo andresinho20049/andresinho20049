@@ -26,9 +26,7 @@ export const FooterComponent = () => {
           <SocialMediaComponent />
           <hr />
           <Link
-            href="https://github.com/andresinho20049"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/home"
           >
             <span className="text-sm text-gray-500 text-center md:text-right">
               &copy; {copyrightDate} {copyrightName}
