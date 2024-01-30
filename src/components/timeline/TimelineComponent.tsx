@@ -8,7 +8,7 @@ import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
 
 const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
   return (
-    <Timeline.Item className="snap-always snap-start scroll-my-1">
+    <Timeline.Item>
       <Timeline.Point icon={HiCalendar} />
       <Timeline.Content>
         <div className="sticky top-0 drop-shadow-lg bg-blend-difference backdrop-blur-md">
@@ -43,7 +43,7 @@ const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
 
 export const TimelineComponent = () => {
   return (
-    <Timeline className="snap-y snap-mandatory my-4">
+    <Timeline className="my-4">
       {listTimeline.map((time, idx) => (
         <TimelineItem
           key={idx}
