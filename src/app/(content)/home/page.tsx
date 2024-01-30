@@ -28,8 +28,8 @@ import { TypeScriptSvg } from "@/components/svg/typescript";
 export default function Resume() {
   return (
     <div className="min-h-screen">
-      <div className="bg-white bg-fixed bg-cover bg-[url('/background/resumeBg_1.png')] p-8 grid lg:grid-cols-2 gap-4 h-dvh">
-        <div className="w-full flex flex-col items-center justify-center gap-1 md:gap-4 prose prose-neutral md:prose-lg lg:prose-xl text-center">
+      <div className="bg-fixed bg-cover bg-[url('/background/resumeBg_home.png')] p-8 grid sm:grid-cols-4 lg:grid-cols-2 gap-4 h-dvh">
+        <div className="sm:col-span-3 lg:col-span-1 w-full flex flex-col items-center justify-center gap-1 md:gap-4 prose dark:prose-invert md:prose-lg lg:prose-xl text-center">
           <div>
             <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary-500 pr-1">
               {"I'm André Carlos"}
