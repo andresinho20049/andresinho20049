@@ -22,8 +22,11 @@ export default function Sobre() {
           height={1080}
         />
       </div>
-      <TimelineComponent />
-      <div className="w-full">
+      <div className="flex flex-col justify-center items-center">
+        <div className="container">
+          <TimelineComponent />
+        </div>
+
         <AdsenseComponent />
       </div>
       <RecommendedProjects />
