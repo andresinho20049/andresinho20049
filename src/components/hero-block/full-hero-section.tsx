@@ -14,7 +14,7 @@ export const FullHeroSection = ({
   urlLink,
 }: IFullHeroSectionProps) => {
   return (
-    <div className="flex flex-wrap h-screen border-t-4 dark:border-0">
+    <div className="flex flex-wrap h-screen border-t-2 ">
       <div className="flex flex-col justify-between w-full h-full lg:w-8/12">
         <nav className="flex px-4 justify-between items-center">
           <div className="landscape:size-12 landscape:lg:size-28 size-28">
