@@ -4,6 +4,7 @@ import { LinksNavigation } from "@/utils/links-navigation";
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "../iteraction/mode-toggle";
+import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -11,10 +12,7 @@ export const HeaderNav = () => {
   const pathname = usePathname();
 
   return (
-    <Navbar
-      fluid
-      rounded
-    >
+    <Navbar fluid rounded>
       <Navbar.Brand href="/" className="order-2 md:order-1">
         <Avatar img="/Logo.png" alt="My Logo" />
         <span className="self-center whitespace-nowrap text-sm md:text-xl font-semibold dark:text-white ">
@@ -46,14 +44,20 @@ export const HeaderNav = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Dropdown.Item>Linkedin</Dropdown.Item>
+            <Dropdown.Item className="gap-2">
+              <BsLinkedin />
+              {" Linkedin"}
+            </Dropdown.Item>
           </Link>
           <Link
             href="https://github.com/andresinho20049"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Dropdown.Item>GitHub</Dropdown.Item>
+            <Dropdown.Item className="gap-2">
+              <BsGithub />
+              {" GitHub"}
+            </Dropdown.Item>
           </Link>
         </Dropdown>
       </div>
