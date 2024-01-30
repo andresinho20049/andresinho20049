@@ -6,16 +6,16 @@ import Link from "next/link";
 
 export const HeroBlockWithImage = (proj: Projects) => {
   return (
-    <div className="flex px-6 md:px-20  items-center justify-center bg-hero md:h-screen">
-      <div className="flex flex-col  gap-6 md:flex-row items-center max-w-8xl">
-        <div className="order-last lg:order-first w-full lg:pr-32">
-          <h2 className="hidden lg:block text-4xl lg:text-5xl text-center md:text-left text-blue-900 leading-tight font-medium animate-title">
+    <div className="flex px-6 md:px-20 items-center justify-center bg-hero h-screen">
+      <div className="flex flex-col gap-4 landscape:flex-row items-center max-w-8xl">
+        <div className="order-last landscape:order-first w-full md:pr-32">
+          <h2 className="hidden landscape:block text-2xl lg:text-5xl text-center text-left text-blue-900 leading-tight font-medium animate-title">
             {proj.title}
           </h2>
-          <h3 className="mt-6 md:mt-10 text-md lg:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed animate-fade-in">
+          <h3 className="mt-2 md:mt-10 text-md md:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed animate-fade-in">
             {proj.description}
           </h3>
-          <div className="mt-10 flex flex-row justify-start animate-fade-in">
+          <div className="mt-6 flex flex-row justify-start animate-fade-in">
             <Button
               outline
               gradientDuoTone="purpleToPink"
@@ -28,13 +28,13 @@ export const HeroBlockWithImage = (proj: Projects) => {
           </div>
         </div>
 
-        <div className="order-first lg:order-last w-full md:w-1/2 ">
-          <div className="lg:hidden sticky top-0 drop-shadow-lg bg-blend-difference backdrop-blur-md">
-            <h2 className="text-4xl lg:text-5xl text-center md:text-left text-blue-900 leading-tight font-medium">
+        <div className="order-first landscape:order-last w-full landscape:w-1/2 ">
+          <div className="landscape:hidden drop-shadow-lg bg-blend-difference backdrop-blur-md">
+            <h2 className="text-2xl  text-center text-blue-900 leading-tight font-medium">
               {proj.title}
             </h2>
           </div>
-          <div>
+          <div className="w-1/2 landscape:w-full mx-auto">
             <Image
               src={proj.imgSrc}
               alt={proj.title}

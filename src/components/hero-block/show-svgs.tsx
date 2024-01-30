@@ -13,7 +13,7 @@ import { TypeScriptSvg } from "../svg/typescript";
 
 export const ShowSvgsComponent = () => {
     return (
-      <div className="h-96 bg-fixed bg-cover bg-[url('/background/20200608_144908.svg')] p-8">
+      <div className="hidden md:block h-96 bg-fixed bg-cover bg-[url('/background/20200608_144908.svg')] p-8">
         <div className="lg:w-3/6 w-full h-5/6 relative group">
           <div className="size-28 absolute top-1/2 lg:top-0 left-0 animate-skewEffect">
             <DockerSvg />
