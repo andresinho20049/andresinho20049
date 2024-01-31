@@ -1,15 +1,15 @@
 version: '3.8'
 
 services:
-  mmgis_article:
+  portifolio:
     build: .
     profiles: ['']
     ports:
       - 3000:3000
     networks:
-      - mmgis_article-network
+      - portifolio-network
   
-  mmgis_article_dev:
+  portifolio_dev:
     user: root
     build: 
       dockerfile: ./Dockerfile
@@ -32,11 +32,11 @@ services:
         source: ./node_modules
         target: /opt/app/node_modules
     networks:
-      - mmgis_article-network
+      - portifolio-network
 
 volumes:
-  mmgis_article-data:
+  portifolio-data:
 
 networks:
-  mmgis_article-network:
+  portifolio-network:
     

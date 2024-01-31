@@ -45,14 +45,14 @@ RUN npm run build
 #   ## Example
 #   Defines the target in the build command.
 #   - development  
-#   `docker build -t mmgis_article_dev:0.0.1v --target development .`
+#   `docker build -t portifolio_dev:0.0.1v --target development .`
 #   
 #   - builder   
-#   `docker build -t mmgis_article_pkg:0.0.1v --target builder .`
+#   `docker build -t portifolio_pkg:0.0.1v --target builder .`
 #   
 #   - production    
 #   (The last clause of "from" to default target .)
-#   `docker build -t mmgis_article:0.0.1v .`
+#   `docker build -t portifolio:0.0.1v .`
 #------------------------Production-----------------------------
 ## RUNNER ##
 FROM base as runner
