@@ -11,7 +11,7 @@ export const BreadcrumbComponent = ({ text }: IBreadcrumbs) => {
       aria-label="Breadcrumb projects"
       className="flex justify-center sticky top-0 py-4 drop-shadow-lg bg-blend-difference backdrop-blur-md "
     >
-      <BreadcrumbItem href="/" icon={HiHome}>
+      <BreadcrumbItem href="/home" icon={HiHome}>
         Home
       </BreadcrumbItem>
       <BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
