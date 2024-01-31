@@ -3,15 +3,14 @@ import { HeaderNav } from "@/components/header/header_nav";
 import { HeroBlockWithImage } from "@/components/hero-block/hero-with-image";
 import { ShowcaseChooseUs } from "@/components/hero-block/showcase-chose-us";
 import { allProjects } from "contentlayer/generated";
-import { FooterComponent } from "@/components/footer/footer"
+import { FooterComponent } from "@/components/footer/footer";
 import Image from "next/image";
 
 export default async function Projects() {
   return (
     <section className="flex flex-col justify-start items-center h-dvh snap-y snap-mandatory overflow-y-auto scroll-smooth">
       <nav className="snap-start w-full">
-
-      <HeaderNav />
+        <HeaderNav />
       </nav>
       <Image
         alt="Timeline Art"
