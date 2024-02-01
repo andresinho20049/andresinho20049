@@ -1,8 +1,7 @@
 import { Projects } from "contentlayer/generated";
-import { Button } from "flowbite-react";
-import { HiOutlineArrowRight } from "react-icons/hi";
 import Image from "next/image";
-import Link from "next/link";
+import { HiOutlineArrowRight } from "react-icons/hi";
+import { LinkAppearanceButton } from "../button/link-appearance-button";
 
 export const HeroBlockWithImage = (proj: Projects) => {
   return (
@@ -16,15 +15,12 @@ export const HeroBlockWithImage = (proj: Projects) => {
             {proj.description}
           </h3>
           <div className="mt-6 flex flex-row justify-start animate-fade-in">
-            <Button
-              outline
-              gradientDuoTone="purpleToPink"
+            <LinkAppearanceButton
               href={`/projects/${proj.slug.split("/").pop()}`}
-              className="transition duration-150 ease-out hover:ease-in"
             >
               See More
               <HiOutlineArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </LinkAppearanceButton>
           </div>
         </div>
 

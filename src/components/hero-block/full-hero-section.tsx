@@ -1,6 +1,6 @@
 import Image from "next/image";
+import { LinkAppearanceButton } from "../button/link-appearance-button";
 import { AndresinhoSvg } from "../svg/andresinho20049";
-import Link from "next/link";
 
 export interface IFullHeroSectionProps {
   title: string;
@@ -29,13 +29,10 @@ export const FullHeroSection = ({
             </h1>
             <div className="w-20 h-2 bg-blue-700 my-4"></div>
             <p className="text-md lg:text-xl mb-5 lg:mb-16">{msg}</p>
-            <div>
-              <Link
-                href={urlLink}
-                className="outline outline-pink-500 hover:outline-pink-300 dark:text-white dark:hover:text-gray-400 hover:text-gray-400 text-gray-900 text-2xl font-medium px-4 py-2 rounded shadow"
-              >
+            <div className="w-36">
+              <LinkAppearanceButton href={urlLink}>
                 Learn More
-              </Link>
+              </LinkAppearanceButton>
             </div>
           </div>
         </section>

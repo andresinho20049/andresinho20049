@@ -1,11 +1,7 @@
 import { Projects, allProjects } from "contentlayer/generated";
-import { Button, Card, CustomFlowbiteTheme } from "flowbite-react";
+import { Card, CustomFlowbiteTheme } from "flowbite-react";
 import { HiOutlineArrowRight } from "react-icons/hi";
-import {
-  AdsenseArticleAds,
-  AdsenseComponent,
-  AdsenseComponentImageOnly,
-} from "../google/AdsenseComponent";
+import { LinkAppearanceButton } from "../button/link-appearance-button";
 
 const customTheme: CustomFlowbiteTheme["card"] = {
   root: {
@@ -43,15 +39,12 @@ export const CardProject = (proj: Projects) => {
           {proj.date.substring(0, 10)}
         </p>
 
-        <Button
-          outline
-          gradientDuoTone="purpleToPink"
+        <LinkAppearanceButton
           href={`/projects/${proj.slug.split("/").pop()}`}
-          className="transition duration-150 ease-out hover:ease-in"
         >
           See More
           <HiOutlineArrowRight className="ml-2 h-5 w-5" />
-        </Button>
+        </LinkAppearanceButton>
       </div>
     </Card>
   );
