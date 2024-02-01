@@ -2,9 +2,10 @@
 
 import { ITimeline } from "@/interface/ITimeline";
 import { listTimeline } from "@/utils/ListTimeline";
-import { Button, Timeline } from "flowbite-react";
+import { Timeline } from "flowbite-react";
 import Image from "next/image";
 import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { LinkAppearanceButton } from "../button/link-appearance-button";
 
 const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
   return (
@@ -31,10 +32,10 @@ const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
         </Timeline.Body>
 
         {link && (
-          <Button color="gray" href={link} target="_blank">
+          <LinkAppearanceButton href={link} isBlank>
             See more
             <HiArrowNarrowRight className="ml-2 h-3 w-3" />
-          </Button>
+          </LinkAppearanceButton>
         )}
       </Timeline.Content>
     </Timeline.Item>
