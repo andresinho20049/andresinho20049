@@ -2,12 +2,12 @@ import { allProjects } from "contentlayer/generated";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
+import { RecommendedProjects } from "@/components/cards/cardProject";
 import { AdsenseArticleAds } from "@/components/google/AdsenseComponent";
 import { BreadcrumbComponent } from "@/components/iteraction/breadcrumb";
 import { Mdx } from "@/components/structure/mdx-components";
 import Image from "next/image";
-import { RecommendedProjects } from "@/components/cards/cardProject";
-import { Button } from "flowbite-react";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 interface PageProps {
@@ -77,17 +77,13 @@ export default async function PageProject({ params }: PageProps) {
 
           {page.linkPreview && (
             <div>
-              <Button
-                outline
-                gradientDuoTone="purpleToPink"
-                target="_blank"
-                rel="noopener noreferrer"
+              <LinkAppearanceButton
                 href={page.linkPreview}
-                className="transition duration-150 ease-out hover:ease-in"
+                isBlank
               >
                 Visit
                 <HiOutlineArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              </LinkAppearanceButton>
             </div>
           )}
           <Mdx code={page.body.code} />

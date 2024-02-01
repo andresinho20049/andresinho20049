@@ -1,6 +1,4 @@
-import { LinksNavigation } from "@/utils/links-navigation";
-import { Button } from "flowbite-react";
-import Link from "next/link";
+import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 
 export default function Home() {
 
@@ -28,12 +26,7 @@ export default function Home() {
       </div>
 
       <div className="w-48 animate-fade-in">
-        <Link
-          href={"/home"}
-          className="outline outline-pink-500 hover:outline-pink-300 bg-gray-500 lg:bg-transparent text-white hover:text-gray-400 text-lg font-medium px-4 py-2 rounded shadow animate-pulse"
-        >
-          Get Started
-        </Link>
+        <LinkAppearanceButton href={"/home"}>Get Started</LinkAppearanceButton>
       </div>
     </div>
   );
