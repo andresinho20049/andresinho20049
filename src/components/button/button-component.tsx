@@ -1,19 +1,18 @@
 'use client'
 
-import { Button } from "flowbite-react"
+import { Button, ButtonProps } from "flowbite-react"
 import { ReactNode } from "react";
 
-interface IButtonComponentProps {
-    onClick: () => void;
+type IButtonComponentProps = ButtonProps & {
     children: ReactNode;
 }
 
 export const ButtonComponent = ({
-    onClick,
-    children
+    children, 
+    ...props
 }:IButtonComponentProps) => {
     return (
-        <Button onClick={onClick} outline color="blue">
+        <Button {...props} outline color="blue">
             {children}
         </Button>
     )

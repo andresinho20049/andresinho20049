@@ -1,18 +1,10 @@
-'use client'
-
-import { ButtonComponent } from "@/components/button/button-component";
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
+import { ContactForm } from "@/components/form/ContactForm";
 import { FiverrSvg } from "@/components/svg/fiverr";
-import { WorkanaSvg, WorkanaSvg2 } from "@/components/svg/workana";
-import { FloatingLabel, Textarea } from "flowbite-react";
+import { WorkanaSvg2 } from "@/components/svg/workana";
 import { TbBrandUpwork } from "react-icons/tb";
 
 export default function Contact() {
-
-
-    const handleClick = () => {
-        console.log("Btn clicked");
-    }
 
   return (
     <div className="w-full h-full">
@@ -63,41 +55,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <form
-          action={""}
-          className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-32"
-        >
-          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <div>
-                <FloatingLabel label="Name" variant="standard" type="text" />
-              </div>
-              <div>
-                <FloatingLabel label="Subject" variant="standard" type="text" />
-              </div>
-              <div className="sm:col-span-2">
-                <FloatingLabel label="E-mail" variant="standard" type="email" />
-              </div>
-              <div className="sm:col-span-2">
-                <p className="block text-sm text-gray-500 dark:text-gray-400">
-                  Message
-                </p>
-                <div className="mt-2.5">
-                  <Textarea
-                    rows={4}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    name="message"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 flex justify-end">
-              <ButtonComponent onClick={handleClick}>
-                Send Message
-              </ButtonComponent>
-            </div>
-          </div>
-        </form>
+        <ContactForm />
       </div>
     </div>
   );

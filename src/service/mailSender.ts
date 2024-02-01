@@ -21,7 +21,7 @@ export interface ISendMailProps {
     msg: string;
 }
 
-export const sendMailContact = ({
+export const sendMailContact = async ({
     name,
     email,
     subject,
@@ -194,14 +194,6 @@ export const sendMailContact = ({
       ],
     };
 
-    transporter.sendMail(MailOpt, (err, info) => {
-        if (!!err) {
-            console.error(err);
-            return err;
-        } else {
-            console.log("E-mail enviado com sucesso!", info);
-            return info;
-        }
-    });
+    return await transporter.sendMail(MailOpt);
 
 }
