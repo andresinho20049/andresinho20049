@@ -2,11 +2,11 @@
 
 import { LinksNavigation } from "@/utils/links-navigation";
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
-import { usePathname } from "next/navigation";
-import { ModeToggle } from "../iteraction/mode-toggle";
-import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { IoIosContact } from "react-icons/io";
+import { ModeToggle } from "../iteraction/mode-toggle";
 
 export const HeaderNav = () => {
   const pathname = usePathname();
@@ -32,12 +32,15 @@ export const HeaderNav = () => {
         >
           <Dropdown.Header>
             <span className="block text-sm">André Carlos</span>
+            <span className="block truncate text-sm font-medium">
+              @andresinho20049
+            </span>
           </Dropdown.Header>
 
           <Dropdown.Item className="md:hidden flex justify-center">
             <ModeToggle />
           </Dropdown.Item>
-          <Dropdown.Divider />
+          <Dropdown.Divider className="md:hidden flex" />
 
           <Link
             href="https://www.linkedin.com/in/andresinho20049/"
@@ -57,6 +60,14 @@ export const HeaderNav = () => {
             <Dropdown.Item className="gap-2">
               <BsGithub />
               {" GitHub"}
+            </Dropdown.Item>
+          </Link>
+          <Dropdown.Divider />
+
+          <Link href={"/contact"}>
+            <Dropdown.Item className="gap-2">
+              <IoIosContact />
+              {" Contact"}
             </Dropdown.Item>
           </Link>
         </Dropdown>

@@ -1,6 +1,9 @@
+import { BsDatabase } from "react-icons/bs";
 import { FaDev } from "react-icons/fa";
 import { MdOutlineDeveloperMode } from "react-icons/md";
-import { BsDatabase } from "react-icons/bs";
+import { LinkAppearanceButton } from "../button/link-appearance-button";
+import { CiMail } from "react-icons/ci";
+import { Avatar } from "flowbite-react";
 
 
 
@@ -66,6 +69,30 @@ export const ShowcaseChooseUs = () => {
               developing procedures for dashboard calculations. I have also
               worked on report extraction projects with high data volume.
             </p>
+          </div>
+
+          <div className="sm:col-span-2 lg:col-span-3 flex flex-col md:flex-row items-center gap-4">
+            <div className="flex items-center gap-2 md:border-r">
+              <Avatar img="/Logo.png" alt="My Logo" />
+              <span className="self-center whitespace-nowrap text-sm md:text-xl font-semibold dark:text-white mr-4">
+                Andrésinho20049
+              </span>
+            </div>
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800 dark:text-gray-600">
+                Please feel free to contact us anytime,{" "}
+              </h3>
+              <p className="font-normal leading-relaxed tracking-wide text-gray-400">
+                as we are more than happy to assist you in any way we can.
+              </p>
+            </div>
+
+            <LinkAppearanceButton href="/contact">
+              <CiMail className="h-8" />
+              <span className="font-light leading-relaxed tracking-wider">
+                Contact Us
+              </span>
+            </LinkAppearanceButton>
           </div>
         </div>
 
