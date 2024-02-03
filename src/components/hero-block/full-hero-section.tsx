@@ -1,20 +1,23 @@
 import Image from "next/image";
 import { LinkAppearanceButton } from "../button/link-appearance-button";
 import { AndresinhoSvg } from "../svg/andresinho20049";
+import { ReactNode } from "react";
 
 export interface IFullHeroSectionProps {
-  title: string;
+  title: string | ReactNode;
   msg: string;
   urlLink: string;
+  imgSrc: string;
 }
 
 export const FullHeroSection = ({
   title,
   msg,
   urlLink,
+  imgSrc
 }: IFullHeroSectionProps) => {
   return (
-    <div className="flex flex-wrap h-screen border-t-2 ">
+    <div className="flex flex-wrap h-screen">
       <div className="flex flex-col justify-between w-full h-full lg:w-8/12">
         <nav className="flex px-4 justify-between items-center">
           <div className="landscape:size-12 landscape:lg:size-28 size-28">
@@ -24,10 +27,9 @@ export const FullHeroSection = ({
         <section className="px-4 flex items-center h-full lg:mt-0">
           <div className="w-full">
             <h1 className="text-4xl lg:text-6xl font-bold">
-              Would you like to <span className="text-blue-700">know me</span>{" "}
-              better?
+              {title}
             </h1>
-            <div className="w-20 h-2 bg-blue-700 my-4"></div>
+            <div className="w-36 h-2 bg-blue-700 my-4"></div>
             <p className="text-md lg:text-xl mb-5 lg:mb-16">{msg}</p>
             <div className="w-36">
               <LinkAppearanceButton href={urlLink}>
@@ -41,8 +43,8 @@ export const FullHeroSection = ({
         <Image
           width={894}
           height={1280}
-          src="/avatar/me-and-family.png"
-          alt="Leafs"
+          src={imgSrc}
+          alt="Ilustrate Image"
           className="object-contain"
         />
       </div>
