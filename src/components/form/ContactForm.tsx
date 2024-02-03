@@ -42,16 +42,13 @@ export const ContactForm = () => {
     formVaildSchema
       .validate(formData, { abortEarly: false })
       .then((dataValid: ISendMailProps) => {
-        console.log(dataValid);
         sendMailContact(dataValid)
           .then((info) => {
-            console.log(info);
             setToastMsg("Message sent successfully.");
             setIsSendMsg("success");
             handleReset();
           })
           .catch((err) => {
-            console.error(err);
             setToastMsg("Message failed, a problem occurred.");
             setIsSendMsg("error");
           })
