@@ -29,6 +29,10 @@ export const sendMailContact = async ({
   subject,
   msg,
 }: ISendMailProps) => {
+
+  console.log("Request received: ", `${name} - ${email}`, subject)
+  console.log(msg);
+
   const htmlMsg = `<!DOCTYPE html>
     <html lang="en">
 
@@ -103,7 +107,7 @@ export const sendMailContact = async ({
 
         <section class="flex-container">
 
-            <!-- <img src="cid:Logo_extended" alt="Logo Andresinho20049"> -->
+            <img src="cid:Logo_extended" alt="Logo Andresinho20049">
             <h1>Portfolio - E-Mail</h1>
             <h3>This is an automatic email, please do not reply</h3>
 
@@ -187,6 +191,13 @@ export const sendMailContact = async ({
     ],
     subject: subject,
     html: htmlMsg,
+    attachments: [
+      {
+        filename: "Logo_extended.png",
+        path: "/",
+        cid: "Logo_extended", //same cid value as in the html img src
+      },
+    ],
   };
 
   return await transporter.sendMail(MailOpt);

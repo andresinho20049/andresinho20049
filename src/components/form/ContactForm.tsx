@@ -44,11 +44,13 @@ export const ContactForm = () => {
       .then((dataValid: ISendMailProps) => {
         sendMailContact(dataValid)
           .then((info) => {
+            console.log(info)
             setToastMsg("Message sent successfully.");
             setIsSendMsg("success");
             handleReset();
           })
           .catch((err) => {
+            console.error(err);
             setToastMsg("Message failed, a problem occurred.");
             setIsSendMsg("error");
           })
