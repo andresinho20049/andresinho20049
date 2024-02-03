@@ -1,3 +1,5 @@
+"use server"
+
 import * as nodemailer from "nodemailer";
 import { MailOptions } from "nodemailer/lib/smtp-pool";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
@@ -8,28 +10,26 @@ const transporterOpt: SMTPTransport.Options = {
   secure: true,
   auth: {
     user: process.env.NEXT_APP_EMAIL,
-    pass: process.env.NEXT_APP_PASSWORD
+    pass: process.env.NEXT_APP_PASSWORD,
   },
 };
 
 const transporter = nodemailer.createTransport(transporterOpt);
 
 export interface ISendMailProps {
-    name: string;
-    email: string;
-    subject: string;
-    msg: string;
+  name: string;
+  email: string;
+  subject: string;
+  msg: string;
 }
 
 export const sendMailContact = async ({
-    name,
-    email,
-    subject,
-    msg
-}:ISendMailProps) => {
-
-
-    const htmlMsg = `<!DOCTYPE html>
+  name,
+  email,
+  subject,
+  msg,
+}: ISendMailProps) => {
+  const htmlMsg = `<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -103,7 +103,7 @@ export const sendMailContact = async ({
 
         <section class="flex-container">
 
-            <img src="cid:Logo_extended" alt="Logo Andresinho20049">
+            <!-- <img src="cid:Logo_extended" alt="Logo Andresinho20049"> -->
             <h1>Portfolio - E-Mail</h1>
             <h3>This is an automatic email, please do not reply</h3>
 
@@ -172,28 +172,22 @@ export const sendMailContact = async ({
 
     </html>`;
 
-    const MailOpt: MailOptions = {
-    to: [{
+  const MailOpt: MailOptions = {
+    to: [
+      {
         name: name,
-        address: email
-    }],
+        address: email,
+      },
+    ],
     bcc: [
-        {
-            name: "Andre Carlos",
-            address: "andre.andresinho2009@hotmail.com"
-        }
+      {
+        name: "Andre Carlos",
+        address: "andre.andresinho2009@hotmail.com",
+      },
     ],
     subject: subject,
-      html: htmlMsg,
-      attachments: [
-        {
-          filename: "Logo",
-          path: "/Logo_extended.png",
-          cid: "Logo_extended",
-        },
-      ],
-    };
+    html: htmlMsg,
+  };
 
-    return await transporter.sendMail(MailOpt);
-
-}
+  return await transporter.sendMail(MailOpt);
+};

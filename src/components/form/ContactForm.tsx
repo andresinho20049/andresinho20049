@@ -1,6 +1,6 @@
 "use client";
 
-import { ISendMailProps } from "@/service/mailSender";
+import { ISendMailProps, sendMailContact } from "@/service/mailSender";
 import { FormHandles } from "@unform/core";
 import { Form } from "@unform/web";
 import { useCallback, useRef, useState } from "react";
@@ -10,9 +10,7 @@ import { VTextArea } from "./VTextArea";
 import { VTextField } from "./VTextField";
 import { ToastComponent, statusToats } from "../iteraction/toast";
 
-
 export const ContactForm = () => {
-
   const initialData: ISendMailProps = {
     name: "",
     email: "",
@@ -21,7 +19,7 @@ export const ContactForm = () => {
   };
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [isSendMsg, setIsSendMsg] = useState<statusToats>("");
+  const [isSendMsg, setIsSendMsg] = useState<statusToats>(null);
   const [toastMsg, setToastMsg] = useState<string>("");
 
   const formRef = useRef<FormHandles>(null);
@@ -29,40 +27,39 @@ export const ContactForm = () => {
     name: string().required("Name is required."),
     email: string()
       .email(
-        "The email address you provided is invalid. Please enter a valid email address in the correct format."
+        "The email address you provided is invalid. Please enter a valid email address."
       )
       .required("E-mail is required!"),
     subject: string().required("Subject is required."),
     msg: string()
       .required("Message is required")
-      .min(10, "Please your message must contain at least 10 characters"),
+      .min(50, "Please your message must contain at least 50 characters"),
   });
 
-  const handleForm= useCallback((formData: ISendMailProps) => {
-
+  const handleForm = useCallback((formData: ISendMailProps) => {
     setIsLoading(true);
 
     formVaildSchema
       .validate(formData, { abortEarly: false })
       .then((dataValid: ISendMailProps) => {
         console.log(dataValid);
-        // sendMailContact(dataValid)
-        //   .then((info) => {
-        //     console.log(info);
-        //     setToastMsg("Message sent successfully.");
-        //     setIsSendMsg("success");
-        //   })
-        //   .catch((err) => {
-        //     console.error(err);
-        //     setToastMsg("Message failed, a problem occurred.");
-        //     setIsSendMsg("error");
-        //   })
-        //   .finally(() => {
-        //     setIsLoading(false);
-        //     setTimeout(() => {
-        //       setIsSendMsg("");
-        //     }, 2500);
-        //   });
+        sendMailContact(dataValid)
+          .then((info) => {
+            console.log(info);
+            setToastMsg("Message sent successfully.");
+            setIsSendMsg("success");
+            handleReset();
+          })
+          .catch((err) => {
+            console.error(err);
+            setToastMsg("Message failed, a problem occurred.");
+            setIsSendMsg("error");
+          })
+          .finally(() => {
+            setTimeout(() => {
+              setIsSendMsg(null);
+            }, 2500);
+          });
       })
       .catch((err: ValidationError) => {
         console.error(err);
@@ -74,10 +71,10 @@ export const ContactForm = () => {
           validationErrors[error.path] = error.message;
         });
         formRef.current?.setErrors(validationErrors);
-
+      })
+      .finally(() => {
         setIsLoading(false);
       });
-
   }, []);
 
   const handleReset = useCallback(() => {
@@ -115,7 +112,7 @@ export const ContactForm = () => {
           <div className="sm:col-span-2">
             <VTextField
               name="email"
-              label="E-mail"
+              label="Enter your email"
               variant="standard"
               type="text"
               helperText="test"
@@ -130,16 +127,18 @@ export const ContactForm = () => {
               <VTextArea
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                name="message"
+                name="msg"
                 disabled={isLoading}
               />
             </div>
           </div>
         </div>
-        <div className="mt-8 flex justify-end">
-          <ButtonComponent type="submit">Send Message</ButtonComponent>
+        <div className="mt-8 flex flex-col gap-4 justify-start items-end">
+          <ButtonComponent type="submit" isLoading={isLoading}>
+            Send Message
+          </ButtonComponent>
+          <ToastComponent status={isSendMsg} msg={toastMsg} />
         </div>
-        <ToastComponent status={isSendMsg}  msg={toastMsg} />
       </div>
     </Form>
   );
