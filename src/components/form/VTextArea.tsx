@@ -46,6 +46,7 @@ export const VTextArea = ({ name, customChange, ...rest }: IVTextFieldProps) => 
         value={value}
         onChange={(e) => handleChange(e.target.value)}
         onKeyDown={() => (error ? clearError() : undefined)}
-      />
+        />
+        
     );
 }
