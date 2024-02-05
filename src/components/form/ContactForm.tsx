@@ -44,7 +44,7 @@ export const ContactForm = () => {
       .then((dataValid: ISendMailProps) => {
         sendMailContact(dataValid)
           .then((info) => {
-            console.log(info)
+            console.log(info);
             setToastMsg("Message sent successfully.");
             setIsSendMsg("success");
             handleReset();
@@ -55,6 +55,7 @@ export const ContactForm = () => {
             setIsSendMsg("error");
           })
           .finally(() => {
+            setIsLoading(false);
             setTimeout(() => {
               setIsSendMsg(null);
             }, 2500);
@@ -70,8 +71,7 @@ export const ContactForm = () => {
           validationErrors[error.path] = error.message;
         });
         formRef.current?.setErrors(validationErrors);
-      })
-      .finally(() => {
+
         setIsLoading(false);
       });
   }, []);
