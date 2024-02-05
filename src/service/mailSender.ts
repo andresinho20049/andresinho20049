@@ -1,20 +1,27 @@
-"use server"
+"use server";
 
 import * as nodemailer from "nodemailer";
 import { MailOptions } from "nodemailer/lib/smtp-pool";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
+import { getGoogleAccessToken } from "./googleOauth";
 
-const transporterOpt: SMTPTransport.Options = {
-  host: process.env.NEXT_APP_SMTP_HOST,
-  port: parseInt(process.env.NEXT_APP_SMTP_PORT || "587"),
-  secure: true,
-  auth: {
-    user: process.env.NEXT_APP_EMAIL,
-    pass: process.env.NEXT_APP_PASSWORD,
-  },
+const createTransport = async () => {
+  const accessToken = await getGoogleAccessToken();
+
+  const transporterOpt: SMTPTransport.Options = {
+    service: "gmail",
+    auth: {
+      type: "OAuth2",
+      user: process.env.NEXT_APP_EMAIL,
+      accessToken: accessToken,
+      clientId: process.env.GCP_CLIENT_ID,
+      clientSecret: process.env.GCP_CLIENT_SECRET,
+      refreshToken: process.env.GCP_REFRESH_TOKEN,
+    },
+  };
+  const transporter = nodemailer.createTransport(transporterOpt);
+  return transporter;
 };
-
-const transporter = nodemailer.createTransport(transporterOpt);
 
 export interface ISendMailProps {
   name: string;
@@ -29,8 +36,7 @@ export const sendMailContact = async ({
   subject,
   msg,
 }: ISendMailProps) => {
-
-  console.log("Request received: ", `${name} - ${email}`, subject)
+  console.log("Request received: ", `${name} - ${email}`, subject);
   console.log(msg);
 
   const htmlMsg = `<!DOCTYPE html>
@@ -107,7 +113,7 @@ export const sendMailContact = async ({
 
         <section class="flex-container">
 
-            <img src="cid:Logo_extended" alt="Logo Andresinho20049">
+            <!-- <img src="cid:Logo_extended" alt="Logo Andresinho20049"> -->
             <h1>Portfolio - E-Mail</h1>
             <h3>This is an automatic email, please do not reply</h3>
 
@@ -191,14 +197,15 @@ export const sendMailContact = async ({
     ],
     subject: subject,
     html: htmlMsg,
-    attachments: [
-      {
-        filename: "Logo_extended.png",
-        path: "/",
-        cid: "Logo_extended", //same cid value as in the html img src
-      },
-    ],
+    // attachments: [
+    //   {
+    //     filename: "Logo_extended.png",
+    //     path: "/",
+    //     cid: "Logo_extended", //same cid value as in the html img src
+    //   },
+    // ],
   };
 
+  const transporter = await createTransport();
   return await transporter.sendMail(MailOpt);
 };
