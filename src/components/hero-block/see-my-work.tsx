@@ -9,7 +9,7 @@ export const SeeMyWorks = () => {
           width={1200}
           height={1800}
           className="h-full w-full object-cover"
-          src="/cards/responsive_presentation.png"
+          src="/Logo.png"
           alt="Winding mountain road"
         />
       </div>
@@ -19,12 +19,10 @@ export const SeeMyWorks = () => {
             See my <strong className="text-blue-700">Works</strong>
           </h2>
           <p className="mt-4 text-gray-500">
-            I have worked extensively in multinational IT consultancies, where
-            I have been involved in several projects that utilize Scrum
-            methodologies. I am familiar with terms related to releases,
-            scalability, CRQ, and deploy. I have also had the pleasure of having
-            my projects validated by experienced QA teams, and achieving the
-            satisfaction of seeing them running seamlessly in production.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex
+            assumenda quasi harum, minima, esse culpa ea eos recusandae pariatur
+            itaque dolorum error commodi illo, temporibus aperiam soluta animi
+            possimus?
           </p>
           <div className="mt-8">
             <Link

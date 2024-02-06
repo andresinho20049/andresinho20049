@@ -16,7 +16,7 @@ export const HeaderNav = () => {
       <Navbar.Brand href="/" className="order-2 md:order-1">
         <Avatar img="/Logo.png" alt="My Logo" />
         <span className="self-center whitespace-nowrap text-sm md:text-xl font-semibold dark:text-white ">
-          Andrésinho20049
+          My Portfolio
         </span>
       </Navbar.Brand>
       <div className="grid md:grid-cols-2 gap-4 items-center order-1 md:order-3">
@@ -27,11 +27,11 @@ export const HeaderNav = () => {
           arrowIcon={false}
           inline
           label={
-            <Avatar alt="User settings" img="/team/andresinho.jpg" rounded />
+            <Avatar alt="User settings" img="/Logo.png" rounded />
           }
         >
           <Dropdown.Header>
-            <span className="block text-sm">André Carlos</span>
+            <span className="block text-sm">My Portfolio</span>
             <span className="block truncate text-sm font-medium">
               @andresinho20049
             </span>
@@ -43,7 +43,7 @@ export const HeaderNav = () => {
           <Dropdown.Divider className="md:hidden flex" />
 
           <Link
-            href="https://www.linkedin.com/in/andresinho20049/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -53,7 +53,7 @@ export const HeaderNav = () => {
             </Dropdown.Item>
           </Link>
           <Link
-            href="https://github.com/andresinho20049"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >

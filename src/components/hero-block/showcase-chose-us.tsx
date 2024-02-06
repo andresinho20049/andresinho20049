@@ -22,9 +22,10 @@ export const ShowcaseChooseUs = () => {
             Build a solution for your customer
           </h2>
           <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
-            I am a versatile professional. While I have my preferred
-            technologies, I am not limited by them. I have experience working
-            with diverse teams and tools on various projects and solutions.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex
+            assumenda quasi harum, minima, esse culpa ea eos recusandae pariatur
+            itaque dolorum error commodi illo, temporibus aperiam soluta animi
+            possimus?
           </p>
         </div>
 
@@ -34,12 +35,13 @@ export const ShowcaseChooseUs = () => {
               <FaDev />
             </div>
             <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600">
-              Back-end
+              Skill 1
             </h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              I have extensive experience in backend development, particularly
-              with Java. I have worked on developing various solutions and
-              integrating external services.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex
+              assumenda quasi harum, minima, esse culpa ea eos recusandae
+              pariatur itaque dolorum error commodi illo, temporibus aperiam
+              soluta animi possimus?
             </p>
           </div>
 
@@ -48,12 +50,13 @@ export const ShowcaseChooseUs = () => {
               <MdOutlineDeveloperMode />
             </div>
             <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600">
-              Front-end
+              Skill 2
             </h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              I have experience working on vanilla projects with HTML, CSS, JS,
-              and Node.js, as well as their popular frameworks including
-              Angular, React, and Next.js.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex
+              assumenda quasi harum, minima, esse culpa ea eos recusandae
+              pariatur itaque dolorum error commodi illo, temporibus aperiam
+              soluta animi possimus?
             </p>
           </div>
 
@@ -62,12 +65,10 @@ export const ShowcaseChooseUs = () => {
               <BsDatabase />
             </div>
             <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600">
-              Database
+              Skill 3
             </h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              I have expertise in SQL, working with different databases, and
-              developing procedures for dashboard calculations. I have also
-              worked on report extraction projects with high data volume.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis commodi, dicta at dolorem molestiae corrupti, dolorum tempore ratione architecto facere voluptates provident aperiam quo autem ipsa aut excepturi vero.
             </p>
           </div>
 
@@ -95,15 +96,6 @@ export const ShowcaseChooseUs = () => {
             </LinkAppearanceButton>
           </div>
         </div>
-
-        <div
-          className="absolute bottom-0 left-0 z-0 h-1/3 w-full"
-          //   style="background-image: linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);"
-        ></div>
-        <div
-          className="absolute bottom-0 right-0 z-0 h-1/3 w-full"
-          //   style="background-image: linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);"
-        ></div>
       </section>
     </div>
   );

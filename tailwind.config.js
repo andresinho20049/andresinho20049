@@ -58,9 +58,6 @@ module.exports = {
       backgroundImage: {
         "gradient-radial":
           "radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
-        art_andresinho_bg: "url('../../public/background/homeBg.png')",
-        art_andresinho_mobile_bg:
-          "url('../../public/background/homeBg_mobile.png')",
       },
       animation: {
         "fade-in": "fade-in 3s ease-in-out forwards",

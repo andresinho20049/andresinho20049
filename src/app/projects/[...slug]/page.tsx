@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 import { RecommendedProjects } from "@/components/cards/cardProject";
-import { AdsenseArticleAds } from "@/components/google/AdsenseComponent";
 import { BreadcrumbComponent } from "@/components/iteraction/breadcrumb";
 import { Mdx } from "@/components/structure/mdx-components";
 import Image from "next/image";
@@ -87,9 +86,6 @@ export default async function PageProject({ params }: PageProps) {
             </div>
           )}
           <Mdx code={page.body.code} />
-        </div>
-        <div className="w-full">
-          <AdsenseArticleAds />
         </div>
         <div className="w-5/6">
           <RecommendedProjects exclusion={page.title} qtde={2} />

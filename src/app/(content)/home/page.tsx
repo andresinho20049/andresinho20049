@@ -18,7 +18,7 @@ export default function Resume() {
           </>
         }
         urlLink="/about"
-        imgSrc="/avatar/me-and-family.png"
+        imgSrc="/Logo.png"
       />
       <ShowcaseChooseUs />
     </div>

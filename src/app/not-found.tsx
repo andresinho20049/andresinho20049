@@ -1,6 +1,4 @@
-import { FullHeroSection } from "@/components/hero-block/full-hero-section";
 import { AndresinhoSvg } from "@/components/svg/andresinho20049";
-import Image from "next/image";
 
 export default function NotFound() {
   return (
@@ -47,13 +45,6 @@ export default function NotFound() {
         </section>
       </div>
       <div className="hidden lg:flex h-full w-4/12 px-2 items-end">
-        <Image
-          width={894}
-          height={1280}
-          src={"/background/404.png"}
-          alt="Ilustrate Image"
-          className="object-contain"
-        />
       </div>
     </div>
   );

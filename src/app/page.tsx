@@ -2,12 +2,11 @@ import { LinkAppearanceButton } from "@/components/button/link-appearance-button
 
 export default function Home() {
 
-  const username = `Andresinho20049`;
-  const summary = `Hi there! I'm André Carlos, known on the web as andresinho20049. 
-                  I'd love to take a moment to introduce myself and share a bit about my portfolio.`;
+  const username = `My Portfolio`;
+  const summary = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex assumenda quasi harum, minima, esse culpa ea eos recusandae pariatur itaque dolorum error commodi illo, temporibus aperiam soluta animi possimus?`;
 
   return (
-    <div className="flex flex-col items-center justify-center h-dvh transition-transform overflow-hidden bg-cover bg-center bg-art_andresinho_mobile_bg sm:bg-art_andresinho_bg">
+    <div className="flex flex-col items-center justify-center h-dvh transition-transform overflow-hidden">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 
       <h1

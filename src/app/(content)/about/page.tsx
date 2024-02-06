@@ -1,5 +1,4 @@
 import { RecommendedProjects } from "@/components/cards/cardProject";
-import { AdsenseComponent } from "@/components/google/AdsenseComponent";
 import { TimelineComponent } from "@/components/timeline/TimelineComponent";
 import Image from "next/image";
 
@@ -26,8 +25,6 @@ export default function Sobre() {
         <div className="container">
           <TimelineComponent />
         </div>
-
-        <AdsenseComponent />
       </div>
       <RecommendedProjects />
     </section>

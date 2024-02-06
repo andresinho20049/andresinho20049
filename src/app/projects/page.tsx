@@ -1,9 +1,8 @@
-import { CardProject } from "@/components/cards/cardProject";
+import { FooterComponent } from "@/components/footer/footer";
 import { HeaderNav } from "@/components/header/header_nav";
 import { HeroBlockWithImage } from "@/components/hero-block/hero-with-image";
 import { ShowcaseChooseUs } from "@/components/hero-block/showcase-chose-us";
 import { allProjects } from "contentlayer/generated";
-import { FooterComponent } from "@/components/footer/footer";
 import Image from "next/image";
 
 export default async function Projects() {
@@ -14,7 +13,7 @@ export default async function Projects() {
       </nav>
       <Image
         alt="Timeline Art"
-        src="/background/ProjectsCover.png"
+        src="/Background/ProjectsCover.png"
         width={1024}
         height={720}
       />

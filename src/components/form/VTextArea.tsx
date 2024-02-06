@@ -1,7 +1,7 @@
 // import { TextField, TextFieldProps } from "@mui/material"
 import { useField } from "@unform/core";
-import { FloatingLabel, FloatingLabelProps, Textarea, TextareaProps } from "flowbite-react";
-import { useEffect, useState, useCallback } from "react";
+import { Textarea, TextareaProps } from "flowbite-react";
+import { useCallback, useEffect, useState } from "react";
 
 
 type IVTextFieldProps = TextareaProps & {
