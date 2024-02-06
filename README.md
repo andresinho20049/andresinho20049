@@ -31,7 +31,7 @@
 ## Hello, Devs
 I am a graduate of FMU with a Bachelor's degree in Computer Science and have acquired over five years of experience as a developer. My career path began as an trainee at Vivo's IVR project, where I first worked in the back-end and have since progressed to a full stack developer. My passion for technology is evident in my work, but I also enjoy the outdoors and walking for relaxation. 
 
-In my professional life, I prioritize clear and direct communication, and I strive to maintain a firm yet respectful demeanor. However, among my peers and in social settings, I tend to adopt a more laid-back and relaxed approach. I am committed to producing high-quality work and am confident that my skills and experience make me an asset to team. <br/>
+I have expertise primarily in technical skills in Java, TypeScript, JavaScript, SQL and Docker. Through my experience, I have learned to approach each project with a growth mindset, eager to contribute meaningfully and make the difference. I am constantly striving to improve and face new challenges, confident in my abilities to deliver high-quality work. <br/>
 > I'm sorry if there are any mistakes in my English. It's not my first language and I'm still improving.
 
 ### 🖥️ Technologies and Tools: 
@@ -45,8 +45,10 @@ In my professional life, I prioritize clear and direct communication, and I stri
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" title = "ANDROID"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title = "POSTGRES"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" title = "NODEJS"/></code>
-<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title = "REACT"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" title = "ANGULAR"/></code>
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title = "REACT"/></code>
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" title = "NEXTJS"/></code>
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title = "PYTHON"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title = "DOCKER"/></code>
 
 ### About me
@@ -58,12 +60,10 @@ In my professional life, I prioritize clear and direct communication, and I stri
   - Cloud Native
   - Front-end with server side (Next)
 - 💬 Entertainment
-  - Customized cars
-  - videos about animals and nature
-  - Movies, different genres
-  - Game 
+  - Custom cars
+  - Games
+  - Movies
 - 😄 Pronouns: He/HIM
-- ⚡ Fun fact: I have 2 children
 
 ### Language topics
 ```js
@@ -94,12 +94,12 @@ In my professional life, I prioritize clear and direct communication, and I stri
 
 <content>
 
-  ## [Spring boot com Redis e Postgres usando Docker](https://github.com/andresinho20049/spring-authservice-with-docker/)
+  ## [Spring boot with Redis and Postgres using Docker](https://github.com/andresinho20049/spring-authservice-with-docker/)
 
   This Spring boot project was developed with the default authentication settings in mind and 
   documentation to serve as a basis for developing other projects.
 
-  ## Visualização
+  ## Preview
   ![Visualizacao](https://github.com/andresinho20049/spring-authservice-with-docker/blob/master/media/preview-started.gif)
   How to start
 
@@ -111,7 +111,10 @@ In my professional life, I prioritize clear and direct communication, and I stri
 <br/>
 <br/>
 
-> My expertise spans from core development using HTML, CSS, and JS to developing NodeJS projects with React, NextJs and Angular frameworks.
+> Front-end has a lot of diversification, so I would also like to include that I initially worked on Core HTML, CSS and JS projects, then I used JQuery as the main library for a while and today I use NodeJs in my projects, and I have knowledge of the frameworks:
+ > - Angular
+ > - React
+ > - NextJs
 
 ```js
 
@@ -122,10 +125,10 @@ In my professional life, I prioritize clear and direct communication, and I stri
     },
     nodeProjects: {
       frameworks: ["Angular", "React", "NextJs"],
-      learnings: ["Express", "jsonwebtoken"],
       topLibraries: {
+        angular: ["@angular/material", "@angular/common", "@angular/forms", "@angular/router"],
         react: ["Material-UI", "Axios", "Unform", "YUP", "React-Router-Dom"],
-        angular: ["@angular/material", "@angular/common", "@angular/forms", "@angular/router"]
+        Nextjs: ["Tailwind", "Unform", "YUP", "contentlayer", "flowbite"]
       }
     }
   }
@@ -135,13 +138,24 @@ In my professional life, I prioritize clear and direct communication, and I stri
 <details>
 <summary>:eyes: show example</summary>
 
-  ## [LB Talks](https://github.com/andresinho20049/LB-Talk-Web)
+  ## [My Portfolio](https://github.com/andresinho20049/andresinho20049)
 
-  LB Talks is a user-friendly website that provides two convenient methods for translating pounds. Users can either utilize the API's Speech-to-text feature to transcribe an audio recording, which is then processed by the VLibras service for translation, or they can opt to enter their desired text directly into the text mode for seamless translation into pounds.
+  My portfolio is a NodeJs project using NextJs 13 Framework (App Router).
+
+  It is processed server-side by default, helping with page loading and SEO.
+
+  **Main Tools:**
+   - NodeJs
+   - TypeScript
+   - NextJs
+   - Tailwind
+   - MDX
+
+  See more -> [click here](https://andresinho20049.com.br/).
 
 </details>
 
-> Considerations: Professional projects are private and uploaded to the corporation's gitlabs, the projects available here on my Github profile are personal and developed with academic intent.
+> Considerations: Professional projects are private and uploaded to the corporation's gitlabs, the projects available here on my Github profile are personal.
 
 
 ## My GitHub Profile
