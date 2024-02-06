@@ -30,9 +30,7 @@
 ## Olá, Devs
 Sou formado pela FMU com bacharelado em Ciência da Computação e adquiri mais de cinco anos de experiência como desenvolvedor. Minha trajetória profissional começou como trainee no projeto IVR da Vivo, onde trabalhei inicialmente no back-end e desde então progredi para desenvolvedor full stack. Minha paixão pela tecnologia fica evidente no meu trabalho, mas também gosto de atividades ao ar livre e caminhadas para relaxar.
 
-Na minha vida profissional, priorizo a comunicação clara e direta e me esforço para manter uma atitude firme, mas respeitosa. No entanto, no meu circulo social, tendo uma abordagem mais descontraída. 
-Estou empenhado em produzir um trabalho de alta qualidade e estou confiante de que minhas habilidades e experiência podem contribuir para a equipe. <br/>
-> Quero me desculpar, meu inglês não é nativo e estou aprendendo.
+Possuo expertise principalmente em habilidades técnicas em Java, TypeScript, JavaScript, SQL e Docker. Através da minha experiência, aprendi a abordar cada projeto com uma mentalidade construtiva, ansioso para contribuir de forma significativa e fazer a diferença. Estou constantemente me esforçando para melhorar e enfrentar novos desafios, confiante em minhas habilidades para entregar um trabalho de alta qualidade. <br/>
 
 ### 🖥️ Tecnologias e ferramentas: 
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title = "HTML5"/></code>
@@ -45,8 +43,10 @@ Estou empenhado em produzir um trabalho de alta qualidade e estou confiante de q
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" title = "ANDROID"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title = "POSTGRES"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" title = "NODEJS"/></code>
-<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title = "REACT"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" title = "ANGULAR"/></code>
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title = "REACT"/></code>
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" title = "NEXTJS"/></code>
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title = "PYTHON"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title = "DOCKER"/></code>
 
 ### Sobre mim
@@ -59,12 +59,9 @@ Estou empenhado em produzir um trabalho de alta qualidade e estou confiante de q
   - Front-end com Server-side (Next)
 - 💬 Entertainment
   - Carros customizados
-  - Videos sobre animais e natureza
-  - Filmes, de diferente genêros
-  <!-- - Anime -->
-  - Jogos 
+  - Jogos
+  - Filmes
 - 😄 Pronomes: Ele/Dele
-- ⚡ Curiosidade: Tenhos 2 filhos
 
 ### Language topics
 ```js
@@ -97,7 +94,7 @@ Estou empenhado em produzir um trabalho de alta qualidade e estou confiante de q
 
 ## [Spring boot com Redis e Postgres usando Docker](https://github.com/andresinho20049/spring-authservice-with-docker/)
 
-Este projeto de inicialização do Spring foi desenvolvido com as configurações de autenticação padrão em mente e documentação para servir de base para o desenvolvimento de outros projetos.
+Este projeto Spring Boot foi desenvolvido com as configurações de autenticação padrão em mente e documentação para servir de base para o desenvolvimento de outros projetos.
 
 ## Visualização
 ![Visualizacao](https://github.com/andresinho20049/spring-authservice-with-docker/blob/master/media/preview-started.gif)
@@ -108,7 +105,11 @@ Como iniciar
 </details>
 
 
-> Minha experiência abrange desde o desenvolvimento vanila usando HTML, CSS e JS até o desenvolvimento de projetos NodeJS com estruturas React, NextJs e Angular.
+> Front-end tem muita diversificação, então gostaria de incluir também que inicialmente trabalhei em projetos Core HTML, CSS e JS, depois usei JQuery como biblioteca principal por um tempo e hoje uso NodeJs em meus projetos, e Tenho conhecimento dos frameworks:
+ > - Angular
+ > - React
+ > - NextJs 
+
 
 ```js
 
@@ -119,10 +120,10 @@ Como iniciar
     },
     nodeProjects: {
       frameworks: ["Angular", "React", "NextJs"],
-      learnings: ["Express", "jsonwebtoken"],
       topLibraries: {
+        angular: ["@angular/material", "@angular/common", "@angular/forms", "@angular/router"],
         react: ["Material-UI", "Axios", "Unform", "YUP", "React-Router-Dom"],
-        angular: ["@angular/material", "@angular/common", "@angular/forms", "@angular/router"]
+        Nextjs: ["Tailwind", "Unform", "YUP", "contentlayer", "flowbite"]
       }
     }
   }
@@ -132,16 +133,25 @@ Como iniciar
 <details>
 <summary>:eyes: mostrar exemplo</summary>
 
-## [LB Talks](https://github.com/andresinho20049/LB-Talk-Web)
+## [My Portfolio](https://github.com/andresinho20049/andresinho20049)
 
-LB Talks é um site responsivo, ele contem a funcionalidade de tradução para libras, podendo ser aplicado de 2 diferentes formas.
+  Meu portifólio é um Projeto NodeJs usando o Framework NextJs 13 (App Router)
 
-Usuário pode gravar um audio e por meio de API's Speech-to-text é feito a transcrição do audio, após retonado o texto com a fala é chamado serviço do VLibras realizando a tradução para libras.
-Alterando o modo para texto, o usuário pode digitar e será feito a tradução do texto digitado para libras.
+
+  Ele é processado no servidor por padrão, ajudando no carregamento da página e no SEO.
+
+  **Principais ferramentas:**
+   - NodeJs
+   - TypeScript
+   - NextJs
+   - Tailwind
+   - MDX
+
+  Veja Mais -> [click here](https://andresinho20049.com.br/).
 
 </details>
 
-> Considerações: Projetos profissionais são privados e carregados no gitlabs da corporação, os projetos disponíveis aqui no meu perfil do Github são pessoais e desenvolvidos com intuito acadêmico.
+> Considerações: Projetos profissionais são privados e carregados no gitlabs da corporação, os projetos disponíveis aqui no meu perfil do Github são pessoais.
 
 
 ## Meu perfil no Github

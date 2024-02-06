@@ -25,9 +25,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*
-cred_gcp_portifolio_nextjs_oauth.json
-cred_gcp_portifolio_nextjs_oauth_noreply.json
+.env
+.env.production
+.env.development
 
 # vercel
 .vercel
