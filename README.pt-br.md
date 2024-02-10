@@ -133,7 +133,7 @@ Como iniciar
 <details>
 <summary>:eyes: mostrar exemplo</summary>
 
-## [My Portfolio](https://github.com/andresinho20049/andresinho20049)
+## [My Portfolio](https://github.com/andresinho20049/andresinho20049/blob/master/GETTING.pt-br.md)
 
   Meu portifólio é um Projeto NodeJs usando o Framework NextJs 13 (App Router)
 

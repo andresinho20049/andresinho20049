@@ -18,7 +18,9 @@ export default function Contact() {
             </p>
             <hr className="my-6" />
             <div className="leading-7 text-gray-600 space-y-4">
-              <p className="text-center">Find my freelance profile link below.</p>
+              <p className="text-center">
+                Find my freelance profile link below.
+              </p>
               <div className="flex gap-2 flex-wrap">
                 <div className="flex-1">
                   <LinkAppearanceButton
@@ -39,7 +41,7 @@ export default function Contact() {
                 </div>
                 <div className="flex-1">
                   <LinkAppearanceButton
-                    href="https://br.fiverr.com/s/mb7AxR"
+                    href=" https://br.fiverr.com/andresinho20049"
                     isBlank
                   >
                     <FiverrSvg />

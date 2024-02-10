@@ -138,7 +138,7 @@ I have expertise primarily in technical skills in Java, TypeScript, JavaScript, 
 <details>
 <summary>:eyes: show example</summary>
 
-  ## [My Portfolio](https://github.com/andresinho20049/andresinho20049)
+  ## [My Portfolio](https://github.com/andresinho20049/andresinho20049/blob/master/GETTING.md)
 
   My portfolio is a NodeJs project using NextJs 13 Framework (App Router).
 
