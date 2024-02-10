@@ -23,7 +23,7 @@ import { TypeScriptSvg } from "@/components/svg/typescript";
 
 export const IntroduceMeBlock = () => {
   return (
-    <div className="bg-fixed bg-cover bg-[url('/background/resumeBg_home.png')] p-8 grid sm:grid-cols-4 lg:grid-cols-2 gap-4 h-dvh border-b-2">
+    <div className="bg-fixed bg-cover bg-[url('/background/resumeBg_home.png')] p-8 grid sm:grid-cols-4 lg:grid-cols-2 gap-4 h-screen border-b-2">
       <div className="sm:col-span-3 lg:col-span-1 w-full flex flex-col items-center justify-center gap-1 md:gap-4 prose dark:prose-invert md:prose-lg lg:prose-xl text-center">
         <div>
           <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary-500 pr-1">
