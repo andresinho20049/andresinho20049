@@ -21,7 +21,7 @@ export const getGoogleAccessToken = async () => {
       oauth2Client.getAccessToken((err, token) => {
         if (err) {
           console.error("*ERR: ", err);
-          reject();
+          reject(err);
         }
         resolve(token);
       });
