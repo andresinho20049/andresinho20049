@@ -1,4 +1,5 @@
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -7,7 +8,7 @@ export default function Home() {
                   I'd love to take a moment to introduce myself and share a bit about my portfolio.`;
 
   return (
-    <div className="flex flex-col items-center justify-center h-dvh transition-transform overflow-hidden bg-cover bg-center bg-art_andresinho_mobile_bg sm:bg-art_andresinho_bg">
+    <div className="flex flex-col items-center justify-center h-dvh transition-transform overflow-hidden bg-cover bg-center sm:bg-gradient-to-t from-gray-700 to-gray-900 max-sm:bg-[url('/background/homeBg_mobile.png')]">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 
       <h1
@@ -28,6 +29,20 @@ export default function Home() {
       <div className="w-48 animate-fade-in">
         <LinkAppearanceButton href={"/home"}>Get Started</LinkAppearanceButton>
       </div>
+      <Image
+        src={"/avatar/Me-min.png"}
+        alt=""
+        width={720}
+        height={1600}
+        className="object-contain object-right-bottom h-3/6 xl:h-4/6 2xl:h-5/6 absolute bottom-0 right-0 max-lg:hidden"
+      />
+      <Image
+        src={"/Logo.png"}
+        alt=""
+        width={1000}
+        height={1091}
+        className="object-contain object-left-top h-24 w-11/12 absolute top-0 lef-0 animate-fade-in"
+      />
     </div>
   );
 }
