@@ -1,9 +1,14 @@
 import { RecommendedProjects } from "@/components/cards/cardProject";
 import { AdsenseComponent } from "@/components/google/AdsenseComponent";
 import { TimelineComponent } from "@/components/timeline/TimelineComponent";
+import { Metadata } from "next";
 import Image from "next/image";
 
-export default function Sobre() {
+export const metadata:Metadata = {
+  title: "About Me"
+}
+
+export default function About() {
   return (
     <section className="max-w-xs sm:max-w-sm md:max-w-full mx-auto">
       <div className="mb-10">
