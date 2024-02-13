@@ -2,7 +2,13 @@ import { LinkAppearanceButton } from "@/components/button/link-appearance-button
 import { ContactForm } from "@/components/form/ContactForm";
 import { FiverrSvg } from "@/components/svg/fiverr";
 import { WorkanaSvg2 } from "@/components/svg/workana";
+import { Metadata } from "next";
 import { TbBrandUpwork } from "react-icons/tb";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  keywords: ["Contact", "E-mail", "Andresinho20049", "gmail"]
+};
 
 export default function Contact() {
 

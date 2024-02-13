@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Portfolio - Developer Full-stack",
   keywords: [
     "Andresinho20049",
-    "andresinh20049",
+    "andresinho20049",
     "Andre Carlos",
     "andre carlos",
     "Portfolio",
@@ -30,6 +30,12 @@ export const metadata: Metadata = {
     "Desenvolvedor",
     "Dev",
     "dev",
+  ],
+  authors: [
+    {
+      name: "André Carlos",
+      url: "https://www.instagram.com/andresinho20049",
+    },
   ],
   icons: {
     icon: "/icons/android-chrome-512x512.png",
