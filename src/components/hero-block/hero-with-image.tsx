@@ -5,7 +5,7 @@ import { LinkAppearanceButton } from "../button/link-appearance-button";
 
 export const HeroBlockWithImage = (proj: Projects) => {
   return (
-    <div className="flex px-6 md:px-20 items-center justify-center bg-hero h-screen">
+    <div className="flex items-center justify-center bg-hero h-screen">
       <div className="flex flex-col gap-4 landscape:flex-row items-center max-w-8xl">
         <div className="order-last landscape:order-first w-full md:pr-32">
           <h2 className="hidden landscape:block text-2xl lg:text-5xl text-center text-left text-blue-900 leading-tight font-medium animate-title">

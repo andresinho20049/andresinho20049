@@ -20,11 +20,12 @@ import { ReactSvg } from "@/components/svg/react";
 import { SpringSvg } from "@/components/svg/spring";
 import { TailwindSvg } from "@/components/svg/tailwind";
 import { TypeScriptSvg } from "@/components/svg/typescript";
+import Image from "next/image";
 
 export const IntroduceMeBlock = () => {
   return (
-    <div className="bg-fixed bg-cover bg-[url('/background/resumeBg_home.png')] p-8 grid sm:grid-cols-4 lg:grid-cols-2 gap-4 h-screen border-b-2">
-      <div className="sm:col-span-3 lg:col-span-1 w-full flex flex-col items-center justify-center gap-1 md:gap-4 prose dark:prose-invert md:prose-lg lg:prose-xl text-center">
+    <div className="bg-fixed bg-cover bg-gradient-to-t from-blue-700 to-emerald-500 to-30% p-8 flex gap-4 h-screen border-b-2">
+      <div className="flex-1 flex flex-col items-center justify-center gap-1 md:gap-4 prose dark:prose-invert md:prose-lg lg:prose-xl text-center">
         <div>
           <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary-500 pr-1">
             {"I'm André Carlos"}
@@ -35,7 +36,7 @@ export const IntroduceMeBlock = () => {
             {`As a developer with a Bachelor's degree in Computer Science, I have expertise primarily in technical skills in Java, TypeScript, JavaScript, SQL and Docker. Through my experience, I have learned to approach each project with a growth mindset, eager to contribute meaningfully and make the difference. I am constantly striving to improve and face new challenges, confident in my abilities to deliver high-quality work.`}
           </p>
         </div>
-        <div className="hidden lg:block h-72 w-full relative group">
+        <div className="hidden xl:block h-72 w-full relative group">
           <div className="size-28 absolute top-1/2 lg:top-0 left-0 animate-skewEffect">
             <DockerSvg />
           </div>
@@ -47,7 +48,7 @@ export const IntroduceMeBlock = () => {
           </div>
         </div>
       </div>
-      <div className="w-4/6 h-5/6 relative group hidden lg:block">
+      <div className="w-5/12 h-5/6 relative group hidden xl:block">
         <div className="size-28 absolute left-0 top-0 animate-transformOpacity">
           <GitSvg />
         </div>
@@ -106,6 +107,13 @@ export const IntroduceMeBlock = () => {
           <PythonSvg />
         </div>
       </div>
+      <Image
+        src={"/avatar/Me-min.png"}
+        alt=""
+        width={720}
+        height={1600}
+        className="object-contain object-right-bottom h-4/6 2xl:h-5/6 absolute bottom-0 right-0 max-lg:hidden"
+      />
     </div>
   );
 };

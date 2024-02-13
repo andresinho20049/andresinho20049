@@ -12,10 +12,7 @@ export const metadata: Metadata = {
 
 export default async function Projects() {
   return (
-    <section className="flex flex-col justify-start items-center h-dvh snap-y snap-mandatory overflow-y-auto scroll-smooth">
-      <nav className="snap-start w-full">
-        <HeaderNav />
-      </nav>
+    <section className="snap-start">
       <Image
         alt="Timeline Art"
         src="/background/ProjectsCover.png"
@@ -42,10 +39,6 @@ export default async function Projects() {
             </div>
           ))}
       </article>
-      <div className="snap-start w-full">
-        <ShowcaseChooseUs />
-        <FooterComponent />
-      </div>
     </section>
   );
 }

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
 
 export default async function portfolio() {
   return (
-    <h1>Resume</h1>
+    <section className="snap-start w-full">
+      <h1>Resume</h1>
+      <h3>Developing</h3>
+    </section>
   );
 }

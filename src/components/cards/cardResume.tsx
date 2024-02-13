@@ -2,6 +2,10 @@
 
 import { usePathname } from "next/navigation";
 import { LinkTabs } from "../button/link-tab";
+import { FaArrowRight } from "react-icons/fa6";
+
+import Link from "next/link";
+import Image from "next/image";
 
 interface ITabsPortfolio {
   name: string;
@@ -32,16 +36,21 @@ export const CardResume = () => {
 
   return (
     <div className="shadow rounded-lg pb-6 md:sticky top-0 bg-gray-50 dark:bg-gray-800">
-      <div className="flex flex-col items-center p-6 ">
-        <img
+      <div className="flex flex-col items-center p-6 text-center">
+        <Image
+        alt="Andre Photo"
           src="/team/andresinho.jpg"
           className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
-        ></img>
-        <h1 className="text-xl font-bold">André Carlos</h1>
-        <p className="text-gray-700 dark:text-gray-600">Software Developer</p>
+          height={400}
+          width={400}
+        />
+        <h1 className="text-lg xl:text-xl font-bold">André Carlos</h1>
+        <p className="text-gray-700 dark:text-gray-600 text-sm lg:text-md">
+          Developer
+        </p>
       </div>
       {/* <hr className="my-6 border-t border-gray-300"> */}
-      <div className="flex flex-col">
+      <div className="flex md:flex-col flex-wrap justify-center">
         {listTab.map((tab) => (
           <LinkTabs
             key={tab.href}
@@ -51,6 +60,12 @@ export const CardResume = () => {
             {tab.name}
           </LinkTabs>
         ))}
+        <Link
+          className="hidden md:flex justify-center items-center gap-4 mt-8 hover:underline hover:text-blue-700"
+          href={"/contact"}
+        >
+          Contact <FaArrowRight />
+        </Link>
       </div>
     </div>
   );

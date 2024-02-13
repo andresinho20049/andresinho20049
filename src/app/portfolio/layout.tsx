@@ -9,25 +9,25 @@ interface ILayoutProps {
 export default function LayoutContent({ children }: ILayoutProps) {
 
     return (
-      <section className="flex flex-col	justify-between min-h-screen">
-        <header className="flex-none">
+      <section className="flex flex-col justify-start items-center h-dvh snap-y snap-mandatory overflow-y-auto scroll-smooth">
+        <nav className="snap-start w-full">
           <HeaderNav />
-        </header>
-        <main>
-          <div>
-            <div className="container mx-auto py-8">
-              <div className="grid grid-cols-4 md:grid-cols-12 gap-6 px-4">
-                <div className="col-span-4 md:col-span-2">
-                  <CardResume />
-                </div>
-                <div className="col-span-4 md:col-span-10">{children}</div>
+        </nav>
+        <main className="flex-1">
+          <div className="px-8 py-4">
+            <div className="grid grid-cols-4 md:grid-cols-12 gap-6">
+              <div className="col-span-4 md:col-span-3 xl:col-span-2 max-md:snap-start py-8">
+                <CardResume />
+              </div>
+              <div className="col-span-4 md:col-span-9 xl:col-span-10 xl:px-4">
+                {children}
               </div>
             </div>
           </div>
         </main>
-        <footer className="flex-none mt-auto">
+        <div className="snap-end w-full">
           <FooterComponent />
-        </footer>
+        </div>
       </section>
     );
 }

@@ -14,7 +14,7 @@ export const BreadcrumbComponent = ({ text }: IBreadcrumbs) => {
       <BreadcrumbItem href="/home" icon={HiHome}>
         Home
       </BreadcrumbItem>
-      <BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
+      <BreadcrumbItem href="/portfolio/projects">Projects</BreadcrumbItem>
       <BreadcrumbItem>{text}</BreadcrumbItem>
     </Breadcrumb>
   );

@@ -17,7 +17,7 @@ export default function Resume() {
             Would you like to <span className="text-blue-700">know me</span> better?
           </>
         }
-        urlLink="/about"
+        urlLink="/portfolio"
         imgSrc="/avatar/me-and-family.png"
       />
       <ShowcaseChooseUs />
