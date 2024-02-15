@@ -35,18 +35,18 @@ export const CardResume = () => {
   ];
 
   return (
-    <div className="shadow rounded-lg pb-6 md:sticky top-0 bg-gray-50 dark:bg-gray-800">
+    <div className="shadow-md rounded-lg pb-6 md:sticky top-0 bg-gray-50 dark:bg-gray-800">
       <div className="flex flex-col items-center p-6 text-center">
         <Image
-        alt="Andre Photo"
+          alt="Andre Photo"
           src="/team/andresinho.jpg"
           className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
           height={400}
           width={400}
         />
         <h1 className="text-lg xl:text-xl font-bold">André Carlos</h1>
-        <p className="text-gray-700 dark:text-gray-600 text-sm lg:text-md">
-          Developer
+        <p className="text-gray-700 dark:text-gray-400 text-sm lg:text-md">
+          Software Engineer
         </p>
       </div>
       {/* <hr className="my-6 border-t border-gray-300"> */}

@@ -13,16 +13,12 @@ export default function LayoutContent({ children }: ILayoutProps) {
         <nav className="snap-start w-full">
           <HeaderNav />
         </nav>
-        <main className="flex-1">
-          <div className="px-8 py-4">
-            <div className="grid grid-cols-4 md:grid-cols-12 gap-6">
-              <div className="col-span-4 md:col-span-3 xl:col-span-2 max-md:snap-start py-8">
-                <CardResume />
-              </div>
-              <div className="col-span-4 md:col-span-9 xl:col-span-10 xl:px-4">
-                {children}
-              </div>
+        <main className="flex-1 w-full px-8 py-4">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="w-full md:max-w-48 max-md:snap-start py-8">
+              <CardResume />
             </div>
+            <div className="flex-1">{children}</div>
           </div>
         </main>
         <div className="snap-end w-full">

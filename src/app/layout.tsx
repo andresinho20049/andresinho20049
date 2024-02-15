@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: "Andresinho20049",
     template: "%s | Andresinho20049",
   },
-  description: "Portfolio - Developer Full-stack",
+  description: "Portfolio - Software Engineer",
   keywords: [
     "Andresinho20049",
     "andresinho20049",
@@ -30,6 +30,8 @@ export const metadata: Metadata = {
     "Desenvolvedor",
     "Dev",
     "dev",
+    "Software Engineer",
+    "software engineer",
   ],
   authors: [
     {

@@ -18,6 +18,7 @@ export default async function Projects() {
         src="/background/ProjectsCover.png"
         width={1024}
         height={720}
+        className="mx-auto"
       />
       <article className="grid gap-4 ">
         {allProjects

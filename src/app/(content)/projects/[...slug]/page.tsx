@@ -59,7 +59,7 @@ export default async function PageProject({ params }: PageProps) {
     <article>
       <BreadcrumbComponent text={page.title} />
       <div className="flex flex-col justify-start items-center">
-        <div className="w-4/5 prose dark:prose-invert">
+        <div className="w-4/5 prose-sm md:prose lg:prose-lg xl:prose-xl dark:prose-invert">
           <h1>{page.title}</h1>
           {page.description && (
             <h3 className="text-lg md:text-xl font-light">
