@@ -24,10 +24,10 @@ import Image from "next/image";
 
 export const IntroduceMeBlock = () => {
   return (
-    <div className="bg-fixed bg-cover bg-gradient-to-t from-blue-700 to-emerald-500 to-30% p-8 flex gap-4 h-screen border-b-2">
+    <div className="bg-fixed bg-cover bg-center lg:bg-right bg-[url('/background/resumeBg_home-min.png')] p-8 flex gap-4 h-screen border-b-2">
       <div className="flex-1 flex flex-col items-center justify-center gap-1 md:gap-4 prose dark:prose-invert md:prose-lg lg:prose-xl text-center">
         <div>
-          <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary-500 pr-1">
+          <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary-500 pr-1 max-sm:text-2xl">
             {"I'm André Carlos"}
           </h1>
         </div>
@@ -107,13 +107,6 @@ export const IntroduceMeBlock = () => {
           <PythonSvg />
         </div>
       </div>
-      <Image
-        src={"/avatar/Me-min.png"}
-        alt=""
-        width={720}
-        height={1600}
-        className="object-contain object-right-bottom h-4/6 2xl:h-5/6 absolute bottom-0 right-0 max-lg:hidden"
-      />
     </div>
   );
 };
