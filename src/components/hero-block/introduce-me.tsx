@@ -1,31 +1,9 @@
-import { AngularSvg } from "@/components/svg/angular";
-import { CssSvg } from "@/components/svg/css";
-import { DockerSvg } from "@/components/svg/docker";
-import { GitSvg } from "@/components/svg/git";
-import { HtmlSvg } from "@/components/svg/html";
-import { JavaSvg } from "@/components/svg/java";
-import { JavaScriptSvg } from "@/components/svg/javascript";
-import { JenkinsSvg } from "@/components/svg/jenkins";
-import { JiraSvg } from "@/components/svg/jira";
-import { JQuerySvg } from "@/components/svg/jquery";
-import { MarkdownSvg } from "@/components/svg/markdown";
-import { NextSvg } from "@/components/svg/next";
-import { NginxSvg } from "@/components/svg/nginx";
-import { NodeSvg } from "@/components/svg/node";
-import { NumpySvg } from "@/components/svg/numpy";
-import { PandasSvg } from "@/components/svg/pandas";
-import { PostgresSvg } from "@/components/svg/postgres";
-import { PythonSvg } from "@/components/svg/python";
-import { ReactSvg } from "@/components/svg/react";
-import { SpringSvg } from "@/components/svg/spring";
-import { TailwindSvg } from "@/components/svg/tailwind";
-import { TypeScriptSvg } from "@/components/svg/typescript";
 import Image from "next/image";
 
 export const IntroduceMeBlock = () => {
   return (
     <div className="bg-fixed bg-cover bg-center lg:bg-right bg-[url('/background/resumeBg_home-min.png')] p-8 flex gap-4 h-screen border-b-2">
-      <div className="flex-1 flex flex-col items-center justify-center gap-1 md:gap-4 prose dark:prose-invert md:prose-lg lg:prose-xl text-center">
+      <div className="h-5/6 flex flex-col items-center justify-center gap-1 md:gap-4 prose dark:prose-invert lg:prose-lg xl:prose-xl text-center">
         <div>
           <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary-500 pr-1 max-sm:text-2xl">
             {"I'm André Carlos"}
@@ -36,76 +14,124 @@ export const IntroduceMeBlock = () => {
             {`As a developer with a Bachelor's degree in Computer Science, I have expertise primarily in technical skills in Java, TypeScript, JavaScript, SQL and Docker. Through my experience, I have learned to approach each project with a growth mindset, eager to contribute meaningfully and make the difference. I am constantly striving to improve and face new challenges, confident in my abilities to deliver high-quality work.`}
           </p>
         </div>
-        <div className="hidden xl:block h-72 w-full relative group">
-          <div className="size-28 absolute top-1/2 lg:top-0 left-0 animate-skewEffect">
-            <DockerSvg />
+      </div>
+      <div className="hidden lg:block border-4 border-blue-700  h-5/6 w-3/12 2xl:w-5/12">
+        <DevIconsAnimation />
+      </div>
+    </div>
+  );
+};
+
+const DevIconsAnimation = () => {
+  return (
+    <div className="flex justify-between group relative h-full w-full">
+      <div className="flex flex-col justify-between">
+        <Image
+          alt="spring Logo"
+          src={"/svg/spring.svg"}
+          width={98}
+          height={98}
+        />
+        <Image
+          className="translate-x-20 hidden 2xl:block"
+          alt="react Logo"
+          src={"/svg/react-simple.svg"}
+          width={80}
+          height={80}
+        />
+        <Image alt="junit Logo" src={"/svg/junit.svg"} width={98} height={98} />
+      </div>
+      <div className="flex flex-col items-center justify-center gap-4">
+        <div className="hidden xl:flex gap-2">
+          <Image
+            alt="html Logo"
+            src={"/svg/html.svg"}
+            width={80}
+            height={80}
+          />
+
+          <Image
+            alt="css Logo"
+            src={"/svg/css.svg"}
+            width={80}
+            height={80}
+          />
+        </div>
+        <div className="flex justify-evenly h-2/6 2xl:h-3/6 border">
+          <div className="hidden 2xl:flex flex-col justify-between">
+            <Image
+              className="fill-white"
+              alt="git Logo"
+              src={"/svg/git.svg"}
+              width={90}
+              height={90}
+            />
+            <Image
+              alt="docker Logo"
+              src={"/svg/docker.svg"}
+              width={80}
+              height={80}
+            />
           </div>
-          <div className="size-28  absolute top-0 left-1/2 animate-bounceOpacityRight ">
-            <JavaSvg />
+          <div className="self-center	">
+            <Image
+              alt="java Logo"
+              src={"/svg/java.svg"}
+              width={124}
+              height={124}
+            />
           </div>
-          <div className="size-28  absolute top-1/2 lg:top-0 right-0 animate-skewEffect">
-            <PostgresSvg />
+          <div className="hidden 2xl:flex flex-col justify-between">
+            <Image
+              alt="jenkins Logo"
+              src={"/svg/jenkins.svg"}
+              width={80}
+              height={80}
+            />
+            <Image
+              alt="jira Logo"
+              src={"/svg/jira.svg"}
+              width={80}
+              height={80}
+            />
           </div>
+        </div>
+        <div className="hidden xl:flex gap-2">
+          <Image
+            alt="typescript Logo"
+            src={"/svg/typescript.svg"}
+            width={80}
+            height={80}
+          />
+
+          <Image
+            alt="javascript Logo"
+            src={"/svg/javascript.svg"}
+            width={80}
+            height={80}
+          />
         </div>
       </div>
-      <div className="w-5/12 h-5/6 relative group hidden xl:block">
-        <div className="size-28 absolute left-0 top-0 animate-transformOpacity">
-          <GitSvg />
-        </div>
-        <div className="size-28  absolute left-1/3 top-1/3 animate-sizeOpacity">
-          <HtmlSvg />
-        </div>
-        <div className="size-28  absolute right-48 top-32 animate-fadeOutLeft">
-          <JavaScriptSvg />
-        </div>
-        <div className="size-28  absolute right-0 top-0 animate-transformOpacity">
-          <JenkinsSvg />
-        </div>
-        <div className="size-28  absolute left-4 bottom-0 animate-fade-left">
-          <JiraSvg />
-        </div>
-        <div className="size-28  absolute left-10 top-96 animate-fadeOutRight">
-          <JQuerySvg />
-        </div>
-        <div className="size-28  absolute top-2/3 right-24 transition duration-300 delay-150 animate-fade-right">
-          <MarkdownSvg />
-        </div>
-        <div className="size-28  absolute left-64 bottom-1/3 animate-fadeOutSkew ">
-          <NginxSvg />
-        </div>
-        <div className="size-28  absolute left-48 bottom-96  animate-bounceOpacityRight">
-          <NextSvg />
-        </div>
-        <div className="size-28  absolute left-64 top-3/4 animate-pulseOpacity">
-          <NodeSvg />
-        </div>
-        <div className="size-28  absolute right-64 bottom-1/4 animate-fadeOutLeft">
-          <PandasSvg />
-        </div>
-        <div className="size-28  absolute left-2/3 top-2/4 animate-transformOpacity">
-          <ReactSvg />
-        </div>
-        <div className="size-28  absolute left-1/3 top-0 animate-bounceOpacityLeft">
-          <SpringSvg />
-        </div>
-        <div className="size-28  absolute right-3/4 top-1/3 animate-fadeOutSkew">
-          <TailwindSvg />
-        </div>
-        <div className="size-28  absolute right-0 top-36 animate-fadeOutRight">
-          <TypeScriptSvg />
-        </div>
-        <div className="size-28  absolute right-3/4 bottom-1/3 translate-y-1/3 animate-transformOpacity">
-          <NumpySvg />
-        </div>
-        <div className="size-28  absolute left-2/3 top-1/3 animate-fadeOutSkew">
-          <CssSvg />
-        </div>
-        <div className="size-28  absolute left-3/4 bottom-0 animate-fadeOutSkew">
-          <AngularSvg />
-        </div>
-        <div className="size-28  absolute left-1/3 bottom-0 animate-bounceOpacityLeft">
-          <PythonSvg />
-        </div>
+      <div className="flex flex-col justify-between items-center">
+        <Image
+          alt="maven Logo"
+          src={"/svg/maven.svg"}
+          width={106}
+          height={106}
+        />
+        <Image
+          className="-translate-x-20 hidden 2xl:block"
+          alt="angular Logo"
+          src={"/svg/angular.svg"}
+          width={80}
+          height={80}
+        />
+        <Image
+          alt="eclipse Logo"
+          src={"/svg/eclipse.svg"}
+          width={110}
+          height={110}
+        />
       </div>
     </div>
   );
