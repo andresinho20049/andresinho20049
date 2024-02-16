@@ -32,6 +32,7 @@ export default function Home() {
       <Image
         src={"/avatar/Me-min.png"}
         alt=""
+        priority
         width={720}
         height={1600}
         className="object-contain object-right-bottom h-3/6 w-min xl:h-4/6 2xl:h-5/6 absolute bottom-0 right-0 max-lg:hidden"

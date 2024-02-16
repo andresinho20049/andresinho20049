@@ -1,5 +1,3 @@
-import { FullHeroSection } from "@/components/hero-block/full-hero-section";
-import { AndresinhoSvg } from "@/components/svg/andresinho20049";
 import Image from "next/image";
 
 export default function NotFound() {
@@ -8,7 +6,12 @@ export default function NotFound() {
       <div className="flex flex-col justify-between w-full h-full lg:w-8/12">
         <nav className="flex px-4 justify-between items-center">
           <div className="landscape:size-12 landscape:lg:size-28 size-28">
-            <AndresinhoSvg />
+            <Image
+              alt="my-logo Logo"
+              src={"/svg/my-logo.svg"}
+              width={124}
+              height={124}
+            />
           </div>
         </nav>
         <section className="px-4 flex items-center h-full lg:mt-0">
@@ -33,7 +36,7 @@ export default function NotFound() {
                 If you need any help, please click the button below to contact
                 us.
               </p>
-              <hr className="max-w-2xl"/>
+              <hr className="max-w-2xl" />
               <div className="w-36">
                 <a
                   href="/contact"

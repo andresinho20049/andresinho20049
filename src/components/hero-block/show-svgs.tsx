@@ -1,52 +1,81 @@
-import { CssSvg } from "../svg/css";
-import { DockerSvg } from "../svg/docker";
-import { GitSvg } from "../svg/git";
-import { HtmlSvg } from "../svg/html";
-import { JavaSvg } from "../svg/java";
-import { JavaScriptSvg } from "../svg/javascript";
-import { NextSvg } from "../svg/next";
-import { NodeSvg } from "../svg/node";
-import { PostgresSvg } from "../svg/postgres";
-import { SpringSvg } from "../svg/spring";
-import { TypeScriptSvg } from "../svg/typescript";
+import Image from "next/image";
 
 
 export const ShowSvgsComponent = () => {
     return (
       <div className="hidden md:block h-96 bg-fixed bg-cover bg-[url('/background/20200608_144908.svg')] p-8">
-        <div className="lg:w-3/6 w-full h-5/6 relative group">
-          <div className="size-28 absolute top-1/2 lg:top-0 left-0 animate-skewEffect">
-            <DockerSvg />
+        <div className="w-6/12 h-5/6 border flex flex-col justify-between">
+          <div className="w-full flex justify-evenly">
+            <Image
+              alt="spring Logo"
+              src={"/svg/spring.svg"}
+              width={80}
+              height={80}
+            />
+            <Image
+              alt="redis Logo"
+              src={"/svg/redis.svg"}
+              width={80}
+              height={80}
+            />
+            <Image
+              alt="java Logo"
+              src={"/svg/java.svg"}
+              width={80}
+              height={80}
+            />
+            <Image
+              alt="postgres Logo"
+              src={"/svg/postgres.svg"}
+              width={80}
+              height={80}
+            />
+            <Image
+              alt="junit Logo"
+              src={"/svg/junit.svg"}
+              width={80}
+              height={80}
+            />
           </div>
-          <div className="size-28  absolute top-1/2 left-1/2 animate-sizeOpacity ">
-            <JavaSvg />
+          <div className="w-full flex justify-between">
+            <Image
+              alt="docker Logo"
+              src={"/svg/docker.svg"}
+              width={80}
+              height={80}
+            />
+            <Image
+              alt="nginx Logo"
+              src={"/svg/nginx.svg"}
+              width={80}
+              height={80}
+            />
           </div>
-          <div className="size-28  absolute top-1/2 lg:top-0 right-0 animate-skewEffect">
-            <PostgresSvg />
-          </div>
-          <div className="size-28 absolute left-0 bottom-0 animate-transformOpacity">
-            <GitSvg />
-          </div>
-          <div className="size-28  absolute left-1/3 top-1/3 animate-skewEffect">
-            <HtmlSvg />
-          </div>
-          <div className="size-28  absolute right-48 top-32 animate-fadeOutLeft">
-            <JavaScriptSvg />
-          </div>
-          <div className="size-28  absolute left-48 bottom-96  animate-fadeOutSkew">
-            <NextSvg />
-          </div>
-          <div className="size-28  absolute left-64 top-3/4 animate-pulseOpacity">
-            <NodeSvg />
-          </div>
-          <div className="size-28  absolute left-1/3 top-0 animate-bounceOpacityLeft">
-            <SpringSvg />
-          </div>
-          <div className="size-28  absolute right-0 top-36 animate-fadeOutSkew">
-            <TypeScriptSvg />
-          </div>
-          <div className="size-28  absolute left-2/3 top-1/3 animate-fadeOutSkew">
-            <CssSvg />
+          <div className="w-full flex justify-evenly">
+            <Image
+              alt="react Logo"
+              src={"/svg/react-simple.svg"}
+              width={60}
+              height={60}
+            />
+            <Image
+              alt="next Logo"
+              src={"/svg/next.svg"}
+              width={80}
+              height={80}
+            />
+            <Image
+              alt="nodejs Logo"
+              src={"/svg/nodejs.svg"}
+              width={80}
+              height={80}
+            />
+            <Image
+              alt="tailwind Logo"
+              src={"/svg/tailwind.svg"}
+              width={110}
+              height={110}
+            />
           </div>
         </div>
       </div>
