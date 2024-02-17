@@ -28,7 +28,7 @@ export const SeeMyWorks = () => {
           </p>
           <div className="mt-8">
             <Link
-              href="/projects"
+              href="/portfolio/projects"
               className="inline-block w-full text-center text-lg font-medium text-blue-700 border-blue-700 border-solid border-2 py-4 hover:scale-[1.2] px-6 hover:text-blue-400 hover:border-blue-400 transition-transform duration-200 ease-in-out rounded hover:shadow-md md:w-52"
             >
               Career Highlights

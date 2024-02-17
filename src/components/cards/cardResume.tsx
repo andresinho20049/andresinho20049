@@ -28,10 +28,10 @@ export const CardResume = () => {
       name: "Timeline",
       href: "/timeline",
     },
-    {
-      name: "Jobs",
-      href: "/jobs",
-    },
+    // {
+    //   name: "Jobs",
+    //   href: "/jobs",
+    // },
   ];
 
   return (
