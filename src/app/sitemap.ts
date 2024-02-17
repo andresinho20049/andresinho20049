@@ -18,10 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     pages.push(proj);
   })
 
+  const date = new Date().toISOString().split("T")[0];
+
   return pages.map((p) => {
     return {
       url: `${baseUrl}/${p}`,
-      lastModified: Date(),
+      lastModified: date,
     };
   });
 }
