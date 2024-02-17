@@ -67,26 +67,23 @@ module.exports = {
         title: "title 3s ease-out forwards",
         "fade-left": "fade-left 3s ease-in-out forwards",
         "fade-right": "fade-right 3s ease-in-out forwards",
+        "fade-top": "fade-top 3s ease-in-out forwards",
+        "fade-bottom": "fade-bottom 3s ease-in-out forwards",
         typing: "typing 2s steps(20) normal forwards, blink .7s infinite",
-        transformOpacity: "transformOpacity 5s infinite alternate-reverse",
         sizeOpacity:
-          "ping 3s infinite alternate-reverse, opacityEffect 8s infinite alternate-reverse",
-        bounceOpacityLeft:
-          "bounce 1s infinite, fade-left 8s infinite alternate-reverse",
-        bounceOpacityRight:
-          "bounce 1s infinite, fade-right 8s infinite alternate-reverse",
+          "ping 3s infinite alternate-reverse, opacityEffect 5s forwards 5 alternate",
         bounceOpacity:
-          "bounce 1s infinite, opacityEffect 8s infinite alternate",
-        pulseOpacity:
-          "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite, skewEffect 3s linear infinite alternate, opacityEffect 5s infinite alternate ",
-        fadeOutRight:
-          "fade-in 3s ease-in-out backwards,  fade-right 5s forwards 3 alternate",
-        fadeOutLeft:
-          "fade-in 3s ease-in-out backwards,  fade-left 5s forwards 3 alternate",
-        fadeOutSkew:
-          "fade-in 3s ease-in-out forwards, skewEffect 3s infinite alternate, opacityEffect 5s 10 forwards ",
+          "fade-in-slow 3s ease-in-out forwards, bounce 1s infinite",
+        bounceOpacityLeft:
+          "bounce 1s infinite, fade-left 5s forwards 5 alternate",
+        bounceOpacityRight:
+          "bounce 1s infinite, fade-right 5s forwards 5 alternate",
+        fadeOutRight: "fade-right 5s forwards 5 alternate",
+        fadeOutLeft: "fade-left 5s forwards 5 alternate",
+        fadeOutTop: "fade-top 5s forwards 5 alternate",
+        fadeOutBottom: "fade-bottom 5s forwards 5 alternate",
         skewEffect:
-          "skewEffect 2s cubic-bezier(0.4, 0, 0.6, 1) infinite, opacityEffect 5s infinite alternate-reverse ",
+          "fade-in-slow 3s ease-in-out forwards, skewEffect 2s cubic-bezier(0.4, 0, 0.6, 1) infinite ",
       },
       keyframes: {
         "fade-in": {
@@ -94,6 +91,14 @@ module.exports = {
             opacity: "0%",
           },
           "75%": {
+            opacity: "0%",
+          },
+          "100%": {
+            opacity: "100%",
+          },
+        },
+        "fade-in-slow": {
+          "0%": {
             opacity: "0%",
           },
           "100%": {
@@ -128,6 +133,34 @@ module.exports = {
             opacity: "0%",
           },
         },
+        "fade-top": {
+          "0%": {
+            transform: "translateY(100%)",
+            opacity: "0%",
+          },
+
+          "30%": {
+            transform: "translateY(0%)",
+            opacity: "100%",
+          },
+          "100%": {
+            opacity: "0%",
+          },
+        },
+        "fade-bottom": {
+          "0%": {
+            transform: "translateY(-100%)",
+            opacity: "0%",
+          },
+
+          "30%": {
+            transform: "translateY(0%)",
+            opacity: "100%",
+          },
+          "100%": {
+            opacity: "0%",
+          },
+        },
         title: {
           "0%": {
             "line-height": "0%",
@@ -150,10 +183,10 @@ module.exports = {
         typing: {
           "0%": {
             width: "0%",
-            opacity: "0%"
+            opacity: "0%",
           },
           "10%": {
-            opacity: "100%"
+            opacity: "100%",
           },
           "100%": {
             width: "100%",
@@ -163,45 +196,17 @@ module.exports = {
           "50%": {
             borderColor: "transparent",
           },
-          // "100%": {
-          //   borderColor: "white",
-          // },
-        },
-        transformOpacity: {
-          "0%": {
-            transform: "translateX(-50%) translateY(0%) skewY(-6deg)",
-          },
-          "30%": {
-            transform: "translateX(30%)  skewY(10deg)",
-            opacity: "0%",
-          },
-          "75%": {
-            opacity: "0%",
-          },
-          "100%": {
-            transform: "translateY(50%) translateX(30%) skewY(6deg)",
-          },
-        },
-        opacityEffect: {
-          "0%": {
-            opacity: "0%",
-          },
-          "10%": {
-            opacity: "100%",
-          },
-          "20%": {
-            opacity: "0%",
-          },
-          "100%": {
-            opacity: "0%",
-          },
         },
         skewEffect: {
-          "30%": {
-            transform: "skewY(-10deg)",
+          "0%": {
+            transform: "skewX(0deg)",
           },
-          "75%": {
-            transform: "skewY(10deg)",
+          "30%": {
+            transform: "skewY(6deg)",
+          },
+          "70%": {
+            transform: "skewY(-6deg)",
+            transform: "skewX(6deg)",
           },
         },
       },
