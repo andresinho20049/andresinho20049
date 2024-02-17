@@ -5,7 +5,8 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "As a developer, I demonstrate some of the projects developed"
+  description:
+    "As a full stack developer, I demonstrate some of the projects developed by us. feel free to look",
 };
 
 export default async function Projects() {

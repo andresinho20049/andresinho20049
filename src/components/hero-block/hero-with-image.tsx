@@ -8,7 +8,7 @@ export const HeroBlockWithImage = (proj: Projects) => {
     <div className="flex items-center justify-center bg-hero h-screen">
       <div className="flex flex-col gap-4 landscape:flex-row items-center max-w-8xl">
         <div className="order-last landscape:order-first w-full md:pr-32">
-          <h1 className="hidden landscape:block text-2xl lg:text-5xl text-center text-left text-blue-900 leading-tight font-medium animate-title">
+          <h1 className="hidden landscape:block text-2xl lg:text-5xl text-center text-left text-primary-900 leading-tight font-medium animate-title">
             {proj.title}
           </h1>
           <h2 className="mt-2 md:mt-10 text-md md:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed animate-fade-in">
@@ -26,7 +26,7 @@ export const HeroBlockWithImage = (proj: Projects) => {
 
         <div className="order-first landscape:order-last w-full landscape:w-1/2 ">
           <div className="landscape:hidden drop-shadow-lg bg-blend-difference backdrop-blur-md">
-            <h1 className="text-2xl  text-center text-blue-900 leading-tight font-medium">
+            <h1 className="text-2xl  text-center text-primary-900 leading-tight font-medium">
               {proj.title}
             </h1>
           </div>

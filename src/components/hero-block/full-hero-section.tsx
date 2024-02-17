@@ -33,7 +33,7 @@ export const FullHeroSection = ({
         <section className="px-4 flex items-center h-full lg:mt-0">
           <div className="w-full">
             <h1 className="text-4xl lg:text-6xl font-bold">{title}</h1>
-            <div className="w-36 h-2 bg-blue-700 my-4"></div>
+            <div className="w-36 h-2 bg-primary-700 my-4"></div>
             <p className="text-md lg:text-xl mb-5 lg:mb-16">{msg}</p>
             <div className="w-44">
               {urlLink && (

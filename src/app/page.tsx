@@ -1,14 +1,8 @@
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
-import { Metadata } from "next";
+import { SocialMediaComponent } from "@/components/footer/SocialMedia";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "Andresinho20049",
-  description:
-    "Hi there! I'm André Carlos, known on the web as andresinho20049",
-};
-
-export default function Home() {
+export default async function Home() {
 
   const username = `Andresinho20049`;
   const summary = `Hi there! I'm André Carlos, known on the web as andresinho20049. 
@@ -20,7 +14,7 @@ export default function Home() {
 
       <h1
         className="z-10 text-4xl md:text-5xl lg:text-8xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title 
-        font-semibold font-display  whitespace-nowrap bg-clip-text hover:bg-gradient-to-b from-white via-white to-primary-300"
+        font-semibold font-display  whitespace-nowrap bg-clip-text hover:bg-gradient-to-b from-white via-white to-primary-500"
       >
         {username}
       </h1>
@@ -36,9 +30,15 @@ export default function Home() {
       <div className="w-48 animate-fade-in">
         <LinkAppearanceButton href={"/home"}>Get Started</LinkAppearanceButton>
       </div>
+
+      <div className="absolute bottom-5 flex flex-col gap-2 animate-fade-in">
+        <SocialMediaComponent />
+        <p className="font-mono text-sm font-semibold">My Social media</p>
+      </div>
+
       <Image
         src={"/avatar/Me-min.png"}
-        alt=""
+        alt="A photo of myself"
         priority
         width={720}
         height={1600}
@@ -46,10 +46,10 @@ export default function Home() {
       />
       <Image
         src={"/Logo.png"}
-        alt=""
+        alt="Logo"
         width={1000}
         height={1091}
-        className="object-contain object-left-top h-24 w-11/12 absolute top-0 lef-0 animate-fade-in"
+        className="object-contain object-left-top h-24 w-11/12 absolute top-5 lef-0 animate-fade-in"
       />
     </div>
   );

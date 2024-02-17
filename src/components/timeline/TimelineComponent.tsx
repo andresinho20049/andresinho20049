@@ -44,7 +44,7 @@ const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
 
 export const TimelineComponent = () => {
   return (
-    <Timeline className="my-4">
+    <Timeline className="my-4 max-w-5xl">
       {listTimeline.map((time, idx) => (
         <TimelineItem
           key={idx}

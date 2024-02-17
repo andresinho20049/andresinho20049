@@ -32,7 +32,7 @@ export const ModalComponent = ({
       <button
         aria-label={title}
         title={title}
-        className="bg-transparent h-8 w-8 rounded-md flex justify-center items-center hover:border border-blue-700"
+        className="bg-transparent h-8 w-8 rounded-md flex justify-center items-center hover:border border-primary-700"
         onClick={openModal}
       >
         <span className="sr-only">{title}</span>

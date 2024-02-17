@@ -16,20 +16,19 @@ export const SeeMyWorks = () => {
       <div className="w-full bg-white lg:z-10 lg:shadow-lg lg:absolute lg:top-0 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
         <div className="flex flex-col p-12 md:px-16">
           <h2 className="text-2xl font-medium uppercase text-gray-800 lg:text-4xl">
-            See my <strong className="text-blue-700">Works</strong>
+            See my <strong className="text-primary-700">Works</strong>
           </h2>
-          <p className="mt-4 text-gray-500">
-            I have worked extensively in multinational IT consultancies, where I
-            have been involved in several projects that utilize Scrum
-            methodologies. I am familiar with terms related to releases,
-            scalability, CRQ, and deploy. I have also had the pleasure of having
-            my projects validated by experienced QA teams, and achieving the
-            satisfaction of seeing them running seamlessly in production.
+          <p className="mt-4 text-gray-500 leading-relaxed text-pretty whitespace-pre-line text-sm lg:text-base ">
+            {`I worked in multinational IT consultancies, where I was involved in several projects that use Scrum methodologies. 
+            
+            I'm familiar with the terms used in scrum and kanban methodologies. 
+            
+            I also had the pleasure of having my projects validated by experienced QA teams, and having the satisfaction of seeing them running in production.`}
           </p>
           <div className="mt-8">
             <Link
               href="/portfolio/projects"
-              className="inline-block w-full text-center text-lg font-medium text-blue-700 border-blue-700 border-solid border-2 py-4 hover:scale-[1.2] px-6 hover:text-blue-400 hover:border-blue-400 transition-transform duration-200 ease-in-out rounded hover:shadow-md md:w-52"
+              className="inline-block w-full text-center text-lg font-medium text-primary-700 border-primary-700 border-solid border-2 py-4 hover:scale-[1.2] px-6 hover:text-primary-400 hover:border-primary-400 transition-transform duration-200 ease-in-out rounded hover:shadow-md md:w-52"
             >
               Career Highlights
             </Link>

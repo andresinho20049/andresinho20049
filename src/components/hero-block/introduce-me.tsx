@@ -10,8 +10,10 @@ export const IntroduceMeBlock = () => {
           </h1>
         </div>
         <div className="animate-fade-in">
-          <p>
-            {`As a developer with a Bachelor's degree in Computer Science, I have expertise primarily in technical skills in Java, TypeScript, JavaScript, SQL and Docker. Through my experience, I have learned to approach each project with a growth mindset, eager to contribute meaningfully and make the difference. I am constantly striving to improve and face new challenges, confident in my abilities to deliver high-quality work.`}
+          <p className="leading-relaxed text-center clear-left text-pretty whitespace-pre-line text-lg font-normal">
+            {`I'm a Developer with a bachelor's degree in Computer Science and I've more than 5 years of experience, I present my portfolio.
+
+              Through my experience, I have learned to approach each project with a growth mindset, eager to contribute meaningfully and make a difference. I'm constantly striving to improve and face new challenges, confident in my abilities to deliver high-quality work.`}
           </p>
         </div>
       </div>

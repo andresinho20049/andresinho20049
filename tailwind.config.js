@@ -24,10 +24,11 @@ module.exports = {
       red: colors.red,
       pink: colors.pink,
       neutral: colors.neutral,
-      primary: colors.cyan,
+      primary: colors.blue,
       secondary: colors.pink,
       zinc: colors.zinc,
       cyan: colors.cyan,
+      blue: colors.blue
     },
     screens: {
       sm: "640px",

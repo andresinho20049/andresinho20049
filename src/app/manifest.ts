@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: "andresinho20049",
     lang: "en",
     description:
-      "Hi there! I'm André Carlos, known on the web as andresinho20049. I'd love to take a moment to introduce myself and share a bit about my portfolio. (Software Engineer)",
+      "Hi there! I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience, I present my portfolio.",
     categories: [
       "Design",
       "Developers",
