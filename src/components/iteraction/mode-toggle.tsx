@@ -23,10 +23,10 @@ export function ModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="w-full h-full flex items-center justify-center gap-2 p-0"
+      className="w-full h-full flex items-center justify-center gap-2 p-0 group"
     >
       <span className="sr-only	">Toggle theme</span>
-      <div className="border rounded-md p-1">{icon}</div>
+      <div className="border rounded-md p-1 group-hover:border-primary-500">{icon}</div>
     </button>
   );
 }
