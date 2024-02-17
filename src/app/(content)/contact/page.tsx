@@ -1,8 +1,14 @@
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 import { ContactForm } from "@/components/form/ContactForm";
-import { FiverrSvg } from "@/components/svg/fiverr";
-import { WorkanaSvg2 } from "@/components/svg/workana";
+import { Metadata } from "next";
+import Image from "next/image";
 import { TbBrandUpwork } from "react-icons/tb";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Feel free to contact us (andresinho20049 team), we will get back to you as soon as possible.",
+  keywords: ["Contact", "E-mail", "Andresinho20049", "gmail"]
+};
 
 export default function Contact() {
 
@@ -36,7 +42,13 @@ export default function Contact() {
                     href="https://www.workana.com/freelancer/c718379dcd94c24d33a82a849af53bf1"
                     isBlank
                   >
-                    <WorkanaSvg2 /> Workana
+                    <Image
+                      alt="workana Logo"
+                      src={"/svg/workana.svg"}
+                      width={34}
+                      height={34}
+                    />{" "}
+                    Workana
                   </LinkAppearanceButton>
                 </div>
                 <div className="flex-1">
@@ -44,7 +56,12 @@ export default function Contact() {
                     href=" https://br.fiverr.com/andresinho20049"
                     isBlank
                   >
-                    <FiverrSvg />
+                    <Image
+                      alt="fiverr Logo"
+                      src={"/svg/fiverr.svg"}
+                      width={58}
+                      height={58}
+                    />
                   </LinkAppearanceButton>
                 </div>
               </div>

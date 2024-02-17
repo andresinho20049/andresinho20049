@@ -1,7 +1,6 @@
-// import { TextField, TextFieldProps } from "@mui/material"
 import { useField } from "@unform/core";
 import { FloatingLabel, FloatingLabelProps } from "flowbite-react";
-import { useEffect, useState, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 
 type IVTextFieldProps = FloatingLabelProps & {
@@ -27,7 +26,7 @@ export const VTextField = ({ name, customChange, ...rest }: IVTextFieldProps) =>
         } else {
             setValue(value);
         }
-    }, []);
+    }, [customChange]);
 
     useEffect(() => {
         registerField({
@@ -35,7 +34,7 @@ export const VTextField = ({ name, customChange, ...rest }: IVTextFieldProps) =>
             getValue: () => value,
             setValue: (_, newValue) => handleChange(newValue),
         })
-    }, [registerField, fieldName, value])
+    }, [registerField, fieldName, value, handleChange])
 
     return (
         <FloatingLabel

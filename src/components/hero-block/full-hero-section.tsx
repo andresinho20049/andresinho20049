@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { LinkAppearanceButton } from "../button/link-appearance-button";
-import { AndresinhoSvg } from "../svg/andresinho20049";
 import { ReactNode } from "react";
+import { LinkAppearanceButton } from "../button/link-appearance-button";
 
 export interface IFullHeroSectionProps {
   title: string | ReactNode;
   msg: string;
-  urlLink: string;
+  urlLink?: string;
+  textLink?: string;
   imgSrc: string;
 }
 
@@ -14,27 +14,34 @@ export const FullHeroSection = ({
   title,
   msg,
   urlLink,
-  imgSrc
+  textLink,
+  imgSrc,
 }: IFullHeroSectionProps) => {
   return (
     <div className="flex flex-wrap h-screen">
       <div className="flex flex-col justify-between w-full h-full lg:w-8/12">
         <nav className="flex px-4 justify-between items-center">
           <div className="landscape:size-12 landscape:lg:size-28 size-28">
-            <AndresinhoSvg />
+            <Image
+              alt="my-logo Logo"
+              src={"/svg/my-logo.svg"}
+              width={124}
+              height={124}
+            />
           </div>
         </nav>
         <section className="px-4 flex items-center h-full lg:mt-0">
           <div className="w-full">
-            <h1 className="text-4xl lg:text-6xl font-bold">
-              {title}
-            </h1>
+            <h1 className="text-4xl lg:text-6xl font-bold">{title}</h1>
             <div className="w-36 h-2 bg-blue-700 my-4"></div>
             <p className="text-md lg:text-xl mb-5 lg:mb-16">{msg}</p>
-            <div className="w-36">
-              <LinkAppearanceButton href={urlLink}>
-                Learn More
-              </LinkAppearanceButton>
+            <div className="w-44">
+              {urlLink && (
+                <LinkAppearanceButton href={urlLink}>
+                  <span className="sr-only">visit my timeline</span>
+                  {textLink || "Learn more"}
+                </LinkAppearanceButton>
+              )}
             </div>
           </div>
         </section>
@@ -45,7 +52,7 @@ export const FullHeroSection = ({
           height={1280}
           src={imgSrc}
           alt="Ilustrate Image"
-          className="object-contain"
+          className="object-contain object-bottom"
         />
       </div>
     </div>

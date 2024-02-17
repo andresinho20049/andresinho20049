@@ -1,7 +1,7 @@
 // import { TextField, TextFieldProps } from "@mui/material"
 import { useField } from "@unform/core";
-import { FloatingLabel, FloatingLabelProps, Textarea, TextareaProps } from "flowbite-react";
-import { useEffect, useState, useCallback } from "react";
+import { Textarea, TextareaProps } from "flowbite-react";
+import { useCallback, useEffect, useState } from "react";
 
 
 type IVTextFieldProps = TextareaProps & {
@@ -21,13 +21,16 @@ export const VTextArea = ({ name, customChange, ...rest }: IVTextFieldProps) => 
 
     const [value, setValue] = useState(defaultValue || '');
 
-    const handleChange = useCallback((value: any) => {
-        if(!!customChange && !!value) {
-            setValue(customChange?.(value));
+    const handleChange = useCallback(
+      (value: any) => {
+        if (!!customChange && !!value) {
+          setValue(customChange?.(value));
         } else {
-            setValue(value);
+          setValue(value);
         }
-    }, []);
+      },
+      [customChange]
+    );
 
     useEffect(() => {
         registerField({
@@ -35,7 +38,7 @@ export const VTextArea = ({ name, customChange, ...rest }: IVTextFieldProps) => 
             getValue: () => value,
             setValue: (_, newValue) => handleChange(newValue),
         })
-    }, [registerField, fieldName, value])
+    }, [registerField, fieldName, value, handleChange])
 
     return (
       <Textarea

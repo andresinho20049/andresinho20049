@@ -12,7 +12,7 @@ export const HeaderNav = () => {
   const pathname = usePathname();
 
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid rounded className="shadow-lg">
       <Navbar.Brand href="/" className="order-2 md:order-1">
         <Avatar img="/Logo.png" alt="My Logo" />
         <span className="self-center whitespace-nowrap text-sm md:text-xl font-semibold dark:text-white ">

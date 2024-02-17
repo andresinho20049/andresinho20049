@@ -1,5 +1,5 @@
 <img align="left" width="90rem" src="https://github.com/andresinho20049/andresinho20049/blob/master/public/avatar/Me-Avatar.png" alt="Avatar-Art" border="0">
-<img align="right" width="150rem" src="https://github.com/andresinho20049/andresinho20049/blob/master/public/avatar/AirBrush_20230512110551-transformed.png" alt="Ready-Player-Me-Avatar-2" border="0">
+<img align="right" width="150rem" src="https://github.com/andresinho20049/andresinho20049/blob/master/public/avatar/Me-min.png" alt="Sou Eu" border="0">
 
  <h1 align="center">André Carlos </h1> 
  

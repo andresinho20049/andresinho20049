@@ -14,20 +14,18 @@ export const FooterComponent = () => {
       <hr className="border-gray-200 sm:mx-auto" />
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between">
         <Link href={"/"}>
-        <Image
-          src="/Logo_extended.png"
-          width={260}
-          height={260}
-          alt="Picture of the author"
+          <Image
+            src="/Logo_extended.png"
+            width={260}
+            height={260}
+            alt="Picture of the author"
           />
-          </Link>
+        </Link>
         <div className="flex flex-col justify-between items-center gap-4">
-          <h3>Follow us</h3>
+          <h1 className="select-none text-xl">Follow us</h1>
           <SocialMediaComponent />
           <hr />
-          <Link
-            href="/contact"
-          >
+          <Link href="/contact">
             <span className="text-sm text-gray-500 text-center md:text-right">
               &copy; {copyrightDate} {copyrightName}
               {copyrightName.length && !copyrightName.endsWith(".") ? "." : ""}

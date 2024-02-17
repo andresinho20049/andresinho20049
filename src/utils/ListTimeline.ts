@@ -4,7 +4,8 @@ export const listTimeline: ITimeline[] = [
   {
     time: "April 1998",
     title: "Hi, my name is André!",
-    body: "I was born on April 1998. At that time, my father was studying at Senai. He tried studying computer science, but couldn't finish. He has been my biggest inspiration and my first reference in the IT area. I thought it would be cool to mention this fact.",
+    body: `I was born on April 1998. At that time, my father was studying at Senai. He tried studying computer science, but couldn't finish. 
+    He has been my biggest inspiration and my first reference in the IT area. I thought it would be cool to mention this fact.`,
     imgSrc: "/timeline/me_and_my_dad.png",
   },
   {
@@ -201,79 +202,20 @@ export const listTimeline: ITimeline[] = [
     body: `We were part of the Ura VIVO project, but due to the team's internalization, only certified professionals were selected to continue the project. As a college student at the time, I was unable to meet the required criteria and had to take a break. I am informing you that I am now migrating to the RPA project with Blueprism.`,
   },
   {
-    time: "January 2020",
-    title: "I was fired :(",
-    body: `It wasn't a private dismissal of mine, it was a mass dismissal.
-
-    'Unfortunately, the RPA project was not going very well, and I believe that because I was new to the project, it was a more viable option than professionals with Blueprism certification.
-
-    'During this project I worked on the demands of Vivo 360 and my biggest participation in it was helping with the SQL Procedures used to consume the data.`,
-  },
-  {
-    time: "September 2020",
-    title: "Generic DAO",
-    body: `Rest API implementing CRUD (MySQL)
-    The aim of this project is to develop generic DAO using only javax.persistence
-
-    Technology used:
-     - Java 8
-     - Spring boot
-     - Rest
-
-    Object Relational Mapping is the representation of a table in a relational database through Java classes.
-
-    It is also known as ORM or Object Relational Mapping.
-
-    Java Persistence API (JPA) To standardize ORM implementations in Java, the JPA specification was developed.
-
-    In JPA, the Java classes that represent the data to be stored in the DBMS are called Entities. What makes this class an entity is the presence of the @javax.persistence.Entity annotation. Such an annotation causes JPA to associate the Java class in question with a database table.
-
-    Project developed for academic purposes with the objective of studying ORM`,
-    link: "https://github.com/andresinho20049/Generic-Dao",
-  },
-  {
     time: "October 2020",
     title: "Starting a new Journey",
     body: `Now I'm part of the A5 Solutions team, I started as a Developer.
 
-    I will join the devolopers team, more particularly I will be part of Manager Thiago Calegari's Team.`,
+    I will join the devolopers team, more particularly I will be part of Manager Thiago Calegari's Team.
+    
+    key tools:
+     - Java with Spring-boot
+     - Front-end Vanila (HTML, CSS, JS)
+     - Angular
+     - Postgres
+     - AWS S3, AWS EC2
+    `,
     imgSrc: "/timeline/I_join_a5.jpg",
-  },
-  {
-    time: "November 2020",
-    title: "Academic project",
-    body: `"Web Software Development"
-    Topics
-
-    Develop application using PHP
-
-    Follow the evaluation criteria:
-     - Written version
-     - Presence of information requested by the teacher;
-     - Grammatical correction;
-     - Adequacy to ABNT standards (cover, title page, summary, introduction, development, conclusion, references and annexes);
-     - Recorded presentation
-
-    *Project Structure*
-    Languages:
-     - (Backend) PHP
-     - (Front-end) PHP, HTML, CSS AND JS
-
-    Libraries:
-     - (Backend) Silex E Jwtwrapper
-     - (Front-end) Jquery and Bootstrap
-
-    Database:
-     - MySql 5.6
-
-    Security
-     - JWT Session
-     - Resources released only after login
-
-    ACADEMIC PROJECT:
-    Student: André Carlos
-    Course: Computer Science.
-    Subject: Software Development for the Web - 5th Semester.`,
   },
   {
     time: "May 2021",
@@ -320,7 +262,7 @@ export const listTimeline: ITimeline[] = [
     Note: At the time of submission of the TCC, the STT API belonged to GCP services, however recently a free API has been used and the operation in the voice function presents problems in very long speeches.
 
     The application was designed with simplicity and increased accessibility in mind. Many Brazilians with hearing impairment need the help of an interpreter to communicate effectively. Therefore, when observing a classmate who was accompanied by an interpreter in class, and remembering that few have the monetary resources to do the same, the idea proposed in this monograph was conceived. Therefore, the application's main objective is to help deaf people who need to communicate and carry out daily tasks, but who cannot have the help of an interpreter, even momentarily.`,
-    link: "https://lb-talk-web.vercel.app/talks",
+    link: "https://lb-talk-web.andresinho20049.com.br/",
   },
   {
     time: "December 2022",
