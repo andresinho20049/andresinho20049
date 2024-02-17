@@ -12,7 +12,7 @@ export default function LayoutContent({ children }: ILayoutProps) {
         <header className="flex-none">
           <HeaderNav />
         </header>
-        <main>
+        <main className="flex-1">
           {children}
         </main>
         <footer className="flex-none mt-auto">
