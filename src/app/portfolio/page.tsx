@@ -28,20 +28,21 @@ export default async function portfolio() {
     "css",
     "javascript",
     "typescript",
-    "git",
-    "java",
-    "spring",
-    "postgres",
     "angular",
     "react",
     "next",
-    "python",
+    "jquery",
+    "git",
     "docker",
+    "java",
+    "spring",
+    "postgres",
+    "python",
   ];
 
   return (
     <section className="snap-start w-full py-6">
-      <div className="rounded-lg shadow-md overflow-hidden max-w-screen-lg mx-auto dark:shadow-gray-700 p-4">
+      <div className="rounded-lg shadow-md overflow-hidden max-w-5xl mx-auto dark:shadow-gray-700 p-4">
         <div className="flex justify-end w-full">
           <ModalComponent
             title="My Resume"
@@ -71,8 +72,8 @@ export default async function portfolio() {
                 key={icon}
                 className="py-0 my-0"
                 alt={icon.toUpperCase()}
-                width={39}
-                height={39}
+                width={42}
+                height={42}
                 src={`/svg/${icon}.svg`}
                 title={icon.toUpperCase()}
               />

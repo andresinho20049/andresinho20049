@@ -9,15 +9,15 @@ import { Avatar } from "flowbite-react";
 
 export const ShowcaseChooseUs = () => {
   return (
-    <div className="bg-gradient-to-b from-blue-500 to-transparent to-30%">
+    <div className="bg-gradient-to-b from-primary-500 to-transparent to-30%">
       <section
         id="features"
         className="relative block px-6 py-10 md:py-20 md:px-10 "
       >
         <div className="relative mx-auto max-w-5xl text-center">
-          <span className="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+          <h1 className="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
             Why choose me
-          </span>
+          </h1>
           <h2 className="block w-full text-white font-bold text-3xl sm:text-4xl">
             Build a solution for your customer
           </h2>
@@ -29,11 +29,11 @@ export const ShowcaseChooseUs = () => {
         </div>
 
         <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-md border border-blue-800 p-8 text-center shadow">
+          <div className="rounded-md border border-primary-800 p-8 text-center shadow">
             <div className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border ">
               <FaDev />
             </div>
-            <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600">
+            <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600 notranslate select-none">
               Back-end
             </h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
@@ -43,25 +43,25 @@ export const ShowcaseChooseUs = () => {
             </p>
           </div>
 
-          <div className="rounded-md border border-blue-800 p-8 text-center shadow">
+          <div className="rounded-md border border-primary-800 p-8 text-center shadow">
             <div className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border ">
               <MdOutlineDeveloperMode />
             </div>
-            <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600">
+            <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600 notranslate select-none">
               Front-end
             </h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
               I have experience working on vanilla projects with HTML, CSS, JS,
-              and Node.js, as well as their popular frameworks including
+              and also Node.js, as well as their popular frameworks including
               Angular, React, and Next.js.
             </p>
           </div>
 
-          <div className="rounded-md border border-blue-800 p-8 text-center shadow">
+          <div className="rounded-md border border-primary-800 p-8 text-center shadow">
             <div className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border ">
               <BsDatabase />
             </div>
-            <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600">
+            <h3 className="mt-6 font-semibold text-gray-800 dark:text-gray-600 notranslate select-none">
               Database
             </h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
@@ -79,9 +79,9 @@ export const ShowcaseChooseUs = () => {
               </span>
             </div>
             <div className="flex-1">
-              <h3 className="font-semibold text-gray-800 dark:text-gray-600">
+              <h2 className="font-semibold text-gray-800 dark:text-gray-600">
                 Please feel free to contact us anytime,{" "}
-              </h3>
+              </h2>
               <p className="font-normal leading-relaxed tracking-wide text-gray-400">
                 as we are more than happy to assist you in any way we can.
               </p>

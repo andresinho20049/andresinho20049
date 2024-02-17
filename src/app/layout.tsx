@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Andresinho20049",
   },
   description:
-    "Hi there! I'm André Carlos, known on the web as andresinho20049. I'd love to take a moment to introduce myself and share a bit about my portfolio. (Software Engineer)",
+    "Hi there! I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience, I present my portfolio.",
   keywords: [
     "Andresinho20049",
     "andresinho20049",
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     "dev",
     "Software Engineer",
     "software engineer",
+    "Full stack",
   ],
   authors: [
     {
@@ -41,14 +42,32 @@ export const metadata: Metadata = {
     },
   ],
   icons: {
-    icon: "/icons/favicon.ico",
-    apple: "/icons/apple-touch-icon.png",
-    shortcut: "/icons/android-chrome-192x192.png",
+    icon: "https://andresinho20049.com.br/Logo.png",
+    apple: "https://andresinho20049.com.br/icons/apple-touch-icon.png",
+    shortcut: "https://andresinho20049.com.br/icons/android-chrome-192x192.png",
   },
   robots: "https://andresinho20049.com.br/robots.txt",
   manifest: "https://andresinho20049.com.br/manifest.webmanifest",
-  other: {
-    "google-site-verification": `${process.env.googleSiteVerification}`,
+  verification: {
+    google: `${process.env.googleSiteVerification}`,
+  },
+  alternates: {
+    canonical: "https://andresinho20049.com.br/",
+  },
+  themeColor: [
+    {
+      color: "#000",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      color: "#fff",
+      media: "(prefers-color-scheme: light)",
+    },
+  ],
+  colorScheme: "dark light",
+  viewport: {
+    initialScale: 1,
+    width: "device-width",
   },
 };
 

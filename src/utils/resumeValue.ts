@@ -4,7 +4,9 @@ const summary: string = `I joined Indra, being part of the URA project team (Viv
 
 During this period I also participated in the development/maintenance of PROC (Oracle/SQL Server), Web Service (Rest/SOAP), implementation in Glassfish in Linux environments.
 
-Later, I was hired by A5 Solutions, working as a full-stack developer on Web projects. In the back-end we use Java Spring Boot and the front-end is more diverse, containing vanilla projects (HTML/CSS/JS) and NodeJs projects (Angular /React).`;
+Later, I was hired by A5 Solutions, working as a full-stack developer on Web projects. In the back-end we use Java Spring Boot and the front-end is more diverse, containing vanilla projects (HTML/CSS/JS) and NodeJs projects (Angular /React).
+
+At A5, I also participated in the development/maintenance of SQL solutions with Postgres`;
 
 export const myResume: resumeProps = {
   name: "André Carlos M. de Oliveira",

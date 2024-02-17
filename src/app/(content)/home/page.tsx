@@ -7,8 +7,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Home page of the my portfolio, I hope you like it",
-  keywords: ["Portfolio", "Landing page", "Inspiration"]
+  description:
+    "Hello, I'm André Carlos, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience, I present my portfolio.",
+  keywords: ["Portfolio", "Landing page", "Inspiration"],
 };
 
 export default function Resume() {
@@ -20,7 +21,7 @@ export default function Resume() {
         <ShowSvgsComponent />
       </div>
       <FullHeroSection
-        msg="With my experience in both software development and hardware, I began my career as a confident and skilled back-end programmer, so Bitwise."
+        msg="With my passion for both software and hardware, I started my career as a back-end programmer, so Bitwise."
         title={
           <>
             Would you like to <span className="text-blue-700">know me</span>{" "}
@@ -28,7 +29,7 @@ export default function Resume() {
           </>
         }
         urlLink="/portfolio"
-        textLink="Visit my portfolio"
+        textLink="Visit my resume"
         imgSrc="/avatar/me-and-family.png"
       />
       <ShowcaseChooseUs />
