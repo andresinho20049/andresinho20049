@@ -61,7 +61,7 @@ export const CardResume = () => {
           </LinkTabs>
         ))}
         <Link
-          className="hidden md:flex justify-center items-center gap-4 mt-8 hover:underline hover:text-blue-700"
+          className="hidden md:flex justify-center items-center gap-4 mt-8 hover:underline hover:text-primary-400"
           href={"/contact"}
         >
           Contact <FaArrowRight />
