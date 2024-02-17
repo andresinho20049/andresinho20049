@@ -47,6 +47,9 @@ export const metadata: Metadata = {
   },
   robots: "https://andresinho20049.com.br/robots.txt",
   manifest: "https://andresinho20049.com.br/manifest.webmanifest",
+  other: {
+    "google-site-verification": `${process.env.googleSiteVerification}`,
+  },
 };
 
 interface RootLayoutProps {
