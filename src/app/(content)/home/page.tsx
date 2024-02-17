@@ -3,6 +3,13 @@ import { IntroduceMeBlock } from "@/components/hero-block/introduce-me";
 import { SeeMyWorks } from "@/components/hero-block/see-my-work";
 import { ShowSvgsComponent } from "@/components/hero-block/show-svgs";
 import { ShowcaseChooseUs } from "@/components/hero-block/showcase-chose-us";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Home page of the my portfolio, I hope you like it",
+  keywords: ["Portfolio", "Landing page", "Inspiration"]
+};
 
 export default function Resume() {
   return (

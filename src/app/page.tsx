@@ -1,5 +1,12 @@
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Andresinho20049",
+  description:
+    "Hi there! I'm André Carlos, known on the web as andresinho20049",
+};
 
 export default function Home() {
 

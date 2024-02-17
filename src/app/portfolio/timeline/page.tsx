@@ -1,5 +1,12 @@
 import { TimelineComponent } from "@/components/timeline/TimelineComponent";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Timeline",
+  description: "This is my timeline, I'm passionate about tech and the whole geek world",
+  keywords: ["Dev", "timeline", "geek", "life of the dev"]
+};
 
 export default function Timeline() {
   return (

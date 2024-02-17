@@ -6,6 +6,7 @@ import { TbBrandUpwork } from "react-icons/tb";
 
 export const metadata: Metadata = {
   title: "Contact",
+  description: "Feel free to contact us (andresinho20049 team), we will get back to you as soon as possible.",
   keywords: ["Contact", "E-mail", "Andresinho20049", "gmail"]
 };
 

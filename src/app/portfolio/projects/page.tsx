@@ -1,13 +1,11 @@
-import { FooterComponent } from "@/components/footer/footer";
-import { HeaderNav } from "@/components/header/header_nav";
 import { HeroBlockWithImage } from "@/components/hero-block/hero-with-image";
-import { ShowcaseChooseUs } from "@/components/hero-block/showcase-chose-us";
 import { allProjects } from "contentlayer/generated";
 import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Projects",
+  description: "As a developer, I demonstrate some of the projects developed"
 };
 
 export default async function Projects() {

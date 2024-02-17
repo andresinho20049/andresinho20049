@@ -8,7 +8,7 @@ import { SlSizeActual } from "react-icons/sl";
 import { TbSeo } from "react-icons/tb";
 
 export const metadata: Metadata = {
-  title: "About Me",
+  title: "About",
   description: "A responsive website demonstrating some of my skills linked to its delivery and development."
 };
 

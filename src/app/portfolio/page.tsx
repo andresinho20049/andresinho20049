@@ -8,6 +8,7 @@ import { GrDocumentPdf } from "react-icons/gr";
 
 export const metadata: Metadata = {
   title: "Portfolio",
+  description: "my resume, see my skills, experience and main tools",
 };
 
 export default async function portfolio() {
