@@ -4,6 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Portfolio - Andresinho20049",
     short_name: "andresinho20049",
+    lang: "en",
     description:
       "Hi there! I'm André Carlos, known on the web as andresinho20049. I'd love to take a moment to introduce myself and share a bit about my portfolio. (Software Engineer)",
     categories: [
@@ -22,7 +23,7 @@ export default function manifest(): MetadataRoute.Manifest {
     icons: [
       {
         src: "/icons/favicon.ico",
-        sizes: "any",
+        sizes: "64x64 48x48 32x32 24x24 16x16",
         type: "image/x-icon",
       },
       {
