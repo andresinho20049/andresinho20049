@@ -2,14 +2,14 @@ import { TypewriterComponent } from "@/components/iteraction/typewriter";
 import { Metadata } from "next";
 import Image from "next/image";
 import { FaCode, FaConnectdevelop } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdSpeed } from "react-icons/md";
 import { SiSpeedtest } from "react-icons/si";
 import { SlSizeActual } from "react-icons/sl";
 import { TbSeo } from "react-icons/tb";
 
-
 export const metadata: Metadata = {
   title: "About Me",
+  description: "A responsive website demonstrating some of my skills linked to its delivery and development."
 };
 
 export default function About() {
@@ -41,14 +41,12 @@ export default function About() {
             <TbSeo size={24} />
           </span>
           <div>
-            <h3 className="font-semibold text-xl">
+            <h2 className="font-semibold text-xl">
               Search Engine Optimization
-            </h3>
+            </h2>
             <p className="mt-1 text-gray-500">
-              {" "}
-              Refined portfolio content, personally developed and managed.
-              Includes concise, meaningful descriptions. Utilizes consistent
-              fonts and typography for clarity and professionalism.
+              Original content, with concise and meaningful descriptions. Uses
+              consistent fonts and typography for clarity and professionalism.
             </p>
           </div>
         </div>
@@ -58,12 +56,10 @@ export default function About() {
             <SlSizeActual size={24} />
           </span>
           <div>
-            <h3 className="font-semibold text-xl">Fully Responsive</h3>
+            <h2 className="font-semibold text-xl">Fully Responsive</h2>
             <p className="mt-1 text-gray-500">
-              {" "}
-              The entire site was developed with a fully responsive mind in
-              mind, so that users can access it from wherever they feel most
-              comfortable.{" "}
+              Fully responsive website allowing you to access it from wherever
+              you feel most comfortable.
             </p>
           </div>
         </div>
@@ -73,26 +69,23 @@ export default function About() {
             <SiSpeedtest size={24} />
           </span>
           <div>
-            <h3 className="font-semibold text-xl">Lighthouse & PSI</h3>
+            <h2 className="font-semibold text-xl">Lighthouse & PSI</h2>
             <p className="mt-1 text-gray-500">
-              {" "}
-              Our pages were tested with the Lighthouse tool, and also at
-              https://pagespeed.web.dev/ to ensure good Performance,
-              Accessibility, SEO, and best practices
+              Our pages were tested with the Lighthouse tool, and others to
+              ensure good Performance, Accessibility, SEO, and best practices
             </p>
           </div>
         </div>
 
         <div className="flex gap-4 items-start">
           <span className="text-violet-600 bg-violet-500/10 p-3 rounded-full">
-            <FaConnectdevelop size={24} />
+            <MdSpeed size={24} />
           </span>
           <div>
-            <h3 className="font-semibold text-xl">Cross Browser</h3>
+            <h2 className="font-semibold text-xl">Server-side Rendering</h2>
             <p className="mt-1 text-gray-500">
-              {" "}
-              Server-Side Rendering (SSR) prioritizing delivery of static
-              content, bringing lightness and compatibility with browsers.{" "}
+              Server-Side Rendering (SSR) prioritizing static content delivery,
+              bringing lightness, browser compatibility and improving SEO
             </p>
           </div>
         </div>
@@ -102,11 +95,10 @@ export default function About() {
             <FaCode size={24} />
           </span>
           <div>
-            <h3 className="font-semibold text-xl">Clean Code</h3>
+            <h2 className="font-semibold text-xl">Clean Code</h2>
             <p className="mt-1 text-gray-500">
-              {" "}
               We follow good clean code practices along with S.O.L.I.D
-              principles.{" "}
+              principles.
             </p>
           </div>
         </div>
@@ -116,10 +108,10 @@ export default function About() {
             <MdEmail size={24} />
           </span>
           <div>
-            <h3 className="font-semibold text-xl">Contact</h3>
+            <h2 className="font-semibold text-xl">Contact</h2>
             <p className="mt-1 text-gray-500">
-              {" "}
-              Our contact page has a form with integration the GCP Gmail API
+              Our contact page has a form with integration the GCP Gmail API, so
+              feel free to contact us
             </p>
           </div>
         </div>
@@ -127,7 +119,7 @@ export default function About() {
       <div className="max-w-3xl mx-auto px-5 mt-28">
         <div className="flex flex-col justify-center">
           <div className="text-center">
-            <h2 className="font-semibold text-3xl">Tools used</h2>
+            <h1 className="font-semibold text-3xl">Tools used</h1>
 
             <p className="max-w-md mx-auto mt-2 text-gray-500">
               Below I list the tools used in the development of this website
@@ -147,7 +139,7 @@ export default function About() {
             <div className="size-18">
               <Image
                 alt="React Logo"
-                src={"/svg/react.svg"}
+                src={"/svg/react-right.svg"}
                 width={124}
                 height={124}
               />

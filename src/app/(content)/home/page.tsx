@@ -9,15 +9,19 @@ export default function Resume() {
     <div className="min-h-screen">
       <IntroduceMeBlock />
       <SeeMyWorks />
-      <ShowSvgsComponent />
+      <div className="hidden md:block">
+        <ShowSvgsComponent />
+      </div>
       <FullHeroSection
         msg="With my experience in both software development and hardware, I began my career as a confident and skilled back-end programmer, so Bitwise."
         title={
           <>
-            Would you like to <span className="text-blue-700">know me</span> better?
+            Would you like to <span className="text-blue-700">know me</span>{" "}
+            better?
           </>
         }
         urlLink="/portfolio"
+        textLink="Visit my portfolio"
         imgSrc="/avatar/me-and-family.png"
       />
       <ShowcaseChooseUs />

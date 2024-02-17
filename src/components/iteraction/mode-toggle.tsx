@@ -24,6 +24,7 @@ export function ModeToggle() {
       onClick={toggleTheme}
       className="w-full h-full flex items-center justify-center gap-2 p-0"
     >
+      <span className="sr-only	">Toggle theme</span>
       <div className="border rounded-md p-1">{icon}</div>
     </button>
   );
