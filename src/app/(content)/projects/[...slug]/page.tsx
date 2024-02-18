@@ -64,6 +64,13 @@ export async function generateMetadata({
           width: 1200,
           height: 630,
         },
+        {
+          url: "/og-Image-2.jpg",
+          type: "image/jpg",
+          alt: "Logo | Andresinho20049",
+          width: 1200,
+          height: 630,
+        }
       ],
     },
   };
@@ -100,7 +107,6 @@ export default async function PageProject({ params }: PageProps) {
 
   return (
     <article>
-      {structuredData}
       <BreadcrumbComponent text={page.title} />
       <div className="flex flex-col justify-start items-center">
         <div className="w-4/5 prose-sm md:prose lg:prose-lg xl:prose-xl dark:prose-invert">
@@ -136,6 +142,7 @@ export default async function PageProject({ params }: PageProps) {
           <RecommendedProjects exclusion={page.title} qtde={2} />
         </div>
       </div>
+      {structuredData}
     </article>
   );
 }

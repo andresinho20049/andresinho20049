@@ -84,6 +84,13 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
       },
+      {
+        url: "/og-Image-2.jpg",
+        type: "image/jpg",
+        alt: "Logo | Andresinho20049",
+        width: 1200,
+        height: 630,
+      },
     ],
   },
   twitter: {
@@ -93,7 +100,7 @@ export const metadata: Metadata = {
     title: "Portfolio | Andresinho20049",
     description:
       "I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience.",
-    images: ["/og-Image.jpg"],
+    images: ["/og-Image.jpg", "/og-Image-2.jpg"],
   },
 };
 
