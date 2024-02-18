@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Andresinho20049",
   },
   description:
-    "Hi there! I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience, I present my portfolio.",
+    "I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience.",
   keywords: [
     "Andresinho20049",
     "andresinho20049",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "andre carlos",
     "Portfolio",
     "Portifolio",
-    "Next Site",
+    "Nextjs",
     "Developer",
     "Typescript",
     "Dev Java",
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "André Carlos",
-      url: "https://www.instagram.com/andresinho20049",
+      url: "https://github.com/andresinho20049",
     },
   ],
   icons: {
-    icon: "https://andresinho20049.com.br/Logo.png",
-    apple: "https://andresinho20049.com.br/icons/apple-touch-icon.png",
-    shortcut: "https://andresinho20049.com.br/icons/android-chrome-192x192.png",
+    icon: "/Logo.png",
+    apple: "/icons/apple-touch-icon.png",
+    shortcut: "/icons/android-chrome-192x192.png",
   },
-  robots: "https://andresinho20049.com.br/robots.txt",
-  manifest: "https://andresinho20049.com.br/manifest.webmanifest",
+  robots: "/robots.txt",
+  manifest: "/manifest.webmanifest",
   verification: {
     google: `${process.env.googleSiteVerification}`,
   },
@@ -68,6 +68,39 @@ export const metadata: Metadata = {
   viewport: {
     initialScale: 1,
     width: "device-width",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://andresinho20049.com.br/",
+    title: "Portfolio | Andresinho20049",
+    description:
+      "I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience.",
+    siteName: "Portfolio | Andresinho20049",
+    images: [
+      {
+        url: "/Logo.png",
+        type: "image/png",
+        alt: "Logo | Andresinho20049",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        url: "/avatar/Me-min.png",
+        alt: "A photo of myself",
+        type: "image/png",
+        width: 720,
+        height: 1600,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "Portfolio | Andresinho2009",
+    creator: "@andresinho20049",
+    title: "Portfolio | Andresinho20049",
+    description:
+      "I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience.",
+    images: ["/Logo.png"],
   },
 };
 

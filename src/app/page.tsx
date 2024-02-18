@@ -1,6 +1,8 @@
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 import { SocialMediaComponent } from "@/components/footer/SocialMedia";
+import { JsonLd } from "@/components/structure/schema-org";
 import Image from "next/image";
+import { Brand } from "schema-dts";
 
 export default async function Home() {
 
@@ -51,6 +53,20 @@ export default async function Home() {
         height={1091}
         className="object-contain object-left-top h-24 w-11/12 absolute top-5 lef-0 animate-fade-in"
       />
+      {SchemaOrgHomePage}
     </div>
   );
 }
+
+const SchemaOrgHomePage = JsonLd<Brand>({
+  "@context": "https://schema.org",
+  "@type": "Brand",
+  "@id": "https://andresinho20049.com.br/#Andresinho20049",
+  image: "https://andresinho20049.com.br/Logo.png",
+  url: "https://andresinho20049.com.br/",
+  name: "Andresinho20049",
+  description:
+    "I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience.",
+  slogan:
+    "I'm the developer who will help you think of the solution for your client.",
+});
