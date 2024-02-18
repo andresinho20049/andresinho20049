@@ -56,7 +56,14 @@ export async function generateMetadata({
           alt: page.description,
           width: 1200,
           height: 1800,
-        }
+        },
+        {
+          url: "/og-Image.jpg",
+          type: "image/jpg",
+          alt: "Logo | Andresinho20049",
+          width: 1200,
+          height: 630,
+        },
       ],
     },
   };
