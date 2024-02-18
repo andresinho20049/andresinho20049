@@ -78,18 +78,11 @@ export const metadata: Metadata = {
     siteName: "Portfolio | Andresinho20049",
     images: [
       {
-        url: "/Logo.png",
-        type: "image/png",
+        url: "/og-Image.jpg",
+        type: "image/jpg",
         alt: "Logo | Andresinho20049",
-        width: 1000,
-        height: 1000,
-      },
-      {
-        url: "/avatar/Me-min.png",
-        alt: "A photo of myself",
-        type: "image/png",
-        width: 720,
-        height: 1600,
+        width: 1200,
+        height: 630,
       },
     ],
   },
@@ -100,7 +93,7 @@ export const metadata: Metadata = {
     title: "Portfolio | Andresinho20049",
     description:
       "I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience.",
-    images: ["/Logo.png"],
+    images: ["/og-Image.jpg"],
   },
 };
 
