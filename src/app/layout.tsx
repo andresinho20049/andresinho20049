@@ -42,8 +42,9 @@ export const metadata: Metadata = {
     },
   ],
   icons: {
-    icon: "/favicon.ico",
-    apple: "/icons/apple-touch-icon.png"
+    icon: "/icons/android-chrome-192x192",
+    apple: "/icons/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
   robots: "/robots.txt",
   manifest: "/manifest.webmanifest",
@@ -110,7 +111,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={`min-h-screen ${inter.className}`}>
+      <body className={`min-h-screen overflow-hidden ${inter.className}`}>
         <Script
           id="ads-google-1"
           async
