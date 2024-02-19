@@ -1,6 +1,6 @@
 ---
 title: React, Material UI 5 e Typescript
-description: Website developed following a playlist of videos on YOUTUBE by Lucas Souza Dev, then I carried out some implementations in an original way
+description: React website with custom theme that can be managed by the user, developed in React and site management using context
 date: 2022-06-13
 imgSrc: /cards/React_c_Mui_Custom_Theme.png
 ---
@@ -34,7 +34,6 @@ json-server -w ./mock/db.json -p 4000
 *Password*: 1234
 
 ## Custom Theme
-After finishing the course, I added some features to the website, and one of them was the implementation of a custom theme.
 ### How was it developed?
   - ModalCustomThemeContext:
     - ModalCustomThemeContext is a context that encompasses the entire Dialog component used to customize the theme
@@ -85,10 +84,13 @@ After finishing the course, I added some features to the website, and one of the
 
 ## Libraries used
 I will talk a little about the tools/libraries used, why they were developed in such a way, mainly the points that were developed differently from the approach used in the course.
+
 ### Material UI 5
 Material UI is a React UI component library that implements Google's Material Design.
+
 ### Axios
 Axios is a Promises-based HTTP client for making requests. Axios brings some advantages and simplifications, making it better to use than just Fetch, such as simple configuration, automatic JSON conversion, Interceptors, etc...
+
 ### Uniform
 Unform, forms API, advantage in using it because it does not use state, so when it is typed in the input, the other inputs do not suffer rendering.
 
@@ -106,8 +108,9 @@ Rest API (Fake), used for mocking.
 
 ## Considerations
 It is important to emphasize that the security/authentication requirements of this application are not valid for a service in production, in a real development scenario, there will probably be a back-end service that will possibly perform an Oauth2 authentication and return a JWT token.
-This application is a development with an academic bias, and to simplify, Json Server was used, thus replacing the "back-end", therefore disregarding security requirements, the focus of this project is front-end development with React and Material UI.
 
-> Developer André Carlos
-> Project: React, Material UI 5 and Typescript
+Json Server was used, thus replacing the "back-end", therefore disregarding security requirements, the focus of this project is front-end development with React and Material UI.
+
+> Developer André Carlos \
+> Project: React, Material UI 5 and Typescript \
 > Backend: JsonServer
