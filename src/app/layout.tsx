@@ -42,9 +42,10 @@ export const metadata: Metadata = {
     },
   ],
   icons: {
-    icon: "/Logo.png",
+    icon: "/favicon.ico",
     apple: "/icons/apple-touch-icon.png",
-    shortcut: "/icons/android-chrome-192x192.png",
+    shortcut: "/icons/android-chrome-192x192",
+    
   },
   robots: "/robots.txt",
   manifest: "/manifest.webmanifest",
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     },
     {
       color: "#fff",
-      media: "(prefers-color-scheme: light)",
+      media: "light",
     },
   ],
   colorScheme: "dark light",
@@ -101,7 +102,7 @@ export const metadata: Metadata = {
     description:
       "I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience.",
     images: ["/og-Image.jpg", "/og-Image-2.jpg"],
-  },
+  }
 };
 
 interface RootLayoutProps {

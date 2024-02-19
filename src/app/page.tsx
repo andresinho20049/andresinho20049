@@ -2,14 +2,13 @@ import { LinkAppearanceButton } from "@/components/button/link-appearance-button
 import { SocialMediaComponent } from "@/components/footer/SocialMedia";
 import { JsonLd } from "@/components/structure/schema-org";
 import Image from "next/image";
-import { Brand } from "schema-dts";
+import { WebSite } from "schema-dts";
 
-export default async function Home() {
-
-  const username = `Andresinho20049`;
-  const summary = `Hi there! I'm André Carlos, known on the web as andresinho20049. 
+const headline = `Andresinho20049`;
+const summary = `Hi there! I'm André Carlos, known on the web as andresinho20049. 
                   I'd love to take a moment to introduce myself and share a bit about my portfolio.`;
 
+export default async function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-dvh transition-transform overflow-hidden bg-cover bg-center sm:bg-gradient-to-t from-gray-700 to-gray-900 max-sm:bg-[url('/background/homeBg_mobile.png')]">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -18,7 +17,7 @@ export default async function Home() {
         className="z-10 text-4xl md:text-5xl lg:text-8xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title 
         font-semibold font-display  whitespace-nowrap bg-clip-text hover:bg-gradient-to-b from-white via-white to-primary-500"
       >
-        {username}
+        {headline}
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -58,15 +57,33 @@ export default async function Home() {
   );
 }
 
-const SchemaOrgHomePage = JsonLd<Brand>({
+const SchemaOrgHomePage = JsonLd<WebSite>({
   "@context": "https://schema.org",
-  "@type": "Brand",
+  "@type": "WebSite",
   "@id": "https://andresinho20049.com.br/#Andresinho20049",
   image: "https://andresinho20049.com.br/Logo.png",
   url: "https://andresinho20049.com.br/",
   name: "Andresinho20049",
   description:
     "I'm André Carlos, known on the web as andresinho20049, I'm a developer with a bachelor's degree in Computer Science and more than 5 years of experience.",
-  slogan:
-    "I'm the developer who will help you think of the solution for your client.",
+  alternateName: [
+    "Portfolio - Software Engineer",
+    "Developer Fullstack",
+    "Computer Science",
+    "Developer - André",
+    "André Dev",
+    "My Portfolio | André",
+  ],
+  headline: headline,
+  text: summary,
+  author: {
+    "@type": "Person",
+    "@id": "https://andresinho20049.com.br/portfolio",
+    name: "André Carlos",
+    url: "https://github.com/andresinho20049",
+    jobTitle: "Software Engineer",
+  },
+  copyrightYear: "2024",
+  dateCreated: "2024-01-12",
+  dateModified: "2024-02-19"
 });
