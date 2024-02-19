@@ -9,7 +9,7 @@ interface ILayoutProps {
 export default function LayoutContent({ children }: ILayoutProps) {
 
     return (
-      <section className="flex flex-col justify-start items-center h-dvh snap-y snap-mandatory overflow-y-auto scroll-smooth">
+      <section className="flex flex-col justify-start items-center h-lvh snap-y snap-mandatory overflow-y-auto overscroll-y-contain scroll-smooth">
         <nav className="snap-start w-full">
           <HeaderNav />
         </nav>

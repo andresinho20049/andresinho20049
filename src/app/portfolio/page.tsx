@@ -41,8 +41,8 @@ export default async function portfolio() {
   ];
 
   return (
-    <section className="snap-start w-full py-6">
-      <div className="rounded-lg shadow-md overflow-hidden max-w-5xl mx-auto dark:shadow-gray-700 p-4">
+    <section className="w-full py-6">
+      <div className="rounded-lg shadow-md overflow-hidden max-w-5xl mx-auto dark:shadow-gray-700 p-4 snap-start ">
         <div className="flex justify-end w-full">
           <ModalComponent
             title="My Resume"
