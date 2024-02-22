@@ -115,7 +115,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Script
           id="ads-google-1"
           async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADS_GID}`}
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3617432012620885`}
           crossOrigin="anonymous"
         />
         <GoogleTagManager gtmId={process.env.GTMID || ""} />
