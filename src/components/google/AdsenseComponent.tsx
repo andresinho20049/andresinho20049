@@ -5,7 +5,12 @@ interface IAdsComponent {
   children: ReactNode;
 }
 
-export type AdsModelsType = "horizontal" | "vertical" | "square" | "article" | "multi";
+export type AdsModelsType =
+  | "horizontal"
+  | "vertical"
+  | "square"
+  | "article"
+  | "multi";
 
 const AdsComponent = ({ children }: IAdsComponent) => {
   return (
@@ -43,7 +48,7 @@ export const AdsenseVerticalComponent = () => {
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
-        data-ad-client="ca-pub-3617432012620885"
+        data-ad-client={process.env.ADS_GID}
         data-ad-slot="7737718706"
         data-ad-format="auto"
         data-full-width-responsive="true"
@@ -58,7 +63,7 @@ export const AdsenseSquareComponent = () => {
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
-        data-ad-client="ca-pub-3617432012620885"
+        data-ad-client={process.env.ADS_GID}
         data-ad-slot="8910010203"
         data-ad-format="auto"
         data-full-width-responsive="true"
@@ -75,7 +80,7 @@ export const AdsenseArticleComponent = () => {
         style={{ display: "block", textAlign: "center" }}
         data-ad-layout="in-article"
         data-ad-format="fluid"
-        data-ad-client="ca-pub-3617432012620885"
+        data-ad-client={process.env.ADS_GID}
         data-ad-slot="6978263277"
       ></ins>
     </AdsComponent>
@@ -89,7 +94,7 @@ export const AdsenseMultiComponent = () => {
         className="adsbygoogle"
         style={{ display: "block" }}
         data-ad-format="autorelaxed"
-        data-ad-client="ca-pub-3617432012620885"
+        data-ad-client={process.env.ADS_GID}
         data-ad-slot="5271337465"
       ></ins>
     </AdsComponent>
