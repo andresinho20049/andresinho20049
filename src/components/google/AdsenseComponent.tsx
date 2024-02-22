@@ -13,7 +13,7 @@ const AdsComponent = ({ children }: IAdsComponent) => {
       {children}
       <Script
         id="ads-google-2"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
         }}
