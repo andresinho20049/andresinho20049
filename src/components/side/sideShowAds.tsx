@@ -12,15 +12,15 @@ import {
 } from "../google/AdsenseComponent";
 
 interface ISideShowAds {
-  children: ReactNode;
+  children?: ReactNode;
   adsTypes: AdsModelsType[];
+  device: "lg" | "xl" | "2xl";
 }
 
-export const SideShowAds = ({ children, adsTypes }: ISideShowAds) => {
-  const { scrollHeight } = useScrollHook({id: "section-content-lyt"});
-
-  const divHeight = (scrollHeight) / (adsTypes.length + 1);
-  console.log(divHeight, "heigth", scrollHeight)
+const useAdsHooks = () => {
+  const { scrollHeight, scrollPercentage } = useScrollHook({
+    id: "section-content-lyt",
+  });
 
   const getAdsComponent = (ads: AdsModelsType) => {
     switch (ads) {
@@ -37,14 +37,34 @@ export const SideShowAds = ({ children, adsTypes }: ISideShowAds) => {
     }
   };
 
+  return {
+    scrollHeight,
+    scrollPercentage,
+    getAdsComponent,
+  };
+};
+
+export const SideShowAds = ({ children, adsTypes, device }: ISideShowAds) => {
+  const { scrollHeight, getAdsComponent } = useAdsHooks();
+
+  const divHeight = scrollHeight / (adsTypes.length + 1);
+  const displayOn =
+    device === "lg" ? "lg:block" : device === "xl" ? "xl:block" : "2xl:block";
+
   return (
-    <div className="hidden lg:block h-full w-2/12 px-2">
-      <div className="sticky top-8 z-[9999]">{children}</div>
+    <div className={`hidden ${displayOn} h-full w-2/12 px-2`}>
+      {children && <div className="sticky top-8 z-[9999]">{children}</div>}
       <div className="relative">
         {adsTypes.map((ads, idx) => (
           <div key={idx}>
-            <div className="sticky inset-2/4">{getAdsComponent(ads)}</div>
-            <div style={{height: divHeight}}></div>
+            <div
+              className={`w-full sticky ${
+                !!children ? "inset-2/4" : "inset-10"
+              }`}
+            >
+              {getAdsComponent(ads)}
+            </div>
+            <div style={{ height: divHeight }}></div>
           </div>
         ))}
         {getAdsComponent("multi")}

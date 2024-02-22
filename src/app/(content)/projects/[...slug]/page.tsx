@@ -5,17 +5,16 @@ import { notFound } from "next/navigation";
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 import { CardDotted } from "@/components/cards/cardDotted";
 import {
-  AdsenseHorizontalComponent,
-  AdsenseVerticalComponent
+  AdsenseHorizontalComponent
 } from "@/components/google/AdsenseComponent";
 import { BreadcrumbComponent } from "@/components/iteraction/breadcrumb";
+import { RecommendedProjects } from "@/components/iteraction/recommendedProjects";
 import { SideShowAds } from "@/components/side/sideShowAds";
 import { Mdx } from "@/components/structure/mdx-components";
 import { JsonLd } from "@/components/structure/schema-org";
 import Image from "next/image";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { Article } from "schema-dts";
-import { RecommendedProjects } from "@/components/iteraction/recommendedProjects";
 
 interface PageProps {
   params: {
@@ -115,11 +114,7 @@ export default async function PageProject({ params }: PageProps) {
     <article>
       <BreadcrumbComponent text={page.title} />
       <div className="flex justify-center">
-        <div className="hidden xl:flex w-2/12 px-2">
-          <div className="w-full sticky top-10">
-            <AdsenseVerticalComponent />
-          </div>
-        </div>
+        <SideShowAds adsTypes={["square", "vertical", "square"]} device="xl" />
 
         <div className="lg:flex-1 flex flex-col justify-start items-center">
           <div className="w-4/5 prose-sm md:prose lg:prose-lg xl:prose-xl dark:prose-invert">
@@ -153,7 +148,7 @@ export default async function PageProject({ params }: PageProps) {
             <RecommendedProjects exclusion={page.title} qtde={2} />
           </div>
         </div>
-        <SideShowAds adsTypes={["square", "vertical"]}>
+        <SideShowAds adsTypes={["square", "vertical"]} device="lg">
           <CardDotted
             titleCard="About"
             titleContent={page.title}
