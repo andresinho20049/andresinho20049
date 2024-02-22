@@ -1,5 +1,6 @@
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 import { ContactForm } from "@/components/form/ContactForm";
+import { AdsenseHorizontalComponent } from "@/components/google/AdsenseComponent";
 import { Metadata } from "next";
 import Image from "next/image";
 import { TbBrandUpwork } from "react-icons/tb";
@@ -18,10 +19,11 @@ export default function Contact() {
         <div className="px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-32">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <h1 className="text-3xl font-bold text-blue-700">Contact Us</h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="my-6 text-lg leading-8 text-gray-600">
               Feel free to contact us, we will get back to you as soon as
               possible.
             </p>
+            <AdsenseHorizontalComponent />
             <hr className="my-6" />
             <div className="leading-7 text-gray-600 space-y-4">
               <p className="text-center">
@@ -70,6 +72,7 @@ export default function Contact() {
         </div>
         <ContactForm />
       </div>
+      <AdsenseHorizontalComponent />
     </div>
   );
 }

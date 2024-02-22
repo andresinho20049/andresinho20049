@@ -35,7 +35,7 @@ export const CardResume = () => {
   ];
 
   return (
-    <div className="shadow-md rounded-lg pb-6 md:sticky top-0 bg-gray-50 dark:bg-gray-800">
+    <div className="shadow-md rounded-lg pb-6 bg-gray-50 dark:bg-gray-800">
       <div className="flex flex-col items-center p-6 text-center">
         <Image
           alt="Andre Photo"

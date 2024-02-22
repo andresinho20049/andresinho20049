@@ -25,6 +25,10 @@ export const Projects = defineDocumentType(() => ({
       type: "string",
       default: "Model project developed for academic purposes",
     },
+    tags: {
+      type: "string",
+      default: "Other"
+    },
     date: {
       type: "date",
       required: true,

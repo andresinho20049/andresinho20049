@@ -1,16 +1,16 @@
 import Script from "next/script";
+import { ReactNode } from "react";
 
-export const AdsenseComponent = () => {
+interface IAdsComponent {
+  children: ReactNode;
+}
+
+export type AdsModelsType = "horizontal" | "vertical" | "square" | "article" | "multi";
+
+const AdsComponent = ({ children }: IAdsComponent) => {
   return (
-    <div className="w-full">
-      <ins
-        className="adsbygoogle"
-        style={{display:"block"}}
-        data-ad-client="ca-pub-3617432012620885"
-        data-ad-slot="6487308684"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
+    <>
+      {children}
       <Script
         id="ads-google-2"
         strategy="lazyOnload"
@@ -18,34 +18,58 @@ export const AdsenseComponent = () => {
           __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
         }}
       />
-    </div>
+    </>
   );
 };
 
-export const AdsenseComponentImageOnly = () => {
+export const AdsenseHorizontalComponent = () => {
   return (
-    <div className="container m-auto justify-items-stretch">
+    <AdsComponent>
       <ins
         className="adsbygoogle"
         style={{ display: "block", width: "100%" }}
         data-ad-format="fluid"
         data-ad-layout-key="-6t+ed+2i-1n-4w"
-        data-ad-client="ca-pub-3617432012620885"
+        data-ad-client={process.env.ADS_GID}
         data-ad-slot="8357347021"
       ></ins>
-      <Script
-        id="ads-google-img-2"
-        dangerouslySetInnerHTML={{
-          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-        }}
-      />
-    </div>
+    </AdsComponent>
   );
 };
 
-export const AdsenseArticleAds = () => {
+export const AdsenseVerticalComponent = () => {
   return (
-    <div className="w-full">
+    <AdsComponent>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-3617432012620885"
+        data-ad-slot="7737718706"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+    </AdsComponent>
+  );
+};
+
+export const AdsenseSquareComponent = () => {
+  return (
+    <AdsComponent>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-3617432012620885"
+        data-ad-slot="8910010203"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+    </AdsComponent>
+  );
+};
+
+export const AdsenseArticleComponent = () => {
+  return (
+    <AdsComponent>
       <ins
         className="adsbygoogle"
         style={{ display: "block", textAlign: "center" }}
@@ -54,12 +78,20 @@ export const AdsenseArticleAds = () => {
         data-ad-client="ca-pub-3617432012620885"
         data-ad-slot="6978263277"
       ></ins>
-      <Script
-        id="ads-google-article-2"
-        dangerouslySetInnerHTML={{
-          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-        }}
-      />
-    </div>
+    </AdsComponent>
   );
-}
+};
+
+export const AdsenseMultiComponent = () => {
+  return (
+    <AdsComponent>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-format="autorelaxed"
+        data-ad-client="ca-pub-3617432012620885"
+        data-ad-slot="5271337465"
+      ></ins>
+    </AdsComponent>
+  );
+};

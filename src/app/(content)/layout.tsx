@@ -10,7 +10,7 @@ interface ILayoutProps {
 export default function LayoutContent({ children }: ILayoutProps) {
 
     return (
-      <section className="flex flex-col	justify-between h-lvh overflow-y-auto overscroll-contain">
+      <section id="section-content-lyt" className="flex flex-col	justify-between h-lvh overflow-y-auto overscroll-contain">
         <header className="flex-none">
           <HeaderNav />
         </header>
