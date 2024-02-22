@@ -19,7 +19,9 @@ export default function LayoutContent({ children }: ILayoutProps) {
             <div className="w-full md:max-w-48 max-md:snap-start py-8 space-y-2">
               <div className="md:sticky top-0">
                 <CardResume />
+                <div className="h-48 my-2">
                 <AdsenseSquareComponent />
+                </div>
               </div>
             </div>
             <div className="flex-1">{children}</div>
