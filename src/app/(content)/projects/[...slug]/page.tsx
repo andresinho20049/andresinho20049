@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 import { CardDotted } from "@/components/cards/cardDotted";
-import { RecommendedProjects } from "@/components/cards/cardProject";
 import {
   AdsenseHorizontalComponent,
   AdsenseVerticalComponent
@@ -16,6 +15,7 @@ import { JsonLd } from "@/components/structure/schema-org";
 import Image from "next/image";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { Article } from "schema-dts";
+import { RecommendedProjects } from "@/components/iteraction/recommendedProjects";
 
 interface PageProps {
   params: {
@@ -116,7 +116,7 @@ export default async function PageProject({ params }: PageProps) {
       <BreadcrumbComponent text={page.title} />
       <div className="flex justify-center">
         <div className="hidden xl:flex w-2/12 px-2">
-          <div className="sticky top-10">
+          <div className="w-full sticky top-10">
             <AdsenseVerticalComponent />
           </div>
         </div>

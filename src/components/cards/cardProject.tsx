@@ -1,4 +1,4 @@
-import { Projects, allProjects } from "contentlayer/generated";
+import { Projects } from "contentlayer/generated";
 import { Card, CustomFlowbiteTheme } from "flowbite-react";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { LinkAppearanceButton } from "../button/link-appearance-button";
@@ -47,65 +47,5 @@ export const CardProject = (proj: Projects) => {
         </LinkAppearanceButton>
       </div>
     </Card>
-  );
-};
-
-export interface IRecommendedProjectsProps {
-  qtde?: number;
-  exclusion?: string;
-}
-
-export const RecommendedProjects = ({
-  qtde = 2,
-  exclusion,
-}: IRecommendedProjectsProps) => {
-  const listProjects = !!exclusion
-    ? allProjects.filter((proj) => proj.title !== exclusion)
-    : allProjects;
-
-  const getRandom = (list: Projects[]) => {
-    return list[Math.floor(Math.random() * list.length)];
-  };
-
-  const getRecommendedProjects = () => {
-    let listRcommendedProjects: Projects[] = [];
-    for (let index = 0; index < qtde; index++) {
-      let proj: Projects = {} as Projects;
-      let includedsProj: string[] = [];
-
-      do {
-        proj = getRandom(listProjects);
-      } while (includedsProj.includes(proj.title));
-
-      listRcommendedProjects.push(proj);
-      includedsProj.push(proj.title);
-    }
-
-    return listRcommendedProjects;
-  };
-
-  return (
-    <div className="my-4 drop-shadow-lg bg-blend-difference backdrop-blur-md">
-      <h3 className="font-mono text-lg md:text-4xl font-semibold tracking-wider	line-clamp-2 text-center">
-        Recommended projects
-      </h3>
-      <div className=" lg:container lg:mx-auto grid md:grid-cols-2 gap-2 py-4  justify-items-center h-92">
-        {getRecommendedProjects().map((proj, idx) => (
-          <CardProject
-            key={idx}
-            _id={proj._id}
-            _raw={proj._raw}
-            title={proj.title}
-            description={proj.description}
-            date={proj.date}
-            body={proj.body}
-            imgSrc={proj.imgSrc}
-            slug={proj.slug}
-            slugAsParams={proj.slugAsParams}
-            type={proj.type}
-          />
-        ))}
-      </div>
-    </div>
   );
 };
