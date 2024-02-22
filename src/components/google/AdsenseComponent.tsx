@@ -1,5 +1,7 @@
+'use client';
+
 import Script from "next/script";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 
 interface IAdsComponent {
   children: ReactNode;
@@ -13,16 +15,23 @@ export type AdsModelsType =
   | "multi";
 
 const AdsComponent = ({ children }: IAdsComponent) => {
+
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {}
+  }, []);
+
   return (
     <>
       {children}
-      <Script
+      {/* <Script
         id="ads-google-2"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
         }}
-      />
+      /> */}
     </>
   );
 };

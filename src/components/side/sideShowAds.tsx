@@ -53,8 +53,8 @@ export const SideShowAds = ({ children, adsTypes, device }: ISideShowAds) => {
 
   return (
     <div className={`hidden ${displayOn} h-full w-2/12 px-2`}>
-      {children && <div className="sticky top-8 z-[9999]">{children}</div>}
       <div className="relative">
+        {children && <div className="sticky top-8 z-[9999]">{children}</div>}
         {adsTypes.map((ads, idx) => (
           <div key={idx}>
             <div
@@ -67,8 +67,8 @@ export const SideShowAds = ({ children, adsTypes, device }: ISideShowAds) => {
             <div style={{ height: divHeight }}></div>
           </div>
         ))}
-        {getAdsComponent("multi")}
       </div>
+      <div className="sticky top-8">{getAdsComponent("multi")}</div>
     </div>
   );
 };
