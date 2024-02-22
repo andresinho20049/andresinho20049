@@ -32,6 +32,7 @@ export default async function Projects() {
               description={proj.description}
               date={proj.date}
               body={proj.body}
+              tags={proj.tags}
               imgSrc={proj.imgSrc}
               slug={proj.slug}
               slugAsParams={proj.slugAsParams}
