@@ -4,7 +4,38 @@ description: API developed for MEI management, making it possible to register NF
 date: 2023-03-02
 imgSrc: /cards/nf_control_vibbra.png
 linkPreview: https://nf-control-front.vercel.app/
+tags: Back-end|Java|Spring-Boot|Swagger|Oauth2|Postgres|Front-end|Node.js|Typescript|React
 ---
+
+Project developed for MEI, with fiscal control and enables registration and management of notes.
+
+This development has two fronts, Java API with Oauth2 authentication and front-end react, sessions with tokenJWT.
+
+## Main tools
+  - Back-end
+    - Java
+      - Spring boot
+      - JPA
+      - Swagger
+      - Oauth2
+    - Postgres
+  - Front-end
+    - Node.js
+    - Typescript
+    - React
+      - Material UI
+      - Axios
+      - Unform
+      - Yup
+
+<ins
+  className="adsbygoogle"
+  style={{ display: "block", textAlign: "center" }}
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-3617432012620885"
+  data-ad-slot="6978263277"
+></ins>
 
 ## Rest API with Oauth2 authentication and documentation using Swagger
 
@@ -70,6 +101,15 @@ Select lombok and then click finish
 
 2. Optional Step: Click Project > Update maven project > Ok
 
+<ins
+  className="adsbygoogle"
+  style={{ display: "block", textAlign: "center" }}
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-3617432012620885"
+  data-ad-slot="6978263277"
+></ins>
+
 ### Models
 #### User
 ```json
@@ -130,6 +170,15 @@ Select lombok and then click finish
 }
 ```
 
+<ins
+  className="adsbygoogle"
+  style={{ display: "block", textAlign: "center" }}
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-3617432012620885"
+  data-ad-slot="6978263277"
+></ins>
+
 ### Mail Service
 The implementation of sending emails using Google's SMTP was developed, but Google removed the possibility of allowing less secure apps. So at the moment sending emails is not working.
 
@@ -177,6 +226,15 @@ As shown below, the notes are filtered by year, allowing you to validate the ent
 
 All values posted on the portal are linked to the logged in user, so each user is only allowed to view their own entries.
 
+<ins
+  className="adsbygoogle"
+  style={{ display: "block", textAlign: "center" }}
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-3617432012620885"
+  data-ad-slot="6978263277"
+></ins>
+
 ## NF Control Front-end
 
 This project was started with [Create React App](https://github.com/facebook/create-react-app).
@@ -209,6 +267,15 @@ Your app is ready to be deployed!
 See the section on [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ---
+
+<ins
+  className="adsbygoogle"
+  style={{ display: "block", textAlign: "center" }}
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-3617432012620885"
+  data-ad-slot="6978263277"
+></ins>
 
 ### Libraries used
 I will talk a little about the tools/libraries used, why they were developed in such ways.
@@ -282,6 +349,15 @@ The portal has a context, `AppThemeContext`, which receives information from the
 
 When instantiating a state with `usePersistedState`, unlike the conventional `useState`, the initial value and a key are informed, then the local storage is consulted to see if it has any value with the informed key and set to the new value. \
 _Considerations to Rocketseat_
+
+<ins
+  className="adsbygoogle"
+  style={{ display: "block", textAlign: "center" }}
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-3617432012620885"
+  data-ad-slot="6978263277"
+></ins>
 
 ## Considerations \
 The back-end was first developed aiming at the business rules and scope of the project, and later the front-end development was started
