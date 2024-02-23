@@ -23,16 +23,9 @@ const AdsComponent = ({ children }: IAdsComponent) => {
   }, []);
 
   return (
-    <>
+    <div>
       {children}
-      {/* <Script
-        id="ads-google-2"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-        }}
-      /> */}
-    </>
+    </div>
   );
 };
 

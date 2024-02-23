@@ -1,3 +1,4 @@
+import { AdsenseArticleComponent } from "@/components/google/AdsenseComponent";
 import { TimelineComponent } from "@/components/timeline/TimelineComponent";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -30,6 +31,7 @@ export default function Timeline() {
       <div className="flex flex-col justify-center items-center snap-start">
           <TimelineComponent />
       </div>
+      <AdsenseArticleComponent />
     </section>
   );
 }

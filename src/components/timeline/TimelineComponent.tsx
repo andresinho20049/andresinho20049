@@ -6,6 +6,7 @@ import { Timeline } from "flowbite-react";
 import Image from "next/image";
 import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
 import { LinkAppearanceButton } from "../button/link-appearance-button";
+import { AdsenseArticleComponent } from "../google/AdsenseComponent";
 
 const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
   return (
@@ -45,16 +46,35 @@ const TimelineItem = ({ time, title, body, link, imgSrc }: ITimeline) => {
 export const TimelineComponent = () => {
   return (
     <Timeline className="my-4 max-w-5xl">
-      {listTimeline.map((time, idx) => (
-        <TimelineItem
-          key={idx}
-          time={time.time}
-          title={time.title}
-          body={time.body}
-          link={time.link}
-          imgSrc={time.imgSrc}
-        />
-      ))}
+      {listTimeline.map((time, idx) => {
+        if (idx > 0 && idx % 7 == 0) {
+          return (
+            <div key={idx}>
+              <div className="my-2">
+                <AdsenseArticleComponent />
+              </div>
+              <TimelineItem
+                time={time.time}
+                title={time.title}
+                body={time.body}
+                link={time.link}
+                imgSrc={time.imgSrc}
+              />
+            </div>
+          );
+        }
+
+        return (
+          <TimelineItem
+            key={idx}
+            time={time.time}
+            title={time.title}
+            body={time.body}
+            link={time.link}
+            imgSrc={time.imgSrc}
+          />
+        );
+      })}
       <div className="sticky top-0 h-16"></div>
     </Timeline>
   );
