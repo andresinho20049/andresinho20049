@@ -75,7 +75,7 @@ export default function Contact() {
           </div>
         </div>
         <ContactForm />
-        <div className="col-span-2 place-self-center">
+        <div className="col-span-2 place-self-center w-full">
           <AdsenseSquareComponent />
         </div>
       </div>
