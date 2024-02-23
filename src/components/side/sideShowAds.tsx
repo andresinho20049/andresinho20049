@@ -8,8 +8,10 @@ import {
   AdsenseHorizontalComponent,
   AdsenseMultiComponent,
   AdsenseSquareComponent,
+  AdsenseSquareFixedComponent,
   AdsenseVerticalComponent,
 } from "../google/AdsenseComponent";
+import { CardAds } from "../cards/cardAds";
 
 interface ISideShowAds {
   children?: ReactNode;
@@ -32,8 +34,11 @@ const useAdsHooks = () => {
         return <AdsenseArticleComponent />;
       case "multi":
         return <AdsenseMultiComponent />;
-      default:
+      case "square":
         return <AdsenseSquareComponent />;
+
+      default:
+        return <AdsenseSquareFixedComponent />;
     }
   };
 
@@ -52,23 +57,30 @@ export const SideShowAds = ({ children, adsTypes, device }: ISideShowAds) => {
     device === "lg" ? "lg:block" : device === "xl" ? "xl:block" : "2xl:block";
 
   return (
-    <div className={`hidden ${displayOn} h-full w-2/12 px-2`}>
+    <div className={`hidden ${displayOn} w-2/12 px-2 mx-2`}>
       <div className="relative">
         {children && <div className="sticky top-8 z-[9999]">{children}</div>}
         {adsTypes.map((ads, idx) => (
           <div key={idx}>
             <div
-              className={`w-full sticky ${
+              className={`w-52 px-2 sticky ${
                 !!children ? "inset-2/4" : "inset-10"
               }`}
             >
-              {getAdsComponent(ads)}
+              <div className={children ? "py-12" : "py-2"}>
+                <CardAds>{getAdsComponent(ads)}</CardAds>
+              </div>
             </div>
             <div style={{ height: divHeight }}></div>
           </div>
         ))}
+        <div style={{ height: divHeight / 4 }}></div>
       </div>
-      <div className="sticky top-8">{getAdsComponent("multi")}</div>
+      {scrollHeight > 7000 && (
+        <div className="sticky top-8">
+          <CardAds>{getAdsComponent("multi")}</CardAds>
+        </div>
+      )}
     </div>
   );
 };

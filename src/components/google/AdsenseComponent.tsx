@@ -11,6 +11,7 @@ export type AdsModelsType =
   | "horizontal"
   | "vertical"
   | "square"
+  | "square-fixed"
   | "article"
   | "multi";
 
@@ -69,6 +70,19 @@ export const AdsenseSquareComponent = () => {
         data-ad-slot="8910010203"
         data-ad-format="auto"
         data-full-width-responsive="true"
+      ></ins>
+    </AdsComponent>
+  );
+};
+
+export const AdsenseSquareFixedComponent = () => {
+  return (
+    <AdsComponent>
+      <ins
+        className="adsbygoogle"
+        style={{display:"inline-block", width:"11rem", height:"11rem"}}
+        data-ad-client="ca-pub-3617432012620885"
+        data-ad-slot="2947021487"
       ></ins>
     </AdsComponent>
   );

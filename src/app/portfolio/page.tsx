@@ -1,3 +1,4 @@
+import { CardAds } from "@/components/cards/cardAds";
 import { SocialMediaComponent } from "@/components/footer/SocialMedia";
 import {
   AdsenseArticleComponent,
@@ -47,8 +48,8 @@ export default async function portfolio() {
   ];
 
   return (
-    <section className="w-full py-6 flex flex-col xl:flex-row gap-10">
-      <div className="flex-1 rounded-lg shadow-md overflow-hidden max-w-5xl max-xl:mx-auto xl:ml-auto dark:shadow-gray-700 p-4 snap-start ">
+    <section className="w-full py-6 flex flex-col xl:flex-row">
+      <div className="flex-1 rounded-lg shadow-md overflow-hidden max-w-5xl mx-auto dark:shadow-gray-700 p-4 snap-start ">
         <div className="flex justify-end w-full">
           <ModalComponent
             title="My Resume"
@@ -196,9 +197,13 @@ export default async function portfolio() {
           </div>
         </div>
       </div>
-      <div className="hidden xl:flex flex-col justify-between w-2/12">
-        <AdsenseMultiComponent />
-        <AdsenseSquareComponent />
+      <div className="hidden xl:flex flex-col justify-between w-40">
+        <CardAds>
+          <AdsenseMultiComponent />
+        </CardAds>
+        <CardAds>
+          <AdsenseSquareComponent />
+        </CardAds>
       </div>
       <div className="block xl:hidden w-full">
         <AdsenseArticleComponent />
