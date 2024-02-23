@@ -4,9 +4,7 @@ import { notFound } from "next/navigation";
 
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 import { CardDotted } from "@/components/cards/cardDotted";
-import {
-  AdsenseHorizontalComponent
-} from "@/components/google/AdsenseComponent";
+import { AdsenseHorizontalComponent } from "@/components/google/AdsenseComponent";
 import { BreadcrumbComponent } from "@/components/iteraction/breadcrumb";
 import { RecommendedProjects } from "@/components/iteraction/recommendedProjects";
 import { SideShowAds } from "@/components/side/sideShowAds";
@@ -114,7 +112,7 @@ export default async function PageProject({ params }: PageProps) {
     <article>
       <BreadcrumbComponent text={page.title} />
       <div className="flex justify-center">
-        <SideShowAds adsTypes={["square", "vertical", "square"]} device="xl" />
+        <SideShowAds adsTypes={["square", "vertical"]} device="xl" />
 
         <div className="lg:flex-1 flex flex-col justify-start items-center">
           <div className="w-4/5 prose-sm md:prose lg:prose-lg xl:prose-xl dark:prose-invert">
@@ -148,7 +146,7 @@ export default async function PageProject({ params }: PageProps) {
             <RecommendedProjects exclusion={page.title} qtde={2} />
           </div>
         </div>
-        <SideShowAds adsTypes={["square", "vertical"]} device="lg">
+        <SideShowAds device="lg" adsTypes={["square-fixed"]}>
           <CardDotted
             titleCard="About"
             titleContent={page.title}
