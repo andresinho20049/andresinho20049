@@ -1,18 +1,22 @@
 import { LinkAppearanceButton } from "@/components/button/link-appearance-button";
 import { ContactForm } from "@/components/form/ContactForm";
-import { AdsenseHorizontalComponent } from "@/components/google/AdsenseComponent";
+import {
+  AdsenseArticleComponent,
+  AdsenseHorizontalComponent,
+  AdsenseSquareComponent,
+} from "@/components/google/AdsenseComponent";
 import { Metadata } from "next";
 import Image from "next/image";
 import { TbBrandUpwork } from "react-icons/tb";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Feel free to contact us (andresinho20049 team), we will get back to you as soon as possible.",
-  keywords: ["Contact", "E-mail", "Andresinho20049", "gmail"]
+  description:
+    "Feel free to contact us (andresinho20049 team), we will get back to you as soon as possible.",
+  keywords: ["Contact", "E-mail", "Andresinho20049", "gmail"],
 };
 
 export default function Contact() {
-
   return (
     <div className="w-full h-full">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -23,7 +27,7 @@ export default function Contact() {
               Feel free to contact us, we will get back to you as soon as
               possible.
             </p>
-            <AdsenseHorizontalComponent />
+            <AdsenseArticleComponent />
             <hr className="my-6" />
             <div className="leading-7 text-gray-600 space-y-4">
               <p className="text-center">
@@ -71,8 +75,10 @@ export default function Contact() {
           </div>
         </div>
         <ContactForm />
+        <div className="col-span-2 place-self-center">
+          <AdsenseSquareComponent />
+        </div>
       </div>
-      <AdsenseHorizontalComponent />
     </div>
   );
 }
