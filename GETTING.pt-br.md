@@ -8,7 +8,7 @@ Esse projeto foi desenvolvido em NodeJs com o framework NextJs, então antes de 
  ## Começando
  1. Inicialize um novo projeto NextJs informando esse repositório como exemplo.
  ```bash
-npx create-next-app --example https://github.com/andresinho20049/andresinho20049/tree/boilerplate my-portfolio
+npx create-next-app --example https://github.com/andresinho20049/my-portfolio/tree/boilerplate my-portfolio
  ```
 
  2. Entre na pasta do seu projeto e inicialize-o:
