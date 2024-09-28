@@ -3,20 +3,13 @@
 import * as nodemailer from "nodemailer";
 import { MailOptions } from "nodemailer/lib/smtp-pool";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
-import { getGoogleAccessToken } from "./googleOauth";
 
-const createTransport = async () => {
-  const accessToken = await getGoogleAccessToken();
-
+const createTransport = () => {
   const transporterOpt: SMTPTransport.Options = {
     service: "gmail",
     auth: {
-      type: "OAuth2",
-      user: process.env.NEXT_APP_EMAIL,
-      accessToken: accessToken,
-      clientId: process.env.GCP_CLIENT_ID,
-      clientSecret: process.env.GCP_CLIENT_SECRET,
-      refreshToken: process.env.GCP_REFRESH_TOKEN,
+      user: process.env.NO_REPLY_EMAIL_APP,
+      pass: process.env.NO_REPLY_PASS_APP,
     },
   };
   const transporter = nodemailer.createTransport(transporterOpt);
@@ -52,12 +45,12 @@ export const sendMailContact = async (props: ISendMailProps) => {
     alternatives: [
       {
         contentType: "text/x-web-markdown",
-        content: markdownMsg
+        content: markdownMsg,
       },
     ],
   };
 
-  const transporter = await createTransport();
+  const transporter = createTransport();
   return await transporter.sendMail(MailOpt);
 };
 
