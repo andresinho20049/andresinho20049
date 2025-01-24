@@ -1,9 +1,12 @@
- <h1 align="center">André Carlos </h1> 
+<h1 align="center">André Carlos </h1> 
  
-<img align="left" width="80rem" src="/public/me-and-family.png" alt="My Family" border="0">
-<img align="right" width="165rem" src="/public/Me-min.png" alt="It's me" border="0">
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.pt-br.md)
+ 
+<img align="left" width="223rem" src="/public/me-and-family.png" alt="My Family" border="0">
+<img align="right" width="145rem" src="/public/Me-min.png" alt="It's me" border="0">
 
  
+<br/>
  
 <div align="center" dsplay="inline-block">
   <a href="https://www.cloudskillsboost.google/public_profiles/d24adbba-0315-45a7-bea1-9a72a94d8760" target="_blank">
@@ -26,10 +29,10 @@
 <br/>
 <br/>
 <br/>
+<br/>
 
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.pt-br.md)
 
-## Hello, Devs
+## Hi there! I'm André Carlos.
 Hello! As a seasoned developer with over 6 years of experience, I'm excited about the opportunity to collaborate with leading companies on innovative projects. 
 
 Graduated from FMU with a Bachelor's degree in Computer Science, I've developed expertise in Java, TypeScript, JavaScript, Python, SQL, Docker, as well as advanced project architectures like REST, SOAP, gRPC, GraphQL, and message queues with AMQP and MQTT. I'm eager to demonstrate my knowledge and skills in these areas, and contribute to the development of cutting-edge solutions. 
