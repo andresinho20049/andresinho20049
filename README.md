@@ -2,8 +2,8 @@
  
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/andresinho20049/andresinho20049/blob/main/README.pt-br.md)
  
-<img align="left" width="223rem" src="/public/me-and-family.png" alt="My Family" border="0">
-<img align="right" width="145rem" src="/public/Me-min.png" alt="It's me" border="0">
+<img align="left" width="22%" src="/public/me-and-family.png" alt="My Family" border="0">
+<img align="right" width="14.2%" src="/public/Me-min.png" alt="It's me" border="0">
 
  
 <br/>
