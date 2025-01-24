@@ -1,9 +1,12 @@
- <h1 align="center">André Carlos </h1> 
+<h1 align="center">André Carlos </h1> 
  
-<img align="left" width="80rem" src="/public/me-and-family.png" alt="My Family" border="0">
-<img align="right" width="165rem" src="/public/Me-min.png" alt="It's me" border="0">
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/andresinho20049/andresinho20049/blob/main/README.md)
+ 
+<img align="left" width="223rem" src="/public/me-and-family.png" alt="My Family" border="0">
+<img align="right" width="145rem" src="/public/Me-min.png" alt="It's me" border="0">
 
  
+<br/>
  
 <div align="center" dsplay="inline-block">
   <a href="https://www.cloudskillsboost.google/public_profiles/d24adbba-0315-45a7-bea1-9a72a94d8760" target="_blank">
@@ -26,10 +29,10 @@
 <br/>
 <br/>
 <br/>
+<br/>
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/andresinho20049/andresinho20049/blob/master/README.md)
 
-## Olá, Devs
+## Olá! Eu sou André Carlos.
 Olá! Como um desenvolvedor com mais de 6 anos de experiência, estou animado com a oportunidade de colaborar com empresas líderes em projetos inovadores.
 
 Graduado pela FMU com bacharelado em Ciência da Computação, desenvolvi experiência em Java, TypeScript, JavaScript, Python, SQL, Docker, bem como arquiteturas de projeto como REST, SOAP, gRPC, GraphQL e filas de mensagens com AMQP e MQTT. Estou ansioso para demonstrar meu conhecimento e habilidades nessas áreas e contribuir para o desenvolvimento de soluções de ponta.
