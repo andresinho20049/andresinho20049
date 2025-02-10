@@ -20,7 +20,7 @@
   </a> 
 </div> 
 <h3 align="center">
- <a href="https://www.andresinho20049.com.br/" target="_blank">
+ <a href="https://andresinho20049.vercel.app/" target="_blank">
   @andresinho20049
  </a>
 </h3>
